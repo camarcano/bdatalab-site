@@ -1,24 +1,26 @@
-# app/routes/webhook.py
-from flask import Blueprint, request, jsonify, current_app
+from flask import Blueprint, request, jsonify
+import os
 import subprocess
 
+bp = Blueprint('webhook', __name__)
 
-webhook_bp = Blueprint('webhook', __name__)
+REPO_DIR = '/opt/bdatalab/repos/BaseballCV'
+REPO_URL = 'https://github.com/dylandru/BaseballCV.git'
 
-@webhook_bp.route('/webhook', methods=['POST'])
+@bp.route('/webhook', methods=['POST'])
 def webhook():
-    # Path to the repository
-    repo_path = '/opt/bdatalab/repos/BaseballCV'
-    try:
-        # Mark repository as safe
-        subprocess.run(["git", "config", "--global", "--add", "safe.directory", "/opt/bdatalab/repos/BaseballCV"])
-        # Run the git pull command
-        result = subprocess.run(
-            ['git', '-C', repo_path, 'pull', 'origin', '26-create-streamlit-app-designed-for-open-source-annotations'],
-            capture_output=True,
-            text=True,
-            check=True
-        )
-        return jsonify({'message': 'Pulled successfully', 'output': result.stdout}), 200
-    except subprocess.CalledProcessError as e:
-        return jsonify({'message': 'Pull failed', 'error': e.stderr}), 500
+    # Get the branch name from the request (default to 'main' if not provided)
+    branch = request.args.get('branch', 'main')
+
+    # Remove the existing repository directory
+    if os.path.exists(REPO_DIR):
+        subprocess.run(["rm", "-rf", REPO_DIR])
+
+    # Clone the specified branch of the repository
+    clone_command = ["git", "clone", "--branch", branch, REPO_URL, REPO_DIR]
+    clone_result = subprocess.run(clone_command, capture_output=True, text=True)
+
+    if clone_result.returncode != 0:
+        return jsonify({"error": clone_result.stderr, "message": "Clone failed"}), 500
+
+    return jsonify({"message": "Repository successfully cloned", "branch": branch}), 200
