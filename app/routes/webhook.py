@@ -23,6 +23,8 @@ def webhook():
         subprocess.run(["rm", "-rf", REPO_DIR], check=True)
         print(jsonify({"message": "Existing repo deleted"}))
 
+    # Change permissions recursively to allow deletion
+    subprocess.run(["chmod", "-R", "775", REPO_DIR], check=True)
     # Clone the specified branch of the repository
     clone_command = ["git", "clone", "--branch", branch, REPO_URL, REPO_DIR]
     clone_result = subprocess.run(clone_command, capture_output=True, text=True)
