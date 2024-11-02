@@ -1,31 +1,4 @@
 import os
-import logging
-from logging.handlers import RotatingFileHandler
-
-# Set up the log file paths
-BASE_DIR = os.path.abspath(os.path.dirname(__file__))
-LOG_DIR = os.path.join(BASE_DIR, '../logs')
-FLASK_LOG_FILE = os.path.join(LOG_DIR, 'flask.log')
-DEBUG_LOG_FILE = os.path.join(LOG_DIR, 'debug.log')
-
-# Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s [%(levelname)s] %(message)s',
-    handlers=[
-        RotatingFileHandler(FLASK_LOG_FILE, maxBytes=10 * 1024 * 1024, backupCount=5),
-        logging.StreamHandler()
-    ]
-)
-
-# Create a separate handler for debug logs
-debug_handler = RotatingFileHandler(DEBUG_LOG_FILE, maxBytes=10 * 1024 * 1024, backupCount=5)
-debug_handler.setLevel(logging.DEBUG)
-formatter = logging.Formatter('%(asctime)s [%(levelname)s] %(message)s')
-debug_handler.setFormatter(formatter)
-
-# Add the debug handler to the root logger
-logging.getLogger().addHandler(debug_handler)
 
 class Config:
     # General Config
@@ -64,5 +37,3 @@ config = {
     'production': ProductionConfig,
 }
 
-# Log Flask application information
-app.logger.info("Flask application is starting.")
