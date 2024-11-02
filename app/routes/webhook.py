@@ -16,15 +16,24 @@ def webhook():
     # Check if the repository directory exists
     if os.path.exists(REPO_DIR):
         # Change permissions recursively to allow deletion
-        subprocess.run(["chmod", "-R", "775", REPO_DIR], check=True)
+        print(jsonify({"message": "Changing permissions for existing repo."}))
+        # Run the chmod command with sudo
+        chmod_command = ["sudo", "chmod", "-R", "775", REPO_DIR]
+        chmod_result = subprocess.run(chmod_command, capture_output=True, text=True)
+
+        if chmod_result.returncode != 0:
+            return jsonify({"error": chmod_result.stderr, "message": "Failed to change permissions"}), 500
         
         # Remove the existing repository directory
         print(jsonify({"message": "Trying to delete existing repo."}))
-        subprocess.run(["rm", "-rf", REPO_DIR], check=True)
+        delete_command = ["sudo", "rm", "-rf", REPO_DIR]
+        delete_result = subprocess.run(delete_command, capture_output=True, text=True)
+
+        if delete_result.returncode != 0:
+            return jsonify({"error": delete_result.stderr, "message": "Failed to delete existing repo"}), 500
+        
         print(jsonify({"message": "Existing repo deleted"}))
 
-    # Change permissions recursively to allow deletion
-    subprocess.run(["chmod", "-R", "775", REPO_DIR], check=True)
     # Clone the specified branch of the repository
     clone_command = ["git", "clone", "--branch", branch, REPO_URL, REPO_DIR]
     clone_result = subprocess.run(clone_command, capture_output=True, text=True)
