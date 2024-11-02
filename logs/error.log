@@ -384,3 +384,98 @@
 [Sat Nov 02 05:53:00.885827 2024] [core:error] [pid 2386] [client 8.213.128.36:54030] AH10244: invalid URI path (/cgi-bin/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/bin/sh)
 [Sat Nov 02 10:03:48.293668 2024] [core:error] [pid 5432] [client 67.60.128.211:54970] AH10244: invalid URI path (/cgi-bin/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/bin/sh)
 [Sat Nov 02 10:04:02.904241 2024] [core:error] [pid 5434] [client 67.60.128.211:58668] AH10244: invalid URI path (/cgi-bin/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/bin/sh)
+[Sat Nov 02 10:54:32.881427 2024] [wsgi:error] [pid 5923] [remote 177.93.3.83:37240] mod_wsgi (pid=5923): Failed to exec Python script file '/var/www/bdatalab/bdatalab.wsgi'.
+[Sat Nov 02 10:54:32.881546 2024] [wsgi:error] [pid 5923] [remote 177.93.3.83:37240] mod_wsgi (pid=5923): Exception occurred processing WSGI script '/var/www/bdatalab/bdatalab.wsgi'.
+[Sat Nov 02 10:54:32.890233 2024] [wsgi:error] [pid 5923] [remote 177.93.3.83:37240] Traceback (most recent call last):
+[Sat Nov 02 10:54:32.892862 2024] [wsgi:error] [pid 5923] [remote 177.93.3.83:37240]   File "/var/www/bdatalab/bdatalab.wsgi", line 8, in <module>
+[Sat Nov 02 10:54:32.892898 2024] [wsgi:error] [pid 5923] [remote 177.93.3.83:37240]     from app import create_app
+[Sat Nov 02 10:54:32.892908 2024] [wsgi:error] [pid 5923] [remote 177.93.3.83:37240]   File "/var/www/bdatalab/app/__init__.py", line 2, in <module>
+[Sat Nov 02 10:54:32.892912 2024] [wsgi:error] [pid 5923] [remote 177.93.3.83:37240]     from flask import Flask
+[Sat Nov 02 10:54:32.892920 2024] [wsgi:error] [pid 5923] [remote 177.93.3.83:37240]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/__init__.py", line 5, in <module>
+[Sat Nov 02 10:54:32.892925 2024] [wsgi:error] [pid 5923] [remote 177.93.3.83:37240]     from . import json as json
+[Sat Nov 02 10:54:32.892934 2024] [wsgi:error] [pid 5923] [remote 177.93.3.83:37240]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/json/__init__.py", line 6, in <module>
+[Sat Nov 02 10:54:32.892938 2024] [wsgi:error] [pid 5923] [remote 177.93.3.83:37240]     from ..globals import current_app
+[Sat Nov 02 10:54:32.892946 2024] [wsgi:error] [pid 5923] [remote 177.93.3.83:37240]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/globals.py", line 6, in <module>
+[Sat Nov 02 10:54:32.892952 2024] [wsgi:error] [pid 5923] [remote 177.93.3.83:37240]     from werkzeug.local import LocalProxy
+[Sat Nov 02 10:54:32.892962 2024] [wsgi:error] [pid 5923] [remote 177.93.3.83:37240]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/werkzeug/__init__.py", line 1, in <module>
+[Sat Nov 02 10:54:32.892966 2024] [wsgi:error] [pid 5923] [remote 177.93.3.83:37240]     from .serving import run_simple as run_simple
+[Sat Nov 02 10:54:32.892973 2024] [wsgi:error] [pid 5923] [remote 177.93.3.83:37240]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/werkzeug/serving.py", line 33, in <module>
+[Sat Nov 02 10:54:32.892977 2024] [wsgi:error] [pid 5923] [remote 177.93.3.83:37240]     from ._internal import _log
+[Sat Nov 02 10:54:32.892984 2024] [wsgi:error] [pid 5923] [remote 177.93.3.83:37240]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/werkzeug/_internal.py", line 3, in <module>
+[Sat Nov 02 10:54:32.892988 2024] [wsgi:error] [pid 5923] [remote 177.93.3.83:37240]     import logging
+[Sat Nov 02 10:54:32.893005 2024] [wsgi:error] [pid 5923] [remote 177.93.3.83:37240]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/logging/__init__.py", line 618
+[Sat Nov 02 10:54:32.893019 2024] [wsgi:error] [pid 5923] [remote 177.93.3.83:37240]     raise NotImplementedError, 'emit must be implemented '\\
+[Sat Nov 02 10:54:32.893041 2024] [wsgi:error] [pid 5923] [remote 177.93.3.83:37240]                              ^
+[Sat Nov 02 10:54:32.893052 2024] [wsgi:error] [pid 5923] [remote 177.93.3.83:37240] SyntaxError: invalid syntax
+[Sat Nov 02 12:46:54.942926 2024] [wsgi:error] [pid 7329] [remote 177.93.3.83:34396] <Response 41 bytes [200 OK]>
+[Sat Nov 02 12:48:58.750228 2024] [wsgi:error] [pid 7445] [remote 177.93.3.83:54014] <Response 51 bytes [200 OK]>
+[Sat Nov 02 12:48:58.922296 2024] [wsgi:error] [pid 7445] [remote 177.93.3.83:54014] <Response 41 bytes [200 OK]>
+[Sat Nov 02 12:52:54.410827 2024] [wsgi:error] [pid 7523] [remote 177.93.3.83:58974] <Response 51 bytes [200 OK]>
+[Sat Nov 02 12:52:54.614416 2024] [wsgi:error] [pid 7523] [remote 177.93.3.83:58974] <Response 41 bytes [200 OK]>
+[Sat Nov 02 12:56:50.633606 2024] [wsgi:error] [pid 7523] [remote 177.93.3.83:35436] <Response 51 bytes [200 OK]>
+[Sat Nov 02 12:56:50.886388 2024] [wsgi:error] [pid 7523] [remote 177.93.3.83:35436] <Response 41 bytes [200 OK]>
+[Sat Nov 02 12:59:30.787995 2024] [wsgi:error] [pid 7523] [remote 177.93.3.83:35714] <Response 51 bytes [200 OK]>
+[Sat Nov 02 12:59:30.974439 2024] [wsgi:error] [pid 7523] [remote 177.93.3.83:35714] <Response 41 bytes [200 OK]>
+[Sat Nov 02 13:02:02.999664 2024] [wsgi:error] [pid 8243] [remote 177.93.3.83:49992] <Response 51 bytes [200 OK]>
+[Sat Nov 02 13:02:03.203623 2024] [wsgi:error] [pid 8243] [remote 177.93.3.83:49992] <Response 41 bytes [200 OK]>
+[Sat Nov 02 13:02:20.776040 2024] [wsgi:error] [pid 8243] [remote 177.93.3.83:48040] <Response 51 bytes [200 OK]>
+[Sat Nov 02 13:02:20.969485 2024] [wsgi:error] [pid 8243] [remote 177.93.3.83:48040] <Response 41 bytes [200 OK]>
+[Sat Nov 02 13:03:46.384745 2024] [wsgi:error] [pid 8243] [remote 177.93.3.83:43768] <Response 51 bytes [200 OK]>
+[Sat Nov 02 13:03:46.387787 2024] [wsgi:error] [pid 8243] [remote 177.93.3.83:43768] <Response 41 bytes [200 OK]>
+[Sat Nov 02 13:30:46.666824 2024] [wsgi:error] [pid 8486] [remote 177.93.3.83:40846] <Response 51 bytes [200 OK]>
+[Sat Nov 02 13:30:46.681429 2024] [wsgi:error] [pid 8486] [remote 177.93.3.83:40846] <Response 41 bytes [200 OK]>
+[Sat Nov 02 13:31:43.370049 2024] [wsgi:error] [pid 8486] [remote 177.93.3.83:51868] <Response 51 bytes [200 OK]>
+[Sat Nov 02 13:31:43.545460 2024] [wsgi:error] [pid 8486] [remote 177.93.3.83:51868] <Response 41 bytes [200 OK]>
+chmod: cannot access '/opt/bdatalab/repos/BaseballCV': No such file or directory
+[Sat Nov 02 13:59:30.315948 2024] [wsgi:error] [pid 8762] [remote 177.93.3.83:33062] mod_wsgi (pid=8762): Exception occurred processing WSGI script '/var/www/bdatalab/bdatalab.wsgi'.
+[Sat Nov 02 13:59:30.320015 2024] [wsgi:error] [pid 8762] [remote 177.93.3.83:33062] Traceback (most recent call last):
+[Sat Nov 02 13:59:30.320420 2024] [wsgi:error] [pid 8762] [remote 177.93.3.83:33062]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/app.py", line 1498, in __call__
+[Sat Nov 02 13:59:30.320430 2024] [wsgi:error] [pid 8762] [remote 177.93.3.83:33062]     return self.wsgi_app(environ, start_response)
+[Sat Nov 02 13:59:30.320435 2024] [wsgi:error] [pid 8762] [remote 177.93.3.83:33062]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 13:59:30.320445 2024] [wsgi:error] [pid 8762] [remote 177.93.3.83:33062]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/app.py", line 1476, in wsgi_app
+[Sat Nov 02 13:59:30.320449 2024] [wsgi:error] [pid 8762] [remote 177.93.3.83:33062]     response = self.handle_exception(e)
+[Sat Nov 02 13:59:30.320452 2024] [wsgi:error] [pid 8762] [remote 177.93.3.83:33062]                ^^^^^^^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 13:59:30.320460 2024] [wsgi:error] [pid 8762] [remote 177.93.3.83:33062]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+[Sat Nov 02 13:59:30.320464 2024] [wsgi:error] [pid 8762] [remote 177.93.3.83:33062]     response = self.full_dispatch_request()
+[Sat Nov 02 13:59:30.320468 2024] [wsgi:error] [pid 8762] [remote 177.93.3.83:33062]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 13:59:30.320492 2024] [wsgi:error] [pid 8762] [remote 177.93.3.83:33062]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+[Sat Nov 02 13:59:30.320501 2024] [wsgi:error] [pid 8762] [remote 177.93.3.83:33062]     rv = self.handle_user_exception(e)
+[Sat Nov 02 13:59:30.320506 2024] [wsgi:error] [pid 8762] [remote 177.93.3.83:33062]          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 13:59:30.320519 2024] [wsgi:error] [pid 8762] [remote 177.93.3.83:33062]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+[Sat Nov 02 13:59:30.320540 2024] [wsgi:error] [pid 8762] [remote 177.93.3.83:33062]     rv = self.dispatch_request()
+[Sat Nov 02 13:59:30.320543 2024] [wsgi:error] [pid 8762] [remote 177.93.3.83:33062]          ^^^^^^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 13:59:30.320553 2024] [wsgi:error] [pid 8762] [remote 177.93.3.83:33062]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+[Sat Nov 02 13:59:30.320556 2024] [wsgi:error] [pid 8762] [remote 177.93.3.83:33062]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+[Sat Nov 02 13:59:30.320559 2024] [wsgi:error] [pid 8762] [remote 177.93.3.83:33062]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 13:59:30.320567 2024] [wsgi:error] [pid 8762] [remote 177.93.3.83:33062]   File "/var/www/bdatalab/app/routes/webhook.py", line 27, in webhook
+[Sat Nov 02 13:59:30.320570 2024] [wsgi:error] [pid 8762] [remote 177.93.3.83:33062]     subprocess.run(["chmod", "-R", "775", REPO_DIR], check=True)
+[Sat Nov 02 13:59:30.320578 2024] [wsgi:error] [pid 8762] [remote 177.93.3.83:33062]   File "/usr/lib/python3.12/subprocess.py", line 571, in run
+[Sat Nov 02 13:59:30.320581 2024] [wsgi:error] [pid 8762] [remote 177.93.3.83:33062]     raise CalledProcessError(retcode, process.args,
+[Sat Nov 02 13:59:30.320599 2024] [wsgi:error] [pid 8762] [remote 177.93.3.83:33062] subprocess.CalledProcessError: Command '['chmod', '-R', '775', '/opt/bdatalab/repos/BaseballCV']' returned non-zero exit status 1.
+[Sat Nov 02 14:05:38.864401 2024] [wsgi:error] [pid 8991] [remote 177.93.3.83:56634] <Response 59 bytes [200 OK]>
+[Sat Nov 02 14:10:01.618602 2024] [wsgi:error] [pid 724] [remote 177.93.3.83:38290] <Response 59 bytes [200 OK]>
+[Sat Nov 02 14:15:14.627138 2024] [wsgi:error] [pid 911] [remote 177.93.3.83:45606] <Response 59 bytes [200 OK]>
+[Sat Nov 02 14:15:14.629746 2024] [wsgi:error] [pid 911] [remote 177.93.3.83:45606] <Response 51 bytes [200 OK]>
+[Sat Nov 02 14:15:14.631410 2024] [wsgi:error] [pid 911] [remote 177.93.3.83:45606] <Response 41 bytes [200 OK]>
+[Sat Nov 02 14:16:28.350186 2024] [wsgi:error] [pid 911] [remote 177.93.3.83:54098] <Response 59 bytes [200 OK]>
+[Sat Nov 02 14:16:28.351920 2024] [wsgi:error] [pid 911] [remote 177.93.3.83:54098] <Response 51 bytes [200 OK]>
+[Sat Nov 02 14:16:28.353307 2024] [wsgi:error] [pid 911] [remote 177.93.3.83:54098] <Response 41 bytes [200 OK]>
+[Sat Nov 02 14:18:26.474082 2024] [wsgi:error] [pid 1003] [remote 177.93.3.83:56896] Changing permissions for existing repo.
+[Sat Nov 02 14:23:32.943490 2024] [wsgi:error] [pid 1003] [remote 177.93.3.83:35230] Changing permissions for existing repo.
+[Sat Nov 02 14:27:55.874145 2024] [wsgi:error] [pid 1195] [remote 177.93.3.83:54190] <Response 43 bytes [200 OK]>
+[Sat Nov 02 14:29:10.361355 2024] [wsgi:error] [pid 1263] [remote 177.93.3.83:45822] <Response 59 bytes [200 OK]>
+[Sat Nov 02 14:29:10.422902 2024] [wsgi:error] [pid 1263] [remote 177.93.3.83:45822] <Response 51 bytes [200 OK]>
+[Sat Nov 02 14:29:10.642409 2024] [wsgi:error] [pid 1263] [remote 177.93.3.83:45822] <Response 42 bytes [200 OK]>
+[Sat Nov 02 14:30:11.000689 2024] [wsgi:error] [pid 1329] [remote 177.93.3.83:52528] <Response 43 bytes [200 OK]>
+[Sat Nov 02 14:36:29.313129 2024] [wsgi:error] [pid 1483] [remote 177.93.3.83:45536] <Response 59 bytes [200 OK]>
+[Sat Nov 02 14:42:01.646697 2024] [wsgi:error] [pid 724] [remote 177.93.3.83:42088] <Response 59 bytes [200 OK]>
+[Sat Nov 02 14:43:06.019909 2024] [wsgi:error] [pid 1019] None
+[Sat Nov 02 14:43:06.025181 2024] [wsgi:error] [pid 1019] [remote 177.93.3.83:56984] <Response 59 bytes [200 OK]>
+[Sat Nov 02 14:45:40.385882 2024] [wsgi:error] [pid 1108] None
+[Sat Nov 02 14:45:40.389748 2024] [wsgi:error] [pid 1108] [remote 177.93.3.83:38406] <Response 59 bytes [200 OK]>
+[Sat Nov 02 14:52:54.041921 2024] [wsgi:error] [pid 1260] [remote 177.93.3.83:49124] <Response 59 bytes [200 OK]>
+[Sat Nov 02 14:52:54.109361 2024] [wsgi:error] [pid 1260] [remote 177.93.3.83:49124] <Response 51 bytes [200 OK]>
+[Sat Nov 02 14:52:54.203470 2024] [wsgi:error] [pid 1260] [remote 177.93.3.83:49124] <Response 42 bytes [200 OK]>
+[Sat Nov 02 14:52:54.203554 2024] [wsgi:error] [pid 1260] [remote 177.93.3.83:49124] <Response 43 bytes [200 OK]>
+[Sat Nov 02 14:54:33.013827 2024] [core:error] [pid 1261] [client 47.252.18.1:55866] AH10244: invalid URI path (/cgi-bin/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/bin/sh)
+[Sat Nov 02 14:54:33.392571 2024] [core:error] [pid 1264] [client 47.252.18.1:51378] AH10244: invalid URI path (/cgi-bin/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/bin/sh)
