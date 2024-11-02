@@ -382,3 +382,5 @@
 [Sat Nov 02 00:27:54.849238 2024] [wsgi:error] [pid 721] [remote 177.93.3.83:41732] SyntaxError: invalid syntax
 [Sat Nov 02 05:52:58.518577 2024] [core:error] [pid 777] [client 8.213.128.36:54014] AH10244: invalid URI path (/cgi-bin/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/bin/sh)
 [Sat Nov 02 05:53:00.885827 2024] [core:error] [pid 2386] [client 8.213.128.36:54030] AH10244: invalid URI path (/cgi-bin/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/bin/sh)
+[Sat Nov 02 10:03:48.293668 2024] [core:error] [pid 5432] [client 67.60.128.211:54970] AH10244: invalid URI path (/cgi-bin/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/bin/sh)
+[Sat Nov 02 10:04:02.904241 2024] [core:error] [pid 5434] [client 67.60.128.211:58668] AH10244: invalid URI path (/cgi-bin/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/bin/sh)
