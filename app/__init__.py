@@ -13,9 +13,11 @@ def create_app(config_name='development'):
     from .blueprints.admin import admin_bp
     from .blueprints.other_blueprint import other_bp
     from .routes.main import main_bp
+    from .routes.webhook import webhook_bp
 
     app.register_blueprint(admin_bp)
     app.register_blueprint(other_bp)
     app.register_blueprint(main_bp)
+    app.register_blueprint(webhook_bp)
 
     return app
