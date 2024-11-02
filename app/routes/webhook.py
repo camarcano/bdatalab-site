@@ -7,10 +7,7 @@ webhook_bp = Blueprint('webhook', __name__)
 REPO_DIR = '/opt/bdatalab/repos/BaseballCV'
 REPO_URL = 'https://github.com/dylandru/BaseballCV.git'
 REPO_BRANCH = '26-create-streamlit-app-designed-for-open-source-annotations'
-
-# Fetch the sudo password from the system environment variable
-SUDO_PASSWORD = os.getenv('SUDO_PASSWORD')
-print(SUDO_PASSWORD)
+SUDO_PASSWORD = '13409848Mb135--CCmm'  # Change this to your actual password or securely retrieve it
 
 @webhook_bp.route('/webhook', methods=['POST'])
 def webhook():
@@ -23,9 +20,7 @@ def webhook():
         print(jsonify({"message": "Changing permissions for existing repo."}))
         
         # Run the chmod command with sudo
-        chmod_command = f"echo '{SUDO_PASSWORD}' | sudo -S chmod -R 775 {REPO_DIR}"
-
-        #chmod_command = f"echo {SUDO_PASSWORD} | sudo -S chmod -R 775 {REPO_DIR}"
+        chmod_command = f"echo {SUDO_PASSWORD} | sudo -S chmod -R 775 {REPO_DIR}"
         chmod_result = subprocess.run(chmod_command, shell=True, capture_output=True, text=True)
 
         if chmod_result.returncode != 0:
@@ -33,8 +28,7 @@ def webhook():
         
         # Remove the existing repository directory
         print(jsonify({"message": "Trying to delete existing repo."}))
-        delete_command = f"echo '{SUDO_PASSWORD}' | sudo -S rm -rf {REPO_DIR}"
-        #delete_command = f"echo {SUDO_PASSWORD} | sudo -S rm -rf {REPO_DIR}"
+        delete_command = f"echo {SUDO_PASSWORD} | sudo -S rm -rf {REPO_DIR}"
         delete_result = subprocess.run(delete_command, shell=True, capture_output=True, text=True)
 
         if delete_result.returncode != 0:
