@@ -77,3 +77,8 @@
 177.93.3.83 - - [02/Nov/2024:00:16:07 -0500] "GET / HTTP/1.1" 500 3401 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
 177.93.3.83 - - [02/Nov/2024:00:16:14 -0500] "GET / HTTP/1.1" 500 3400 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
 177.93.3.83 - - [02/Nov/2024:00:16:15 -0500] "GET / HTTP/1.1" 500 1154 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+177.93.3.83 - - [02/Nov/2024:00:16:35 -0500] "-" 408 323 "-" "-"
+51.79.160.196 - - [02/Nov/2024:00:20:52 -0500] "GET / HTTP/1.1" 301 574 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36"
+51.79.160.196 - - [02/Nov/2024:00:20:53 -0500] "GET / HTTP/1.1" 500 3397 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36"
+177.93.3.83 - - [02/Nov/2024:00:27:54 -0500] "GET / HTTP/1.1" 500 3401 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+177.93.3.83 - - [02/Nov/2024:00:28:14 -0500] "-" 408 2570 "-" "-"
