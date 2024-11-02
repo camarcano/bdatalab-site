@@ -37,11 +37,11 @@ def webhook():
         print(jsonify({"message": "Existing repo deleted."}))
 
     # Clone the specified branch of the repository without sudo
-    #print(jsonify({"message": "Cloning the repository."}))
-    #clone_command = f"git clone --branch {branch} {REPO_URL} {REPO_DIR}"
-    #clone_result = subprocess.run(clone_command, shell=True, capture_output=True, text=True)
+    print(jsonify({"message": "Cloning the repository."}))
+    clone_command = f"git clone --branch {branch} {REPO_URL} {REPO_DIR}"
+    clone_result = subprocess.run(clone_command, shell=True, capture_output=True, text=True)
 
-    #if clone_result.returncode != 0:
-    #    return jsonify({"error": clone_result.stderr, "message": "Clone failed"}), 500
+    if clone_result.returncode != 0:
+        return jsonify({"error": clone_result.stderr, "message": "Clone failed"}), 500
 
-    return jsonify({"message": "Repository successfully processed", "branch": branch}), 200
+    return jsonify({"message": "Repository successfully cloned", "branch": branch}), 200
