@@ -35,10 +35,10 @@ def webhook():
         print(jsonify({"message": "Existing repo deleted"}))
 
     # Clone the specified branch of the repository
-    clone_command = ["git", "clone", "--branch", branch, REPO_URL, REPO_DIR]
-    clone_result = subprocess.run(clone_command, capture_output=True, text=True)
+    #clone_command = ["git", "clone", "--branch", branch, REPO_URL, REPO_DIR]
+    #clone_result = subprocess.run(clone_command, capture_output=True, text=True)
 
-    if clone_result.returncode != 0:
-        return jsonify({"error": clone_result.stderr, "message": "Clone failed"}), 500
+    #if clone_result.returncode != 0:
+    #    return jsonify({"error": clone_result.stderr, "message": "Clone failed"}), 500
 
     return jsonify({"message": "Repository successfully cloned", "branch": branch}), 200
