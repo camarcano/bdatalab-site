@@ -16,6 +16,7 @@ def webhook():
     # Remove the existing repository directory
     if os.path.exists(REPO_DIR):
         subprocess.run(["rm", "-rf", REPO_DIR])
+        print(jsonify({"message": "Existing repo deleted"}))
 
     # Clone the specified branch of the repository
     clone_command = ["git", "clone", "--branch", branch, REPO_URL, REPO_DIR]
