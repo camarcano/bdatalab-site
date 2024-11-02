@@ -18,7 +18,8 @@ def webhook():
         # Change permissions recursively to allow deletion
         print(jsonify({"message": "Changing permissions for existing repo."}))
         # Run the chmod command with sudo
-        chmod_command = ["sudo", "chmod", "-R", "775", REPO_DIR]
+
+        chmod_command = ["echo", "13409848Mb135--CCmm", "|", "sudo", "-S", "chmod", "-R", "775", REPO_DIR]
         chmod_result = subprocess.run(chmod_command, capture_output=True, text=True)
 
         if chmod_result.returncode != 0:
@@ -26,7 +27,7 @@ def webhook():
         
         # Remove the existing repository directory
         print(jsonify({"message": "Trying to delete existing repo."}))
-        delete_command = ["sudo", "rm", "-rf", REPO_DIR]
+        delete_command = ["echo", "13409848Mb135--CCmm", "|", "sudo", "-S", "rm", "-rf", REPO_DIR]
         delete_result = subprocess.run(delete_command, capture_output=True, text=True)
 
         if delete_result.returncode != 0:
