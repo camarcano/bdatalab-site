@@ -10,6 +10,7 @@ REPO_BRANCH = '26-create-streamlit-app-designed-for-open-source-annotations'
 
 # Fetch the sudo password from the system environment variable
 SUDO_PASSWORD = os.getenv('SUDO_PASSWORD')
+print(SUDO_PASSWORD)
 
 @webhook_bp.route('/webhook', methods=['POST'])
 def webhook():
