@@ -380,3 +380,5 @@
 [Sat Nov 02 00:27:54.849210 2024] [wsgi:error] [pid 721] [remote 177.93.3.83:41732]     raise NotImplementedError, 'emit must be implemented '\\
 [Sat Nov 02 00:27:54.849227 2024] [wsgi:error] [pid 721] [remote 177.93.3.83:41732]                              ^
 [Sat Nov 02 00:27:54.849238 2024] [wsgi:error] [pid 721] [remote 177.93.3.83:41732] SyntaxError: invalid syntax
+[Sat Nov 02 05:52:58.518577 2024] [core:error] [pid 777] [client 8.213.128.36:54014] AH10244: invalid URI path (/cgi-bin/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/bin/sh)
+[Sat Nov 02 05:53:00.885827 2024] [core:error] [pid 2386] [client 8.213.128.36:54030] AH10244: invalid URI path (/cgi-bin/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/bin/sh)
