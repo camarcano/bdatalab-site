@@ -6,11 +6,12 @@ webhook_bp = Blueprint('webhook', __name__)
 
 REPO_DIR = '/opt/bdatalab/repos/BaseballCV'
 REPO_URL = 'https://github.com/dylandru/BaseballCV.git'
+REPO_BRANCH = '26-create-streamlit-app-designed-for-open-source-annotations'
 
 @webhook_bp.route('/webhook', methods=['POST'])
 def webhook():
     # Get the branch name from the request (default to 'main' if not provided)
-    branch = request.args.get('branch', '26-create-streamlit-app-designed-for-open-source-annotations')
+    branch = request.args.get('branch', REPO_BRANCH)
 
     # Remove the existing repository directory
     if os.path.exists(REPO_DIR):
