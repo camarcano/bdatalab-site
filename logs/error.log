@@ -81,3 +81,187 @@
 [Fri Nov 01 22:56:10.550435 2024] [wsgi:error] [pid 22222] [remote 193.70.113.250:60908]     from .blueprints.other_blueprint import other_bp
 [Fri Nov 01 22:56:10.550439 2024] [wsgi:error] [pid 22222] [remote 193.70.113.250:60908]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 [Fri Nov 01 22:56:10.550466 2024] [wsgi:error] [pid 22222] [remote 193.70.113.250:60908] ImportError: cannot import name 'main_bp' from 'app.routes.main' (/var/www/bdatalab/app/routes/main.py)
+[Fri Nov 01 23:52:40.858939 2024] [wsgi:error] [pid 23811] [remote 177.93.3.83:58996] mod_wsgi (pid=23811): Failed to exec Python script file '/var/www/bdatalab/bdatalab.wsgi'.
+[Fri Nov 01 23:52:40.859050 2024] [wsgi:error] [pid 23811] [remote 177.93.3.83:58996] mod_wsgi (pid=23811): Exception occurred processing WSGI script '/var/www/bdatalab/bdatalab.wsgi'.
+[Fri Nov 01 23:52:40.880924 2024] [wsgi:error] [pid 23811] [remote 177.93.3.83:58996] Traceback (most recent call last):
+[Fri Nov 01 23:52:40.883309 2024] [wsgi:error] [pid 23811] [remote 177.93.3.83:58996]   File "/var/www/bdatalab/bdatalab.wsgi", line 8, in <module>
+[Fri Nov 01 23:52:40.883324 2024] [wsgi:error] [pid 23811] [remote 177.93.3.83:58996]     from app import create_app
+[Fri Nov 01 23:52:40.883335 2024] [wsgi:error] [pid 23811] [remote 177.93.3.83:58996]   File "/var/www/bdatalab/app/__init__.py", line 2, in <module>
+[Fri Nov 01 23:52:40.883340 2024] [wsgi:error] [pid 23811] [remote 177.93.3.83:58996]     from flask import Flask
+[Fri Nov 01 23:52:40.883349 2024] [wsgi:error] [pid 23811] [remote 177.93.3.83:58996]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/__init__.py", line 5, in <module>
+[Fri Nov 01 23:52:40.883354 2024] [wsgi:error] [pid 23811] [remote 177.93.3.83:58996]     from . import json as json
+[Fri Nov 01 23:52:40.883363 2024] [wsgi:error] [pid 23811] [remote 177.93.3.83:58996]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/json/__init__.py", line 6, in <module>
+[Fri Nov 01 23:52:40.883368 2024] [wsgi:error] [pid 23811] [remote 177.93.3.83:58996]     from ..globals import current_app
+[Fri Nov 01 23:52:40.883376 2024] [wsgi:error] [pid 23811] [remote 177.93.3.83:58996]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/globals.py", line 6, in <module>
+[Fri Nov 01 23:52:40.883381 2024] [wsgi:error] [pid 23811] [remote 177.93.3.83:58996]     from werkzeug.local import LocalProxy
+[Fri Nov 01 23:52:40.883390 2024] [wsgi:error] [pid 23811] [remote 177.93.3.83:58996]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/werkzeug/__init__.py", line 1, in <module>
+[Fri Nov 01 23:52:40.883394 2024] [wsgi:error] [pid 23811] [remote 177.93.3.83:58996]     from .serving import run_simple as run_simple
+[Fri Nov 01 23:52:40.883403 2024] [wsgi:error] [pid 23811] [remote 177.93.3.83:58996]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/werkzeug/serving.py", line 33, in <module>
+[Fri Nov 01 23:52:40.883408 2024] [wsgi:error] [pid 23811] [remote 177.93.3.83:58996]     from ._internal import _log
+[Fri Nov 01 23:52:40.883416 2024] [wsgi:error] [pid 23811] [remote 177.93.3.83:58996]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/werkzeug/_internal.py", line 3, in <module>
+[Fri Nov 01 23:52:40.883421 2024] [wsgi:error] [pid 23811] [remote 177.93.3.83:58996]     import logging
+[Fri Nov 01 23:52:40.883437 2024] [wsgi:error] [pid 23811] [remote 177.93.3.83:58996]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/logging/__init__.py", line 618
+[Fri Nov 01 23:52:40.883449 2024] [wsgi:error] [pid 23811] [remote 177.93.3.83:58996]     raise NotImplementedError, 'emit must be implemented '\\
+[Fri Nov 01 23:52:40.883466 2024] [wsgi:error] [pid 23811] [remote 177.93.3.83:58996]                              ^
+[Fri Nov 01 23:52:40.883476 2024] [wsgi:error] [pid 23811] [remote 177.93.3.83:58996] SyntaxError: invalid syntax
+[Fri Nov 01 23:53:05.833666 2024] [wsgi:error] [pid 23811] [remote 65.49.1.35:46303] mod_wsgi (pid=23811): Failed to exec Python script file '/var/www/bdatalab/bdatalab.wsgi'.
+[Fri Nov 01 23:53:05.833729 2024] [wsgi:error] [pid 23811] [remote 65.49.1.35:46303] mod_wsgi (pid=23811): Exception occurred processing WSGI script '/var/www/bdatalab/bdatalab.wsgi'.
+[Fri Nov 01 23:53:05.833965 2024] [wsgi:error] [pid 23811] [remote 65.49.1.35:46303] Traceback (most recent call last):
+[Fri Nov 01 23:53:05.834206 2024] [wsgi:error] [pid 23811] [remote 65.49.1.35:46303]   File "/var/www/bdatalab/bdatalab.wsgi", line 8, in <module>
+[Fri Nov 01 23:53:05.834212 2024] [wsgi:error] [pid 23811] [remote 65.49.1.35:46303]     from app import create_app
+[Fri Nov 01 23:53:05.834220 2024] [wsgi:error] [pid 23811] [remote 65.49.1.35:46303]   File "/var/www/bdatalab/app/__init__.py", line 2, in <module>
+[Fri Nov 01 23:53:05.834223 2024] [wsgi:error] [pid 23811] [remote 65.49.1.35:46303]     from flask import Flask
+[Fri Nov 01 23:53:05.834230 2024] [wsgi:error] [pid 23811] [remote 65.49.1.35:46303]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/__init__.py", line 5, in <module>
+[Fri Nov 01 23:53:05.834321 2024] [wsgi:error] [pid 23811] [remote 65.49.1.35:46303]     from . import json as json
+[Fri Nov 01 23:53:05.834494 2024] [wsgi:error] [pid 23811] [remote 65.49.1.35:46303]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/json/__init__.py", line 6, in <module>
+[Fri Nov 01 23:53:05.834498 2024] [wsgi:error] [pid 23811] [remote 65.49.1.35:46303]     from ..globals import current_app
+[Fri Nov 01 23:53:05.834505 2024] [wsgi:error] [pid 23811] [remote 65.49.1.35:46303]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/globals.py", line 6, in <module>
+[Fri Nov 01 23:53:05.834509 2024] [wsgi:error] [pid 23811] [remote 65.49.1.35:46303]     from werkzeug.local import LocalProxy
+[Fri Nov 01 23:53:05.834515 2024] [wsgi:error] [pid 23811] [remote 65.49.1.35:46303]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/werkzeug/__init__.py", line 1, in <module>
+[Fri Nov 01 23:53:05.834518 2024] [wsgi:error] [pid 23811] [remote 65.49.1.35:46303]     from .serving import run_simple as run_simple
+[Fri Nov 01 23:53:05.834525 2024] [wsgi:error] [pid 23811] [remote 65.49.1.35:46303]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/werkzeug/serving.py", line 33, in <module>
+[Fri Nov 01 23:53:05.834528 2024] [wsgi:error] [pid 23811] [remote 65.49.1.35:46303]     from ._internal import _log
+[Fri Nov 01 23:53:05.834535 2024] [wsgi:error] [pid 23811] [remote 65.49.1.35:46303]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/werkzeug/_internal.py", line 3, in <module>
+[Fri Nov 01 23:53:05.834538 2024] [wsgi:error] [pid 23811] [remote 65.49.1.35:46303]     import logging
+[Fri Nov 01 23:53:05.834556 2024] [wsgi:error] [pid 23811] [remote 65.49.1.35:46303]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/logging/__init__.py", line 618
+[Fri Nov 01 23:53:05.834567 2024] [wsgi:error] [pid 23811] [remote 65.49.1.35:46303]     raise NotImplementedError, 'emit must be implemented '\\
+[Fri Nov 01 23:53:05.834583 2024] [wsgi:error] [pid 23811] [remote 65.49.1.35:46303]                              ^
+[Fri Nov 01 23:53:05.834591 2024] [wsgi:error] [pid 23811] [remote 65.49.1.35:46303] SyntaxError: invalid syntax
+[Fri Nov 01 23:59:11.560189 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:48157] mod_wsgi (pid=23811): Failed to exec Python script file '/var/www/bdatalab/bdatalab.wsgi'.
+[Fri Nov 01 23:59:11.560266 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:48157] mod_wsgi (pid=23811): Exception occurred processing WSGI script '/var/www/bdatalab/bdatalab.wsgi'.
+[Fri Nov 01 23:59:11.560561 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:48157] Traceback (most recent call last):
+[Fri Nov 01 23:59:11.560778 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:48157]   File "/var/www/bdatalab/bdatalab.wsgi", line 8, in <module>
+[Fri Nov 01 23:59:11.560787 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:48157]     from app import create_app
+[Fri Nov 01 23:59:11.560797 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:48157]   File "/var/www/bdatalab/app/__init__.py", line 2, in <module>
+[Fri Nov 01 23:59:11.560816 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:48157]     from flask import Flask
+[Fri Nov 01 23:59:11.560828 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:48157]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/__init__.py", line 5, in <module>
+[Fri Nov 01 23:59:11.560845 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:48157]     from . import json as json
+[Fri Nov 01 23:59:11.560853 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:48157]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/json/__init__.py", line 6, in <module>
+[Fri Nov 01 23:59:11.560857 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:48157]     from ..globals import current_app
+[Fri Nov 01 23:59:11.560864 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:48157]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/globals.py", line 6, in <module>
+[Fri Nov 01 23:59:11.560867 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:48157]     from werkzeug.local import LocalProxy
+[Fri Nov 01 23:59:11.560877 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:48157]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/werkzeug/__init__.py", line 1, in <module>
+[Fri Nov 01 23:59:11.560880 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:48157]     from .serving import run_simple as run_simple
+[Fri Nov 01 23:59:11.560887 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:48157]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/werkzeug/serving.py", line 33, in <module>
+[Fri Nov 01 23:59:11.560890 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:48157]     from ._internal import _log
+[Fri Nov 01 23:59:11.560897 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:48157]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/werkzeug/_internal.py", line 3, in <module>
+[Fri Nov 01 23:59:11.560901 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:48157]     import logging
+[Fri Nov 01 23:59:11.560915 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:48157]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/logging/__init__.py", line 618
+[Fri Nov 01 23:59:11.560924 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:48157]     raise NotImplementedError, 'emit must be implemented '\\
+[Fri Nov 01 23:59:11.560939 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:48157]                              ^
+[Fri Nov 01 23:59:11.560947 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:48157] SyntaxError: invalid syntax
+[Sat Nov 02 00:00:13.619293 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:64873] mod_wsgi (pid=23811): Failed to exec Python script file '/var/www/bdatalab/bdatalab.wsgi'.
+[Sat Nov 02 00:00:13.619394 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:64873] mod_wsgi (pid=23811): Exception occurred processing WSGI script '/var/www/bdatalab/bdatalab.wsgi'.
+[Sat Nov 02 00:00:13.619644 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:64873] Traceback (most recent call last):
+[Sat Nov 02 00:00:13.619898 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:64873]   File "/var/www/bdatalab/bdatalab.wsgi", line 8, in <module>
+[Sat Nov 02 00:00:13.619910 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:64873]     from app import create_app
+[Sat Nov 02 00:00:13.619919 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:64873]   File "/var/www/bdatalab/app/__init__.py", line 2, in <module>
+[Sat Nov 02 00:00:13.619924 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:64873]     from flask import Flask
+[Sat Nov 02 00:00:13.619933 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:64873]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/__init__.py", line 5, in <module>
+[Sat Nov 02 00:00:13.619937 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:64873]     from . import json as json
+[Sat Nov 02 00:00:13.619952 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:64873]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/json/__init__.py", line 6, in <module>
+[Sat Nov 02 00:00:13.619957 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:64873]     from ..globals import current_app
+[Sat Nov 02 00:00:13.619966 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:64873]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/globals.py", line 6, in <module>
+[Sat Nov 02 00:00:13.619970 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:64873]     from werkzeug.local import LocalProxy
+[Sat Nov 02 00:00:13.619992 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:64873]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/werkzeug/__init__.py", line 1, in <module>
+[Sat Nov 02 00:00:13.619995 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:64873]     from .serving import run_simple as run_simple
+[Sat Nov 02 00:00:13.620002 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:64873]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/werkzeug/serving.py", line 33, in <module>
+[Sat Nov 02 00:00:13.620005 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:64873]     from ._internal import _log
+[Sat Nov 02 00:00:13.620012 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:64873]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/werkzeug/_internal.py", line 3, in <module>
+[Sat Nov 02 00:00:13.620015 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:64873]     import logging
+[Sat Nov 02 00:00:13.620033 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:64873]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/logging/__init__.py", line 618
+[Sat Nov 02 00:00:13.620043 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:64873]     raise NotImplementedError, 'emit must be implemented '\\
+[Sat Nov 02 00:00:13.620057 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:64873]                              ^
+[Sat Nov 02 00:00:13.620066 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:64873] SyntaxError: invalid syntax
+[Sat Nov 02 00:03:20.371481 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:63317] mod_wsgi (pid=23811): Failed to exec Python script file '/var/www/bdatalab/bdatalab.wsgi'.
+[Sat Nov 02 00:03:20.371572 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:63317] mod_wsgi (pid=23811): Exception occurred processing WSGI script '/var/www/bdatalab/bdatalab.wsgi'.
+[Sat Nov 02 00:03:20.371865 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:63317] Traceback (most recent call last):
+[Sat Nov 02 00:03:20.372198 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:63317]   File "/var/www/bdatalab/bdatalab.wsgi", line 8, in <module>
+[Sat Nov 02 00:03:20.372209 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:63317]     from app import create_app
+[Sat Nov 02 00:03:20.372222 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:63317]   File "/var/www/bdatalab/app/__init__.py", line 2, in <module>
+[Sat Nov 02 00:03:20.372228 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:63317]     from flask import Flask
+[Sat Nov 02 00:03:20.372251 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:63317]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/__init__.py", line 5, in <module>
+[Sat Nov 02 00:03:20.372258 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:63317]     from . import json as json
+[Sat Nov 02 00:03:20.372280 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:63317]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/json/__init__.py", line 6, in <module>
+[Sat Nov 02 00:03:20.372289 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:63317]     from ..globals import current_app
+[Sat Nov 02 00:03:20.372309 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:63317]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/globals.py", line 6, in <module>
+[Sat Nov 02 00:03:20.372318 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:63317]     from werkzeug.local import LocalProxy
+[Sat Nov 02 00:03:20.372328 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:63317]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/werkzeug/__init__.py", line 1, in <module>
+[Sat Nov 02 00:03:20.372333 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:63317]     from .serving import run_simple as run_simple
+[Sat Nov 02 00:03:20.372341 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:63317]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/werkzeug/serving.py", line 33, in <module>
+[Sat Nov 02 00:03:20.372346 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:63317]     from ._internal import _log
+[Sat Nov 02 00:03:20.372370 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:63317]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/werkzeug/_internal.py", line 3, in <module>
+[Sat Nov 02 00:03:20.372374 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:63317]     import logging
+[Sat Nov 02 00:03:20.372392 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:63317]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/logging/__init__.py", line 618
+[Sat Nov 02 00:03:20.372403 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:63317]     raise NotImplementedError, 'emit must be implemented '\\
+[Sat Nov 02 00:03:20.372422 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:63317]                              ^
+[Sat Nov 02 00:03:20.372441 2024] [wsgi:error] [pid 23811] [remote 65.49.1.29:63317] SyntaxError: invalid syntax
+[Sat Nov 02 00:04:42.240182 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:9911] mod_wsgi (pid=23811): Failed to exec Python script file '/var/www/bdatalab/bdatalab.wsgi'.
+[Sat Nov 02 00:04:42.240246 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:9911] mod_wsgi (pid=23811): Exception occurred processing WSGI script '/var/www/bdatalab/bdatalab.wsgi'.
+[Sat Nov 02 00:04:42.240447 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:9911] Traceback (most recent call last):
+[Sat Nov 02 00:04:42.240727 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:9911]   File "/var/www/bdatalab/bdatalab.wsgi", line 8, in <module>
+[Sat Nov 02 00:04:42.240739 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:9911]     from app import create_app
+[Sat Nov 02 00:04:42.240750 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:9911]   File "/var/www/bdatalab/app/__init__.py", line 2, in <module>
+[Sat Nov 02 00:04:42.240755 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:9911]     from flask import Flask
+[Sat Nov 02 00:04:42.240764 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:9911]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/__init__.py", line 5, in <module>
+[Sat Nov 02 00:04:42.240768 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:9911]     from . import json as json
+[Sat Nov 02 00:04:42.240777 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:9911]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/json/__init__.py", line 6, in <module>
+[Sat Nov 02 00:04:42.240782 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:9911]     from ..globals import current_app
+[Sat Nov 02 00:04:42.240790 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:9911]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/globals.py", line 6, in <module>
+[Sat Nov 02 00:04:42.240795 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:9911]     from werkzeug.local import LocalProxy
+[Sat Nov 02 00:04:42.240831 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:9911]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/werkzeug/__init__.py", line 1, in <module>
+[Sat Nov 02 00:04:42.240845 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:9911]     from .serving import run_simple as run_simple
+[Sat Nov 02 00:04:42.240866 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:9911]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/werkzeug/serving.py", line 33, in <module>
+[Sat Nov 02 00:04:42.240871 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:9911]     from ._internal import _log
+[Sat Nov 02 00:04:42.240881 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:9911]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/werkzeug/_internal.py", line 3, in <module>
+[Sat Nov 02 00:04:42.240885 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:9911]     import logging
+[Sat Nov 02 00:04:42.240903 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:9911]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/logging/__init__.py", line 618
+[Sat Nov 02 00:04:42.240914 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:9911]     raise NotImplementedError, 'emit must be implemented '\\
+[Sat Nov 02 00:04:42.240931 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:9911]                              ^
+[Sat Nov 02 00:04:42.240954 2024] [wsgi:error] [pid 23811] [remote 65.49.1.36:9911] SyntaxError: invalid syntax
+[Sat Nov 02 00:10:50.019332 2024] [wsgi:error] [pid 24075] [remote 177.93.3.83:33862] mod_wsgi (pid=24075): Failed to exec Python script file '/var/www/bdatalab/bdatalab.wsgi'.
+[Sat Nov 02 00:10:50.019456 2024] [wsgi:error] [pid 24075] [remote 177.93.3.83:33862] mod_wsgi (pid=24075): Exception occurred processing WSGI script '/var/www/bdatalab/bdatalab.wsgi'.
+[Sat Nov 02 00:10:50.025636 2024] [wsgi:error] [pid 24075] [remote 177.93.3.83:33862] Traceback (most recent call last):
+[Sat Nov 02 00:10:50.028151 2024] [wsgi:error] [pid 24075] [remote 177.93.3.83:33862]   File "/var/www/bdatalab/bdatalab.wsgi", line 8, in <module>
+[Sat Nov 02 00:10:50.028167 2024] [wsgi:error] [pid 24075] [remote 177.93.3.83:33862]     from app import create_app
+[Sat Nov 02 00:10:50.028188 2024] [wsgi:error] [pid 24075] [remote 177.93.3.83:33862]   File "/var/www/bdatalab/app/__init__.py", line 2, in <module>
+[Sat Nov 02 00:10:50.028198 2024] [wsgi:error] [pid 24075] [remote 177.93.3.83:33862]     from flask import Flask
+[Sat Nov 02 00:10:50.028209 2024] [wsgi:error] [pid 24075] [remote 177.93.3.83:33862]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/__init__.py", line 5, in <module>
+[Sat Nov 02 00:10:50.028214 2024] [wsgi:error] [pid 24075] [remote 177.93.3.83:33862]     from . import json as json
+[Sat Nov 02 00:10:50.028223 2024] [wsgi:error] [pid 24075] [remote 177.93.3.83:33862]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/json/__init__.py", line 6, in <module>
+[Sat Nov 02 00:10:50.028227 2024] [wsgi:error] [pid 24075] [remote 177.93.3.83:33862]     from ..globals import current_app
+[Sat Nov 02 00:10:50.028236 2024] [wsgi:error] [pid 24075] [remote 177.93.3.83:33862]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/globals.py", line 6, in <module>
+[Sat Nov 02 00:10:50.028241 2024] [wsgi:error] [pid 24075] [remote 177.93.3.83:33862]     from werkzeug.local import LocalProxy
+[Sat Nov 02 00:10:50.028266 2024] [wsgi:error] [pid 24075] [remote 177.93.3.83:33862]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/werkzeug/__init__.py", line 1, in <module>
+[Sat Nov 02 00:10:50.028271 2024] [wsgi:error] [pid 24075] [remote 177.93.3.83:33862]     from .serving import run_simple as run_simple
+[Sat Nov 02 00:10:50.028280 2024] [wsgi:error] [pid 24075] [remote 177.93.3.83:33862]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/werkzeug/serving.py", line 33, in <module>
+[Sat Nov 02 00:10:50.028285 2024] [wsgi:error] [pid 24075] [remote 177.93.3.83:33862]     from ._internal import _log
+[Sat Nov 02 00:10:50.028293 2024] [wsgi:error] [pid 24075] [remote 177.93.3.83:33862]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/werkzeug/_internal.py", line 3, in <module>
+[Sat Nov 02 00:10:50.028298 2024] [wsgi:error] [pid 24075] [remote 177.93.3.83:33862]     import logging
+[Sat Nov 02 00:10:50.028317 2024] [wsgi:error] [pid 24075] [remote 177.93.3.83:33862]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/logging/__init__.py", line 618
+[Sat Nov 02 00:10:50.028330 2024] [wsgi:error] [pid 24075] [remote 177.93.3.83:33862]     raise NotImplementedError, 'emit must be implemented '\\
+[Sat Nov 02 00:10:50.028348 2024] [wsgi:error] [pid 24075] [remote 177.93.3.83:33862]                              ^
+[Sat Nov 02 00:10:50.028357 2024] [wsgi:error] [pid 24075] [remote 177.93.3.83:33862] SyntaxError: invalid syntax
+[Sat Nov 02 00:12:50.555366 2024] [wsgi:error] [pid 24135] [remote 177.93.3.83:39944] mod_wsgi (pid=24135): Failed to exec Python script file '/var/www/bdatalab/bdatalab.wsgi'.
+[Sat Nov 02 00:12:50.555470 2024] [wsgi:error] [pid 24135] [remote 177.93.3.83:39944] mod_wsgi (pid=24135): Exception occurred processing WSGI script '/var/www/bdatalab/bdatalab.wsgi'.
+[Sat Nov 02 00:12:50.566401 2024] [wsgi:error] [pid 24135] [remote 177.93.3.83:39944] Traceback (most recent call last):
+[Sat Nov 02 00:12:50.568931 2024] [wsgi:error] [pid 24135] [remote 177.93.3.83:39944]   File "/var/www/bdatalab/bdatalab.wsgi", line 8, in <module>
+[Sat Nov 02 00:12:50.568960 2024] [wsgi:error] [pid 24135] [remote 177.93.3.83:39944]     from app import create_app
+[Sat Nov 02 00:12:50.568970 2024] [wsgi:error] [pid 24135] [remote 177.93.3.83:39944]   File "/var/www/bdatalab/app/__init__.py", line 2, in <module>
+[Sat Nov 02 00:12:50.568973 2024] [wsgi:error] [pid 24135] [remote 177.93.3.83:39944]     from flask import Flask
+[Sat Nov 02 00:12:50.568981 2024] [wsgi:error] [pid 24135] [remote 177.93.3.83:39944]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/__init__.py", line 5, in <module>
+[Sat Nov 02 00:12:50.568984 2024] [wsgi:error] [pid 24135] [remote 177.93.3.83:39944]     from . import json as json
+[Sat Nov 02 00:12:50.568991 2024] [wsgi:error] [pid 24135] [remote 177.93.3.83:39944]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/json/__init__.py", line 6, in <module>
+[Sat Nov 02 00:12:50.568994 2024] [wsgi:error] [pid 24135] [remote 177.93.3.83:39944]     from ..globals import current_app
+[Sat Nov 02 00:12:50.569001 2024] [wsgi:error] [pid 24135] [remote 177.93.3.83:39944]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/globals.py", line 6, in <module>
+[Sat Nov 02 00:12:50.569004 2024] [wsgi:error] [pid 24135] [remote 177.93.3.83:39944]     from werkzeug.local import LocalProxy
+[Sat Nov 02 00:12:50.569011 2024] [wsgi:error] [pid 24135] [remote 177.93.3.83:39944]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/werkzeug/__init__.py", line 1, in <module>
+[Sat Nov 02 00:12:50.569014 2024] [wsgi:error] [pid 24135] [remote 177.93.3.83:39944]     from .serving import run_simple as run_simple
+[Sat Nov 02 00:12:50.569021 2024] [wsgi:error] [pid 24135] [remote 177.93.3.83:39944]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/werkzeug/serving.py", line 33, in <module>
+[Sat Nov 02 00:12:50.569024 2024] [wsgi:error] [pid 24135] [remote 177.93.3.83:39944]     from ._internal import _log
+[Sat Nov 02 00:12:50.569030 2024] [wsgi:error] [pid 24135] [remote 177.93.3.83:39944]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/werkzeug/_internal.py", line 3, in <module>
+[Sat Nov 02 00:12:50.569034 2024] [wsgi:error] [pid 24135] [remote 177.93.3.83:39944]     import logging
+[Sat Nov 02 00:12:50.569048 2024] [wsgi:error] [pid 24135] [remote 177.93.3.83:39944]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/logging/__init__.py", line 618
+[Sat Nov 02 00:12:50.569058 2024] [wsgi:error] [pid 24135] [remote 177.93.3.83:39944]     raise NotImplementedError, 'emit must be implemented '\\
+[Sat Nov 02 00:12:50.569073 2024] [wsgi:error] [pid 24135] [remote 177.93.3.83:39944]                              ^
+[Sat Nov 02 00:12:50.569081 2024] [wsgi:error] [pid 24135] [remote 177.93.3.83:39944] SyntaxError: invalid syntax
