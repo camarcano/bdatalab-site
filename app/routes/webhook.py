@@ -2,15 +2,15 @@ from flask import Blueprint, request, jsonify
 import os
 import subprocess
 
-bp = Blueprint('webhook', __name__)
+webhook_bp = Blueprint('webhook', __name__)
 
 REPO_DIR = '/opt/bdatalab/repos/BaseballCV'
 REPO_URL = 'https://github.com/dylandru/BaseballCV.git'
 
-@bp.route('/webhook', methods=['POST'])
+@webhook_bp.route('/webhook', methods=['POST'])
 def webhook():
     # Get the branch name from the request (default to 'main' if not provided)
-    branch = request.args.get('branch', 'main')
+    branch = request.args.get('branch', '26-create-streamlit-app-designed-for-open-source-annotations')
 
     # Remove the existing repository directory
     if os.path.exists(REPO_DIR):
