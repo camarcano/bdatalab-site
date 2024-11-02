@@ -15,6 +15,7 @@ def webhook():
 
     # Remove the existing repository directory
     if os.path.exists(REPO_DIR):
+        print(jsonify({"message": "Trying to delete existing repo."}))
         subprocess.run(["rm", "-rf", REPO_DIR])
         print(jsonify({"message": "Existing repo deleted"}))
 
