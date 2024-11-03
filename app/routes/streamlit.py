@@ -39,7 +39,7 @@ def run_streamlit():
             "--server.port", "8501",
             "--server.address", "localhost",
             "--server.headless", "true",
-            "--server.enableCORS", "true",
+            "--server.enableCORS", "false",
             "--server.enableXsrfProtection", "false"
         ]
         
@@ -76,7 +76,7 @@ def proxy_streamlit(path=''):
         response = requests.get(
             streamlit_url, 
             stream=True,
-            timeout=5
+            timeout=15
         )
         
         excluded_headers = ['content-encoding', 'content-length', 'transfer-encoding', 'connection']
