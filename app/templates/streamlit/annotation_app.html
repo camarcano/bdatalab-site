@@ -2,14 +2,15 @@
 {% block content %}
 <div class="streamlit-container" style="width: 100%; height: 100vh;">
     <iframe 
-        id="streamlit-frame"
-        src="http://127.0.0.1:8501"
-        style="width: 100%; height: 100%; border: none;"
-        allow="camera *; microphone *; clipboard-write"
-        sandbox="allow-same-origin allow-scripts allow-forms allow-popups"
-        onload="checkIframeLoaded()"
-        onerror="handleIframeError()">
-    </iframe>
+    id="streamlit-frame"
+    src="{{ url_for('streamlit.annotation_app') }}"
+    style="width: 100%; height: 100%; border: none;"
+    allow="camera *; microphone *; clipboard-write"
+    sandbox="allow-same-origin allow-scripts allow-forms allow-popups"
+    onload="checkIframeLoaded()"
+    onerror="handleIframeError()">
+</iframe>
+
 </div>
 
 <script>
