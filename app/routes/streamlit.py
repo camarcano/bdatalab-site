@@ -1,11 +1,11 @@
 # app/routes/streamlit.py
-from flask import Blueprint, Response, current_app
+from flask import Blueprint, Response
 import streamlit.web.bootstrap as bootstrap
 import threading
 import requests
 import time
 import socket
-from functools import partial
+import os
 
 streamlit_bp = Blueprint('streamlit', __name__)
 
@@ -27,24 +27,31 @@ def wait_for_streamlit(timeout=30):
 def run_streamlit():
     """Run Streamlit server"""
     try:
+        print("Starting Streamlit server...")
+        # Get the absolute path to the Streamlit app
+        app_path = "/opt/bdatalab/repos/BaseballCV/streamlit/annotation_app/app.py"
+        
+        # Change to the directory containing the app
+        os.chdir(os.path.dirname(app_path))
+        
+        # Run Streamlit with updated parameters
         bootstrap.run(
-            # Make sure this path is correct
-            file="/opt/bdatalab/repos/BaseballCV/streamlit/annotation_app/app.py",
+            main_script_path=app_path,
+            command_line=[],
+            args=[],
             flag_options={
                 "server.port": 8501,
                 "server.address": "localhost",
                 "server.headless": True,
                 "server.enableCORS": True,
-                "server.enableXsrfProtection": False,
-                "browser.serverAddress": "localhost",
-                "global.developmentMode": False
+                "server.enableXsrfProtection": False
             }
         )
     except Exception as e:
         print(f"Error starting Streamlit server: {e}")
         raise
 
-# Start Streamlit server if it's not already running
+# Only start Streamlit if it's not already running
 if not is_port_in_use(8501):
     thread = threading.Thread(target=run_streamlit, daemon=True)
     thread.start()
@@ -54,7 +61,7 @@ if not is_port_in_use(8501):
         print("Streamlit server failed to start")
         raise RuntimeError("Streamlit server failed to start")
 else:
-    print("Streamlit server already running on port 8501")
+    logger.info("Streamlit server already running on port 8501")
 
 def proxy_streamlit(path=''):
     """Proxy requests to Streamlit server with error handling"""
@@ -64,7 +71,7 @@ def proxy_streamlit(path=''):
         response = requests.get(
             streamlit_url, 
             stream=True,
-            timeout=5  # Add timeout
+            timeout=5
         )
         
         excluded_headers = ['content-encoding', 'content-length', 'transfer-encoding', 'connection']
