@@ -40,10 +40,11 @@ def create_dash_app(flask_app, route_path, title, df=None):
 
 # Register multiple Dash apps with unique routes
 def init_dash_apps(flask_app):
-    # Create a sample DataFrame if needed
+    
+    # Define df1 with the expected columns
     df1 = pd.DataFrame({
-        "Column1": [1, 2, 3],
-        "Column2": ["A", "B", "C"]
+        "Category": ["A", "B", "C"],  # Ensure this column name matches your usage
+        "Value": [10, 20, 30]         # Ensure this column name matches your usage
     })
 
     dash_app1 = create_dash_app(flask_app, "/dash/app1/", "Dash App 1", df1)
