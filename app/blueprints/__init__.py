@@ -7,7 +7,7 @@ from .other_blueprint import other_bp
 # You can add more blueprints here as needed
 # /blueprints/__init__.py
 # Add this line to your existing imports
-from routes.dash import dash_blueprint, init_dash
+from ..routes.dash import dash_blueprint, init_dash
 
 # In your blueprint registration section, add:
 def init_blueprints(app):
