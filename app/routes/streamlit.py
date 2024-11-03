@@ -87,7 +87,9 @@ def proxy_streamlit(path=''):
         excluded_headers = ['content-encoding', 'content-length', 'transfer-encoding', 'connection']
         headers = [(name, value) for (name, value) in response.raw.headers.items() if name.lower() not in excluded_headers]
         print(headers)
-        
+        print(f"Streamlit response content: {response.content[:200]}")  # Show first 200 bytes of content
+
+
         # Return the response with headers from Streamlit server
         return Response(response.content, response.status_code, headers)
     
