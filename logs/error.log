@@ -1157,3 +1157,44 @@ chmod: cannot access '/opt/bdatalab/repos/BaseballCV': No such file or directory
 [Sat Nov 02 23:28:05.957130 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/requests/adapters.py", line 700, in send
 [Sat Nov 02 23:28:05.957133 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]     raise ConnectionError(e, request=request)
 [Sat Nov 02 23:28:05.957144 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498] requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8501): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x767fc0189850>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Sat Nov 02 23:34:41.765148 2024] [wsgi:error] [pid 11427] Exception in thread Thread-1 (run_streamlit):
+[Sat Nov 02 23:34:41.793056 2024] [wsgi:error] [pid 11427] Traceback (most recent call last):
+[Sat Nov 02 23:34:41.800411 2024] [wsgi:error] [pid 11427]   File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+[Sat Nov 02 23:34:41.801455 2024] [wsgi:error] [pid 11427]     self.run()
+[Sat Nov 02 23:34:41.801556 2024] [wsgi:error] [pid 11427]   File "/usr/lib/python3.12/threading.py", line 1010, in run
+[Sat Nov 02 23:34:41.801994 2024] [wsgi:error] [pid 11427]     self._target(*self._args, **self._kwargs)
+[Sat Nov 02 23:34:41.802066 2024] [wsgi:error] [pid 11427]   File "/var/www/bdatalab/app/routes/streamlit.py", line 13, in run_streamlit
+[Sat Nov 02 23:34:41.802854 2024] [wsgi:error] [pid 11427]     run(
+[Sat Nov 02 23:34:41.802883 2024] [wsgi:error] [pid 11427] TypeError: run() got an unexpected keyword argument 'file'
+[Sat Nov 02 23:38:47.194771 2024] [wsgi:error] [pid 11492] Error starting Streamlit server: run() got an unexpected keyword argument 'file'
+[Sat Nov 02 23:38:47.194840 2024] [wsgi:error] [pid 11492] Exception in thread Thread-1 (run_streamlit):
+[Sat Nov 02 23:38:47.194850 2024] [wsgi:error] [pid 11492] Traceback (most recent call last):
+[Sat Nov 02 23:38:47.194859 2024] [wsgi:error] [pid 11492]   File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+[Sat Nov 02 23:38:47.195370 2024] [wsgi:error] [pid 11492]     self.run()
+[Sat Nov 02 23:38:47.195420 2024] [wsgi:error] [pid 11492]   File "/usr/lib/python3.12/threading.py", line 1010, in run
+[Sat Nov 02 23:38:47.195683 2024] [wsgi:error] [pid 11492]     self._target(*self._args, **self._kwargs)
+[Sat Nov 02 23:38:47.195719 2024] [wsgi:error] [pid 11492]   File "/var/www/bdatalab/app/routes/streamlit.py", line 30, in run_streamlit
+[Sat Nov 02 23:38:47.195772 2024] [wsgi:error] [pid 11492]     bootstrap.run(
+[Sat Nov 02 23:38:47.195784 2024] [wsgi:error] [pid 11492] TypeError: run() got an unexpected keyword argument 'file'
+[Sat Nov 02 23:39:17.211720 2024] [wsgi:error] [pid 11492] Streamlit server failed to start
+[Sat Nov 02 23:39:17.211942 2024] [wsgi:error] [pid 11492] [remote 177.93.3.83:52078] mod_wsgi (pid=11492): Failed to exec Python script file '/var/www/bdatalab/bdatalab.wsgi'.
+[Sat Nov 02 23:39:17.212051 2024] [wsgi:error] [pid 11492] [remote 177.93.3.83:52078] mod_wsgi (pid=11492): Exception occurred processing WSGI script '/var/www/bdatalab/bdatalab.wsgi'.
+[Sat Nov 02 23:39:17.213110 2024] [wsgi:error] [pid 11492] [remote 177.93.3.83:52078] Traceback (most recent call last):
+[Sat Nov 02 23:39:17.213545 2024] [wsgi:error] [pid 11492] [remote 177.93.3.83:52078]   File "/var/www/bdatalab/bdatalab.wsgi", line 9, in <module>
+[Sat Nov 02 23:39:17.213558 2024] [wsgi:error] [pid 11492] [remote 177.93.3.83:52078]     application = create_app()
+[Sat Nov 02 23:39:17.213563 2024] [wsgi:error] [pid 11492] [remote 177.93.3.83:52078]                   ^^^^^^^^^^^^
+[Sat Nov 02 23:39:17.213577 2024] [wsgi:error] [pid 11492] [remote 177.93.3.83:52078]   File "/var/www/bdatalab/app/__init__.py", line 17, in create_app
+[Sat Nov 02 23:39:17.213612 2024] [wsgi:error] [pid 11492] [remote 177.93.3.83:52078]     from .routes.streamlit import streamlit_bp
+[Sat Nov 02 23:39:17.213628 2024] [wsgi:error] [pid 11492] [remote 177.93.3.83:52078]   File "/var/www/bdatalab/app/routes/streamlit.py", line 55, in <module>
+[Sat Nov 02 23:39:17.213634 2024] [wsgi:error] [pid 11492] [remote 177.93.3.83:52078]     raise RuntimeError("Streamlit server failed to start")
+[Sat Nov 02 23:39:17.213666 2024] [wsgi:error] [pid 11492] [remote 177.93.3.83:52078] RuntimeError: Streamlit server failed to start
+[Sat Nov 02 23:39:17.217807 2024] [wsgi:error] [pid 11492] Error starting Streamlit server: run() got an unexpected keyword argument 'file'
+[Sat Nov 02 23:39:17.217927 2024] [wsgi:error] [pid 11492] Exception in thread Thread-2 (run_streamlit):
+[Sat Nov 02 23:39:17.217943 2024] [wsgi:error] [pid 11492] Traceback (most recent call last):
+[Sat Nov 02 23:39:17.217964 2024] [wsgi:error] [pid 11492]   File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+[Sat Nov 02 23:39:17.218568 2024] [wsgi:error] [pid 11492]     self.run()
+[Sat Nov 02 23:39:17.218667 2024] [wsgi:error] [pid 11492]   File "/usr/lib/python3.12/threading.py", line 1010, in run
+[Sat Nov 02 23:39:17.219089 2024] [wsgi:error] [pid 11492]     self._target(*self._args, **self._kwargs)
+[Sat Nov 02 23:39:17.219152 2024] [wsgi:error] [pid 11492]   File "/var/www/bdatalab/app/routes/streamlit.py", line 30, in run_streamlit
+[Sat Nov 02 23:39:17.219230 2024] [wsgi:error] [pid 11492]     bootstrap.run(
+[Sat Nov 02 23:39:17.219245 2024] [wsgi:error] [pid 11492] TypeError: run() got an unexpected keyword argument 'file'
