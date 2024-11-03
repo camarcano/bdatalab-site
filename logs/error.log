@@ -1061,3 +1061,99 @@ chmod: cannot access '/opt/bdatalab/repos/BaseballCV': No such file or directory
 [Sat Nov 02 23:25:05.524543 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:46470]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/requests/adapters.py", line 700, in send
 [Sat Nov 02 23:25:05.524546 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:46470]     raise ConnectionError(e, request=request)
 [Sat Nov 02 23:25:05.524557 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:46470] requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8501): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x723e92639100>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Sat Nov 02 23:28:03.795974 2024] [wsgi:error] [pid 11260] Exception in thread Thread-1 (run_streamlit_server):
+[Sat Nov 02 23:28:03.796075 2024] [wsgi:error] [pid 11260] Traceback (most recent call last):
+[Sat Nov 02 23:28:03.796090 2024] [wsgi:error] [pid 11260]   File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+[Sat Nov 02 23:28:03.796642 2024] [wsgi:error] [pid 11260]     self.run()
+[Sat Nov 02 23:28:03.796711 2024] [wsgi:error] [pid 11260]   File "/usr/lib/python3.12/threading.py", line 1010, in run
+[Sat Nov 02 23:28:03.797071 2024] [wsgi:error] [pid 11260]     self._target(*self._args, **self._kwargs)
+[Sat Nov 02 23:28:03.797138 2024] [wsgi:error] [pid 11260]   File "/var/www/bdatalab/app/routes/streamlit.py", line 14, in run_streamlit_server
+[Sat Nov 02 23:28:03.797216 2024] [wsgi:error] [pid 11260]     run(
+[Sat Nov 02 23:28:03.797236 2024] [wsgi:error] [pid 11260] TypeError: run() got an unexpected keyword argument 'command_line'
+[Sat Nov 02 23:28:05.951924 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498] mod_wsgi (pid=11260): Exception occurred processing WSGI script '/var/www/bdatalab/bdatalab.wsgi'.
+[Sat Nov 02 23:28:05.955575 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498] Traceback (most recent call last):
+[Sat Nov 02 23:28:05.955830 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/urllib3/connection.py", line 199, in _new_conn
+[Sat Nov 02 23:28:05.955842 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]     sock = connection.create_connection(
+[Sat Nov 02 23:28:05.955859 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 23:28:05.955868 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 85, in create_connection
+[Sat Nov 02 23:28:05.955871 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]     raise err
+[Sat Nov 02 23:28:05.955877 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 73, in create_connection
+[Sat Nov 02 23:28:05.955880 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]     sock.connect(sa)
+[Sat Nov 02 23:28:05.955893 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498] ConnectionRefusedError: [Errno 111] Connection refused
+[Sat Nov 02 23:28:05.955950 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498] 
+[Sat Nov 02 23:28:05.955953 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498] The above exception was the direct cause of the following exception:
+[Sat Nov 02 23:28:05.955955 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498] 
+[Sat Nov 02 23:28:05.955963 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498] Traceback (most recent call last):
+[Sat Nov 02 23:28:05.956131 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+[Sat Nov 02 23:28:05.956136 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]     response = self._make_request(
+[Sat Nov 02 23:28:05.956139 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]                ^^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 23:28:05.956146 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 495, in _make_request
+[Sat Nov 02 23:28:05.956148 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]     conn.request(
+[Sat Nov 02 23:28:05.956154 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/urllib3/connection.py", line 441, in request
+[Sat Nov 02 23:28:05.956157 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]     self.endheaders()
+[Sat Nov 02 23:28:05.956163 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]   File "/usr/lib/python3.12/http/client.py", line 1331, in endheaders
+[Sat Nov 02 23:28:05.956166 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]     self._send_output(message_body, encode_chunked=encode_chunked)
+[Sat Nov 02 23:28:05.956172 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]   File "/usr/lib/python3.12/http/client.py", line 1091, in _send_output
+[Sat Nov 02 23:28:05.956174 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]     self.send(msg)
+[Sat Nov 02 23:28:05.956180 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]   File "/usr/lib/python3.12/http/client.py", line 1035, in send
+[Sat Nov 02 23:28:05.956183 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]     self.connect()
+[Sat Nov 02 23:28:05.956189 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/urllib3/connection.py", line 279, in connect
+[Sat Nov 02 23:28:05.956191 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]     self.sock = self._new_conn()
+[Sat Nov 02 23:28:05.956194 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]                 ^^^^^^^^^^^^^^^^
+[Sat Nov 02 23:28:05.956200 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/urllib3/connection.py", line 214, in _new_conn
+[Sat Nov 02 23:28:05.956202 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]     raise NewConnectionError(
+[Sat Nov 02 23:28:05.956215 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498] urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x767fc0189850>: Failed to establish a new connection: [Errno 111] Connection refused
+[Sat Nov 02 23:28:05.956232 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498] 
+[Sat Nov 02 23:28:05.956235 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498] The above exception was the direct cause of the following exception:
+[Sat Nov 02 23:28:05.956237 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498] 
+[Sat Nov 02 23:28:05.956243 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498] Traceback (most recent call last):
+[Sat Nov 02 23:28:05.956318 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+[Sat Nov 02 23:28:05.956324 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]     resp = conn.urlopen(
+[Sat Nov 02 23:28:05.956328 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]            ^^^^^^^^^^^^^
+[Sat Nov 02 23:28:05.956338 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+[Sat Nov 02 23:28:05.956342 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]     retries = retries.increment(
+[Sat Nov 02 23:28:05.956345 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]               ^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 23:28:05.956354 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+[Sat Nov 02 23:28:05.956358 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]     raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+[Sat Nov 02 23:28:05.956361 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 23:28:05.956377 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498] urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=8501): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x767fc0189850>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Sat Nov 02 23:28:05.956392 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498] 
+[Sat Nov 02 23:28:05.956395 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498] During handling of the above exception, another exception occurred:
+[Sat Nov 02 23:28:05.956399 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498] 
+[Sat Nov 02 23:28:05.956408 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498] Traceback (most recent call last):
+[Sat Nov 02 23:28:05.956978 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/app.py", line 1498, in __call__
+[Sat Nov 02 23:28:05.956989 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]     return self.wsgi_app(environ, start_response)
+[Sat Nov 02 23:28:05.956991 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 23:28:05.956999 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/app.py", line 1476, in wsgi_app
+[Sat Nov 02 23:28:05.957002 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]     response = self.handle_exception(e)
+[Sat Nov 02 23:28:05.957004 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]                ^^^^^^^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 23:28:05.957011 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+[Sat Nov 02 23:28:05.957013 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]     response = self.full_dispatch_request()
+[Sat Nov 02 23:28:05.957016 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 23:28:05.957028 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+[Sat Nov 02 23:28:05.957031 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]     rv = self.handle_user_exception(e)
+[Sat Nov 02 23:28:05.957033 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 23:28:05.957039 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+[Sat Nov 02 23:28:05.957041 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]     rv = self.dispatch_request()
+[Sat Nov 02 23:28:05.957044 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]          ^^^^^^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 23:28:05.957050 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+[Sat Nov 02 23:28:05.957053 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+[Sat Nov 02 23:28:05.957055 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 23:28:05.957062 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]   File "/var/www/bdatalab/app/routes/streamlit.py", line 40, in annotation_app
+[Sat Nov 02 23:28:05.957064 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]     response = requests.get('http://127.0.0.1:8501')
+[Sat Nov 02 23:28:05.957067 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 23:28:05.957073 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/requests/api.py", line 73, in get
+[Sat Nov 02 23:28:05.957075 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]     return request("get", url, params=params, **kwargs)
+[Sat Nov 02 23:28:05.957078 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 23:28:05.957097 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/requests/api.py", line 59, in request
+[Sat Nov 02 23:28:05.957100 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]     return session.request(method=method, url=url, **kwargs)
+[Sat Nov 02 23:28:05.957102 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 23:28:05.957109 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+[Sat Nov 02 23:28:05.957111 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]     resp = self.send(prep, **send_kwargs)
+[Sat Nov 02 23:28:05.957113 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 23:28:05.957119 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+[Sat Nov 02 23:28:05.957122 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]     r = adapter.send(request, **kwargs)
+[Sat Nov 02 23:28:05.957124 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 23:28:05.957130 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/requests/adapters.py", line 700, in send
+[Sat Nov 02 23:28:05.957133 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498]     raise ConnectionError(e, request=request)
+[Sat Nov 02 23:28:05.957144 2024] [wsgi:error] [pid 11260] [remote 177.93.3.83:59498] requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8501): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x767fc0189850>: Failed to establish a new connection: [Errno 111] Connection refused'))
