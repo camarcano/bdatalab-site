@@ -1240,3 +1240,6 @@ chmod: cannot access '/opt/bdatalab/repos/BaseballCV': No such file or directory
 [Sat Nov 02 23:58:24.816371 2024] [wsgi:error] [pid 11976] Started Streamlit server process
 [Sat Nov 02 23:58:25.822821 2024] [wsgi:error] [pid 11976] [remote 177.93.3.83:56262] trying to get the url
 [Sat Nov 02 23:58:25.822871 2024] [wsgi:error] [pid 11976] [remote 177.93.3.83:56262] http://localhost:8501/
+[Sun Nov 03 00:10:15.344713 2024] [wsgi:error] [pid 12433] Started Streamlit server process
+[Sun Nov 03 00:10:16.349858 2024] [wsgi:error] [pid 12433] [remote 177.93.3.83:46022] trying to get the url
+[Sun Nov 03 00:10:16.349898 2024] [wsgi:error] [pid 12433] [remote 177.93.3.83:46022] Proxying request to: http://localhost:8501/
