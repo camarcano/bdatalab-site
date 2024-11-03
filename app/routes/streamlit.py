@@ -76,6 +76,7 @@ def proxy_streamlit(path=''):
     try:
         # Stream the response from the Streamlit server
         response = requests.get(streamlit_url, stream=True, timeout=10)
+        print(response)
         
         # Check if the response is successful
         if response.status_code != 200:
@@ -85,6 +86,7 @@ def proxy_streamlit(path=''):
         # Filter out headers that might conflict with Flask's handling
         excluded_headers = ['content-encoding', 'content-length', 'transfer-encoding', 'connection']
         headers = [(name, value) for (name, value) in response.raw.headers.items() if name.lower() not in excluded_headers]
+        print(headers)
         
         # Return the response with headers from Streamlit server
         return Response(response.content, response.status_code, headers)
