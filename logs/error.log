@@ -1233,3 +1233,4 @@ chmod: cannot access '/opt/bdatalab/repos/BaseballCV': No such file or directory
 [Sat Nov 02 23:43:57.118406 2024] [wsgi:error] [pid 11614] [remote 177.93.3.83:51886]   File "/var/www/bdatalab/app/routes/streamlit.py", line 62, in <module>
 [Sat Nov 02 23:43:57.118409 2024] [wsgi:error] [pid 11614] [remote 177.93.3.83:51886]     raise RuntimeError("Streamlit server failed to start")
 [Sat Nov 02 23:43:57.118426 2024] [wsgi:error] [pid 11614] [remote 177.93.3.83:51886] RuntimeError: Streamlit server failed to start
+[Sat Nov 02 23:46:23.924344 2024] [wsgi:error] [pid 11680] Started Streamlit server process
