@@ -1243,3 +1243,8 @@ chmod: cannot access '/opt/bdatalab/repos/BaseballCV': No such file or directory
 [Sun Nov 03 00:10:15.344713 2024] [wsgi:error] [pid 12433] Started Streamlit server process
 [Sun Nov 03 00:10:16.349858 2024] [wsgi:error] [pid 12433] [remote 177.93.3.83:46022] trying to get the url
 [Sun Nov 03 00:10:16.349898 2024] [wsgi:error] [pid 12433] [remote 177.93.3.83:46022] Proxying request to: http://localhost:8501/
+[Sun Nov 03 00:12:39.432836 2024] [wsgi:error] [pid 12527] Started Streamlit server process
+[Sun Nov 03 00:12:40.438804 2024] [wsgi:error] [pid 12527] [remote 177.93.3.83:43782] trying to get the url
+[Sun Nov 03 00:12:40.438850 2024] [wsgi:error] [pid 12527] [remote 177.93.3.83:43782] Proxying request to: http://localhost:8501/
+[Sun Nov 03 00:12:40.448529 2024] [wsgi:error] [pid 12527] [remote 177.93.3.83:43782] <Response [200]>
+[Sun Nov 03 00:12:40.448634 2024] [wsgi:error] [pid 12527] [remote 177.93.3.83:43782] [('Server', 'TornadoServer/6.4.1'), ('Content-Type', 'text/html'), ('Date', 'Sun, 03 Nov 2024 05:12:40 GMT'), ('Accept-Ranges', 'bytes'), ('Etag', '"2c06f1bb433d252a1eb544504956def4a269feb16611ea654d8c1a75495c830ea0b3d387e5cd3ddc0016819f4db0fc85474a0465d138dd293b9d952e5b947140"'), ('Last-Modified', 'Sat, 02 Nov 2024 19:54:31 GMT'), ('Cache-Control', 'no-cache'), ('Vary', 'Accept-Encoding')]
