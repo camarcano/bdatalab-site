@@ -479,3 +479,498 @@ chmod: cannot access '/opt/bdatalab/repos/BaseballCV': No such file or directory
 [Sat Nov 02 14:52:54.203554 2024] [wsgi:error] [pid 1260] [remote 177.93.3.83:49124] <Response 43 bytes [200 OK]>
 [Sat Nov 02 14:54:33.013827 2024] [core:error] [pid 1261] [client 47.252.18.1:55866] AH10244: invalid URI path (/cgi-bin/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/bin/sh)
 [Sat Nov 02 14:54:33.392571 2024] [core:error] [pid 1264] [client 47.252.18.1:51378] AH10244: invalid URI path (/cgi-bin/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/bin/sh)
+[Sat Nov 02 23:14:18.191948 2024] [ssl:info] [pid 10864] AH01914: Configuring server balldatalab.org:443 for SSL protocol
+[Sat Nov 02 23:14:18.192697 2024] [ssl:debug] [pid 10864] ssl_engine_init.c(526): AH01893: Configuring TLS extension handling
+[Sat Nov 02 23:14:18.194170 2024] [ssl:debug] [pid 10864] ssl_util_ssl.c(451): AH02412: [balldatalab.org:443] Cert matches for name 'balldatalab.org' [subject: CN=balldatalab.org / issuer: CN=E5,O=Let's Encrypt,C=US / serial: 047A502027FF9A2017597C405A1045D44948 / notbefore: Nov  1 17:20:39 2024 GMT / notafter: Jan 30 17:20:38 2025 GMT]
+[Sat Nov 02 23:14:18.194181 2024] [ssl:info] [pid 10864] AH02568: Certificate and private key balldatalab.org:443:0 configured from /etc/letsencrypt/live/balldatalab.org/fullchain.pem and /etc/letsencrypt/live/balldatalab.org/privkey.pem
+[Sat Nov 02 23:14:18.227133 2024] [ssl:info] [pid 10865] AH01914: Configuring server balldatalab.org:443 for SSL protocol
+[Sat Nov 02 23:14:18.227741 2024] [ssl:debug] [pid 10865] ssl_engine_init.c(526): AH01893: Configuring TLS extension handling
+[Sat Nov 02 23:14:18.229409 2024] [ssl:debug] [pid 10865] ssl_util_ssl.c(451): AH02412: [balldatalab.org:443] Cert matches for name 'balldatalab.org' [subject: CN=balldatalab.org / issuer: CN=E5,O=Let's Encrypt,C=US / serial: 047A502027FF9A2017597C405A1045D44948 / notbefore: Nov  1 17:20:39 2024 GMT / notafter: Jan 30 17:20:38 2025 GMT]
+[Sat Nov 02 23:14:18.229420 2024] [ssl:info] [pid 10865] AH02568: Certificate and private key balldatalab.org:443:0 configured from /etc/letsencrypt/live/balldatalab.org/fullchain.pem and /etc/letsencrypt/live/balldatalab.org/privkey.pem
+[Sat Nov 02 23:14:18.522134 2024] [proxy:debug] [pid 10871] proxy_util.c(2154): AH00925: initializing worker http://127.0.0.1:8501/ shared
+[Sat Nov 02 23:14:18.522172 2024] [proxy:debug] [pid 10871] proxy_util.c(2214): AH00927: initializing worker http://127.0.0.1:8501/ local
+[Sat Nov 02 23:14:18.522207 2024] [proxy:debug] [pid 10871] proxy_util.c(2262): AH00931: initialized single connection worker in child 10871 for (127.0.0.1:8501)
+[Sat Nov 02 23:14:18.522352 2024] [proxy:debug] [pid 10872] proxy_util.c(2154): AH00925: initializing worker http://127.0.0.1:8501/ shared
+[Sat Nov 02 23:14:18.522371 2024] [proxy:debug] [pid 10872] proxy_util.c(2214): AH00927: initializing worker http://127.0.0.1:8501/ local
+[Sat Nov 02 23:14:18.522454 2024] [proxy:debug] [pid 10872] proxy_util.c(2262): AH00931: initialized single connection worker in child 10872 for (127.0.0.1:8501)
+[Sat Nov 02 23:14:18.523112 2024] [proxy:debug] [pid 10873] proxy_util.c(2154): AH00925: initializing worker http://127.0.0.1:8501/ shared
+[Sat Nov 02 23:14:18.523143 2024] [proxy:debug] [pid 10873] proxy_util.c(2214): AH00927: initializing worker http://127.0.0.1:8501/ local
+[Sat Nov 02 23:14:18.523175 2024] [proxy:debug] [pid 10873] proxy_util.c(2262): AH00931: initialized single connection worker in child 10873 for (127.0.0.1:8501)
+[Sat Nov 02 23:14:18.525931 2024] [proxy:debug] [pid 10875] proxy_util.c(2154): AH00925: initializing worker http://127.0.0.1:8501/ shared
+[Sat Nov 02 23:14:18.525954 2024] [proxy:debug] [pid 10875] proxy_util.c(2214): AH00927: initializing worker http://127.0.0.1:8501/ local
+[Sat Nov 02 23:14:18.525986 2024] [proxy:debug] [pid 10875] proxy_util.c(2262): AH00931: initialized single connection worker in child 10875 for (127.0.0.1:8501)
+[Sat Nov 02 23:14:18.528441 2024] [proxy:debug] [pid 10874] proxy_util.c(2154): AH00925: initializing worker http://127.0.0.1:8501/ shared
+[Sat Nov 02 23:14:18.528486 2024] [proxy:debug] [pid 10874] proxy_util.c(2214): AH00927: initializing worker http://127.0.0.1:8501/ local
+[Sat Nov 02 23:14:18.528515 2024] [proxy:debug] [pid 10874] proxy_util.c(2262): AH00931: initialized single connection worker in child 10874 for (127.0.0.1:8501)
+[Sat Nov 02 23:14:18.539268 2024] [wsgi:info] [pid 10870] mod_wsgi (pid=10870): Attach interpreter ''.
+[Sat Nov 02 23:14:18.550411 2024] [wsgi:debug] [pid 10870] src/server/mod_wsgi.c(9180): mod_wsgi (pid=10870): Started thread 0 in daemon process 'bdatalab'.
+[Sat Nov 02 23:14:18.550504 2024] [wsgi:debug] [pid 10870] src/server/mod_wsgi.c(9180): mod_wsgi (pid=10870): Started thread 2 in daemon process 'bdatalab'.
+[Sat Nov 02 23:14:18.551646 2024] [wsgi:debug] [pid 10870] src/server/mod_wsgi.c(9180): mod_wsgi (pid=10870): Started thread 4 in daemon process 'bdatalab'.
+[Sat Nov 02 23:14:18.551796 2024] [wsgi:debug] [pid 10870] src/server/mod_wsgi.c(9180): mod_wsgi (pid=10870): Started thread 3 in daemon process 'bdatalab'.
+[Sat Nov 02 23:14:18.552630 2024] [wsgi:debug] [pid 10870] src/server/mod_wsgi.c(9180): mod_wsgi (pid=10870): Started thread 1 in daemon process 'bdatalab'.
+[Sat Nov 02 23:14:37.486203 2024] [ssl:info] [pid 10873] [client 23.111.114.116:48898] AH01964: Connection to child 2 established (server balldatalab.org:443)
+[Sat Nov 02 23:14:37.486882 2024] [ssl:debug] [pid 10873] ssl_engine_kernel.c(2395): [client 23.111.114.116:48898] AH02043: SSL virtual host for servername balldatalab.org found
+[Sat Nov 02 23:14:37.637800 2024] [ssl:debug] [pid 10873] ssl_engine_kernel.c(2254): [client 23.111.114.116:48898] AH02041: Protocol: TLSv1.3, Cipher: TLS_AES_128_GCM_SHA256 (128/128 bits)
+[Sat Nov 02 23:14:37.637928 2024] [socache_shmcb:debug] [pid 10873] mod_socache_shmcb.c(508): AH00831: socache_shmcb_store (0x99 -> subcache 25)
+[Sat Nov 02 23:14:37.637952 2024] [socache_shmcb:debug] [pid 10873] mod_socache_shmcb.c(862): AH00847: insert happened at idx=0, data=(0:32)
+[Sat Nov 02 23:14:37.637957 2024] [socache_shmcb:debug] [pid 10873] mod_socache_shmcb.c(865): AH00848: finished insert, subcache: idx_pos/idx_used=0/1, data_pos/data_used=0/197
+[Sat Nov 02 23:14:37.637961 2024] [socache_shmcb:debug] [pid 10873] mod_socache_shmcb.c(530): AH00834: leaving socache_shmcb_store successfully
+[Sat Nov 02 23:14:37.638054 2024] [socache_shmcb:debug] [pid 10873] mod_socache_shmcb.c(508): AH00831: socache_shmcb_store (0xf0 -> subcache 16)
+[Sat Nov 02 23:14:37.638075 2024] [socache_shmcb:debug] [pid 10873] mod_socache_shmcb.c(862): AH00847: insert happened at idx=0, data=(0:32)
+[Sat Nov 02 23:14:37.638079 2024] [socache_shmcb:debug] [pid 10873] mod_socache_shmcb.c(865): AH00848: finished insert, subcache: idx_pos/idx_used=0/1, data_pos/data_used=0/196
+[Sat Nov 02 23:14:37.638083 2024] [socache_shmcb:debug] [pid 10873] mod_socache_shmcb.c(530): AH00834: leaving socache_shmcb_store successfully
+[Sat Nov 02 23:14:37.638299 2024] [ssl:debug] [pid 10873] ssl_engine_kernel.c(415): [client 23.111.114.116:48898] AH02034: Initial (No.1) HTTPS request received for child 2 (server balldatalab.org:443)
+[Sat Nov 02 23:14:37.638553 2024] [authz_core:debug] [pid 10873] mod_authz_core.c(815): [client 23.111.114.116:48898] AH01626: authorization result of Require all granted: granted
+[Sat Nov 02 23:14:37.638561 2024] [authz_core:debug] [pid 10873] mod_authz_core.c(815): [client 23.111.114.116:48898] AH01626: authorization result of <RequireAny>: granted
+[Sat Nov 02 23:14:37.638750 2024] [authz_core:debug] [pid 10873] mod_authz_core.c(815): [client 23.111.114.116:48898] AH01626: authorization result of Require all granted: granted
+[Sat Nov 02 23:14:37.638759 2024] [authz_core:debug] [pid 10873] mod_authz_core.c(815): [client 23.111.114.116:48898] AH01626: authorization result of <RequireAny>: granted
+[Sat Nov 02 23:14:37.639993 2024] [wsgi:info] [pid 10870] [remote 23.111.114.116:48898] mod_wsgi (pid=10870, process='bdatalab', application=''): Loading Python script file '/var/www/bdatalab/bdatalab.wsgi'.
+[Sat Nov 02 23:14:37.904134 2024] [deflate:debug] [pid 10873] mod_deflate.c(904): [client 23.111.114.116:48898] AH01384: Zlib: Compressed 1475 to 645 : URL /
+[Sat Nov 02 23:14:38.264905 2024] [proxy:debug] [pid 10936] proxy_util.c(2154): AH00925: initializing worker http://127.0.0.1:8501/ shared
+[Sat Nov 02 23:14:38.264955 2024] [proxy:debug] [pid 10936] proxy_util.c(2214): AH00927: initializing worker http://127.0.0.1:8501/ local
+[Sat Nov 02 23:14:38.265013 2024] [proxy:debug] [pid 10936] proxy_util.c(2262): AH00931: initialized single connection worker in child 10936 for (127.0.0.1:8501)
+[Sat Nov 02 23:14:42.909784 2024] [ssl:debug] [pid 10873] ssl_engine_io.c(1147): [client 23.111.114.116:48898] AH02001: Connection closed to child 2 with standard shutdown (server balldatalab.org:443)
+[Sat Nov 02 23:15:32.079983 2024] [ssl:info] [pid 10871] [client 177.93.3.83:55406] AH01964: Connection to child 0 established (server balldatalab.org:443)
+[Sat Nov 02 23:15:32.080494 2024] [ssl:debug] [pid 10871] ssl_engine_kernel.c(2395): [client 177.93.3.83:55406] AH02043: SSL virtual host for servername www.balldatalab.org found
+[Sat Nov 02 23:15:32.080688 2024] [core:debug] [pid 10871] protocol.c(2460): [client 177.93.3.83:55406] AH03155: select protocol from , choices=h2,http/1.1 for server balldatalab.org
+[Sat Nov 02 23:15:32.090065 2024] [ssl:info] [pid 10872] [client 177.93.3.83:55412] AH01964: Connection to child 1 established (server balldatalab.org:443)
+[Sat Nov 02 23:15:32.090574 2024] [ssl:debug] [pid 10872] ssl_engine_kernel.c(2395): [client 177.93.3.83:55412] AH02043: SSL virtual host for servername www.balldatalab.org found
+[Sat Nov 02 23:15:32.090736 2024] [core:debug] [pid 10872] protocol.c(2460): [client 177.93.3.83:55412] AH03155: select protocol from , choices=h2,http/1.1 for server balldatalab.org
+[Sat Nov 02 23:15:32.160261 2024] [ssl:debug] [pid 10871] ssl_engine_kernel.c(2254): [client 177.93.3.83:55406] AH02041: Protocol: TLSv1.3, Cipher: TLS_AES_128_GCM_SHA256 (128/128 bits)
+[Sat Nov 02 23:15:32.160361 2024] [socache_shmcb:debug] [pid 10871] mod_socache_shmcb.c(508): AH00831: socache_shmcb_store (0x75 -> subcache 21)
+[Sat Nov 02 23:15:32.160372 2024] [socache_shmcb:debug] [pid 10871] mod_socache_shmcb.c(862): AH00847: insert happened at idx=0, data=(0:32)
+[Sat Nov 02 23:15:32.160376 2024] [socache_shmcb:debug] [pid 10871] mod_socache_shmcb.c(865): AH00848: finished insert, subcache: idx_pos/idx_used=0/1, data_pos/data_used=0/213
+[Sat Nov 02 23:15:32.160380 2024] [socache_shmcb:debug] [pid 10871] mod_socache_shmcb.c(530): AH00834: leaving socache_shmcb_store successfully
+[Sat Nov 02 23:15:32.160480 2024] [socache_shmcb:debug] [pid 10871] mod_socache_shmcb.c(508): AH00831: socache_shmcb_store (0xad -> subcache 13)
+[Sat Nov 02 23:15:32.160505 2024] [socache_shmcb:debug] [pid 10871] mod_socache_shmcb.c(862): AH00847: insert happened at idx=0, data=(0:32)
+[Sat Nov 02 23:15:32.160508 2024] [socache_shmcb:debug] [pid 10871] mod_socache_shmcb.c(865): AH00848: finished insert, subcache: idx_pos/idx_used=0/1, data_pos/data_used=0/213
+[Sat Nov 02 23:15:32.160512 2024] [socache_shmcb:debug] [pid 10871] mod_socache_shmcb.c(530): AH00834: leaving socache_shmcb_store successfully
+[Sat Nov 02 23:15:32.160680 2024] [ssl:debug] [pid 10871] ssl_engine_kernel.c(415): [client 177.93.3.83:55406] AH02034: Initial (No.1) HTTPS request received for child 0 (server balldatalab.org:443)
+[Sat Nov 02 23:15:32.160724 2024] [proxy:trace2] [pid 10871] mod_proxy.c(884): [client 177.93.3.83:55406] AH03461: attempting to match URI path '/annotation_app' against prefix '/annotation_app' for proxying
+[Sat Nov 02 23:15:32.160742 2024] [proxy:trace1] [pid 10871] mod_proxy.c(1005): [client 177.93.3.83:55406] AH03464: URI path '/annotation_app' matches proxy handler 'proxy:http://127.0.0.1:8501/'
+[Sat Nov 02 23:15:32.160768 2024] [authz_core:debug] [pid 10871] mod_authz_core.c(843): [client 177.93.3.83:55406] AH01628: authorization result: granted (no directives)
+[Sat Nov 02 23:15:32.160837 2024] [proxy:trace2] [pid 10871] proxy_util.c(2370): [client 177.93.3.83:55406] http: found worker http://127.0.0.1:8501/ for http://127.0.0.1:8501/
+[Sat Nov 02 23:15:32.160841 2024] [proxy:debug] [pid 10871] mod_proxy.c(1521): [client 177.93.3.83:55406] AH01143: Running scheme http handler (attempt 0)
+[Sat Nov 02 23:15:32.160851 2024] [proxy:debug] [pid 10871] proxy_util.c(2576): AH00942: http: has acquired connection for (127.0.0.1:8501)
+[Sat Nov 02 23:15:32.160856 2024] [proxy:debug] [pid 10871] proxy_util.c(2641): [client 177.93.3.83:55406] AH00944: connecting http://127.0.0.1:8501/ to 127.0.0.1:8501
+[Sat Nov 02 23:15:32.160971 2024] [proxy:debug] [pid 10871] proxy_util.c(2864): [client 177.93.3.83:55406] AH00947: connected / to 127.0.0.1:8501
+[Sat Nov 02 23:15:32.161011 2024] [proxy:trace2] [pid 10871] proxy_util.c(3302): http: fam 2 socket created to connect to 127.0.0.1:8501
+[Sat Nov 02 23:15:32.161110 2024] [proxy:debug] [pid 10871] proxy_util.c(3336): AH02824: http: connection established with 127.0.0.1:8501 (127.0.0.1:8501)
+[Sat Nov 02 23:15:32.161126 2024] [proxy:debug] [pid 10871] proxy_util.c(3525): AH00962: http: connection complete to 127.0.0.1:8501 (127.0.0.1)
+[Sat Nov 02 23:15:32.165776 2024] [proxy:debug] [pid 10871] proxy_util.c(2592): AH00943: http: has released connection for (127.0.0.1:8501)
+[Sat Nov 02 23:15:32.180489 2024] [ssl:debug] [pid 10872] ssl_engine_kernel.c(2254): [client 177.93.3.83:55412] AH02041: Protocol: TLSv1.3, Cipher: TLS_AES_128_GCM_SHA256 (128/128 bits)
+[Sat Nov 02 23:15:32.180606 2024] [socache_shmcb:debug] [pid 10872] mod_socache_shmcb.c(508): AH00831: socache_shmcb_store (0x93 -> subcache 19)
+[Sat Nov 02 23:15:32.180618 2024] [socache_shmcb:debug] [pid 10872] mod_socache_shmcb.c(862): AH00847: insert happened at idx=0, data=(0:32)
+[Sat Nov 02 23:15:32.180620 2024] [socache_shmcb:debug] [pid 10872] mod_socache_shmcb.c(865): AH00848: finished insert, subcache: idx_pos/idx_used=0/1, data_pos/data_used=0/213
+[Sat Nov 02 23:15:32.180623 2024] [socache_shmcb:debug] [pid 10872] mod_socache_shmcb.c(530): AH00834: leaving socache_shmcb_store successfully
+[Sat Nov 02 23:15:32.180719 2024] [socache_shmcb:debug] [pid 10872] mod_socache_shmcb.c(508): AH00831: socache_shmcb_store (0x4e -> subcache 14)
+[Sat Nov 02 23:15:32.180742 2024] [socache_shmcb:debug] [pid 10872] mod_socache_shmcb.c(862): AH00847: insert happened at idx=0, data=(0:32)
+[Sat Nov 02 23:15:32.180744 2024] [socache_shmcb:debug] [pid 10872] mod_socache_shmcb.c(865): AH00848: finished insert, subcache: idx_pos/idx_used=0/1, data_pos/data_used=0/213
+[Sat Nov 02 23:15:32.180747 2024] [socache_shmcb:debug] [pid 10872] mod_socache_shmcb.c(530): AH00834: leaving socache_shmcb_store successfully
+[Sat Nov 02 23:15:32.326239 2024] [proxy:debug] [pid 10959] proxy_util.c(2154): AH00925: initializing worker http://127.0.0.1:8501/ shared
+[Sat Nov 02 23:15:32.326277 2024] [proxy:debug] [pid 10959] proxy_util.c(2214): AH00927: initializing worker http://127.0.0.1:8501/ local
+[Sat Nov 02 23:15:32.326302 2024] [proxy:debug] [pid 10959] proxy_util.c(2262): AH00931: initialized single connection worker in child 10959 for (127.0.0.1:8501)
+[Sat Nov 02 23:15:35.345046 2024] [ssl:debug] [pid 10871] ssl_engine_kernel.c(415): [client 177.93.3.83:55406] AH02034: Subsequent (No.2) HTTPS request received for child 0 (server balldatalab.org:443)
+[Sat Nov 02 23:15:35.345120 2024] [proxy:trace2] [pid 10871] mod_proxy.c(884): [client 177.93.3.83:55406] AH03461: attempting to match URI path '/annotation_app' against prefix '/annotation_app' for proxying
+[Sat Nov 02 23:15:35.345147 2024] [proxy:trace1] [pid 10871] mod_proxy.c(1005): [client 177.93.3.83:55406] AH03464: URI path '/annotation_app' matches proxy handler 'proxy:http://127.0.0.1:8501/'
+[Sat Nov 02 23:15:35.345162 2024] [authz_core:debug] [pid 10871] mod_authz_core.c(843): [client 177.93.3.83:55406] AH01628: authorization result: granted (no directives)
+[Sat Nov 02 23:15:35.345190 2024] [proxy:trace2] [pid 10871] proxy_util.c(2370): [client 177.93.3.83:55406] http: found worker http://127.0.0.1:8501/ for http://127.0.0.1:8501/
+[Sat Nov 02 23:15:35.345223 2024] [proxy:debug] [pid 10871] mod_proxy.c(1521): [client 177.93.3.83:55406] AH01143: Running scheme http handler (attempt 0)
+[Sat Nov 02 23:15:35.345230 2024] [proxy:debug] [pid 10871] proxy_util.c(2576): AH00942: http: has acquired connection for (127.0.0.1:8501)
+[Sat Nov 02 23:15:35.345235 2024] [proxy:debug] [pid 10871] proxy_util.c(2641): [client 177.93.3.83:55406] AH00944: connecting http://127.0.0.1:8501/ to 127.0.0.1:8501
+[Sat Nov 02 23:15:35.345240 2024] [proxy:debug] [pid 10871] proxy_util.c(2864): [client 177.93.3.83:55406] AH00947: connected / to 127.0.0.1:8501
+[Sat Nov 02 23:15:35.345272 2024] [proxy:trace2] [pid 10871] proxy_util.c(3146): http: reusing backend connection 127.0.0.1:37386<>127.0.0.1:8501
+[Sat Nov 02 23:15:35.346700 2024] [proxy:debug] [pid 10871] proxy_util.c(2592): AH00943: http: has released connection for (127.0.0.1:8501)
+[Sat Nov 02 23:15:36.095957 2024] [ssl:debug] [pid 10871] ssl_engine_kernel.c(415): [client 177.93.3.83:55406] AH02034: Subsequent (No.3) HTTPS request received for child 0 (server balldatalab.org:443)
+[Sat Nov 02 23:15:36.096004 2024] [proxy:trace2] [pid 10871] mod_proxy.c(884): [client 177.93.3.83:55406] AH03461: attempting to match URI path '/annotation_app' against prefix '/annotation_app' for proxying
+[Sat Nov 02 23:15:36.096010 2024] [proxy:trace1] [pid 10871] mod_proxy.c(1005): [client 177.93.3.83:55406] AH03464: URI path '/annotation_app' matches proxy handler 'proxy:http://127.0.0.1:8501/'
+[Sat Nov 02 23:15:36.096022 2024] [authz_core:debug] [pid 10871] mod_authz_core.c(843): [client 177.93.3.83:55406] AH01628: authorization result: granted (no directives)
+[Sat Nov 02 23:15:36.096046 2024] [proxy:trace2] [pid 10871] proxy_util.c(2370): [client 177.93.3.83:55406] http: found worker http://127.0.0.1:8501/ for http://127.0.0.1:8501/
+[Sat Nov 02 23:15:36.096049 2024] [proxy:debug] [pid 10871] mod_proxy.c(1521): [client 177.93.3.83:55406] AH01143: Running scheme http handler (attempt 0)
+[Sat Nov 02 23:15:36.096052 2024] [proxy:debug] [pid 10871] proxy_util.c(2576): AH00942: http: has acquired connection for (127.0.0.1:8501)
+[Sat Nov 02 23:15:36.096056 2024] [proxy:debug] [pid 10871] proxy_util.c(2641): [client 177.93.3.83:55406] AH00944: connecting http://127.0.0.1:8501/ to 127.0.0.1:8501
+[Sat Nov 02 23:15:36.096060 2024] [proxy:debug] [pid 10871] proxy_util.c(2864): [client 177.93.3.83:55406] AH00947: connected / to 127.0.0.1:8501
+[Sat Nov 02 23:15:36.096079 2024] [proxy:trace2] [pid 10871] proxy_util.c(3146): http: reusing backend connection 127.0.0.1:37386<>127.0.0.1:8501
+[Sat Nov 02 23:15:36.097166 2024] [proxy:debug] [pid 10871] proxy_util.c(2592): AH00943: http: has released connection for (127.0.0.1:8501)
+[Sat Nov 02 23:15:36.750995 2024] [ssl:debug] [pid 10871] ssl_engine_kernel.c(415): [client 177.93.3.83:55406] AH02034: Subsequent (No.4) HTTPS request received for child 0 (server balldatalab.org:443)
+[Sat Nov 02 23:15:36.751039 2024] [proxy:trace2] [pid 10871] mod_proxy.c(884): [client 177.93.3.83:55406] AH03461: attempting to match URI path '/annotation_app' against prefix '/annotation_app' for proxying
+[Sat Nov 02 23:15:36.751044 2024] [proxy:trace1] [pid 10871] mod_proxy.c(1005): [client 177.93.3.83:55406] AH03464: URI path '/annotation_app' matches proxy handler 'proxy:http://127.0.0.1:8501/'
+[Sat Nov 02 23:15:36.751057 2024] [authz_core:debug] [pid 10871] mod_authz_core.c(843): [client 177.93.3.83:55406] AH01628: authorization result: granted (no directives)
+[Sat Nov 02 23:15:36.751081 2024] [proxy:trace2] [pid 10871] proxy_util.c(2370): [client 177.93.3.83:55406] http: found worker http://127.0.0.1:8501/ for http://127.0.0.1:8501/
+[Sat Nov 02 23:15:36.751084 2024] [proxy:debug] [pid 10871] mod_proxy.c(1521): [client 177.93.3.83:55406] AH01143: Running scheme http handler (attempt 0)
+[Sat Nov 02 23:15:36.751087 2024] [proxy:debug] [pid 10871] proxy_util.c(2576): AH00942: http: has acquired connection for (127.0.0.1:8501)
+[Sat Nov 02 23:15:36.751109 2024] [proxy:debug] [pid 10871] proxy_util.c(2641): [client 177.93.3.83:55406] AH00944: connecting http://127.0.0.1:8501/ to 127.0.0.1:8501
+[Sat Nov 02 23:15:36.751112 2024] [proxy:debug] [pid 10871] proxy_util.c(2864): [client 177.93.3.83:55406] AH00947: connected / to 127.0.0.1:8501
+[Sat Nov 02 23:15:36.751132 2024] [proxy:trace2] [pid 10871] proxy_util.c(3146): http: reusing backend connection 127.0.0.1:37386<>127.0.0.1:8501
+[Sat Nov 02 23:15:36.752182 2024] [proxy:debug] [pid 10871] proxy_util.c(2592): AH00943: http: has released connection for (127.0.0.1:8501)
+[Sat Nov 02 23:15:37.216539 2024] [ssl:debug] [pid 10871] ssl_engine_kernel.c(415): [client 177.93.3.83:55406] AH02034: Subsequent (No.5) HTTPS request received for child 0 (server balldatalab.org:443)
+[Sat Nov 02 23:15:37.216664 2024] [proxy:trace2] [pid 10871] mod_proxy.c(884): [client 177.93.3.83:55406] AH03461: attempting to match URI path '/annotation_app' against prefix '/annotation_app' for proxying
+[Sat Nov 02 23:15:37.216674 2024] [proxy:trace1] [pid 10871] mod_proxy.c(1005): [client 177.93.3.83:55406] AH03464: URI path '/annotation_app' matches proxy handler 'proxy:http://127.0.0.1:8501/'
+[Sat Nov 02 23:15:37.216691 2024] [authz_core:debug] [pid 10871] mod_authz_core.c(843): [client 177.93.3.83:55406] AH01628: authorization result: granted (no directives)
+[Sat Nov 02 23:15:37.216720 2024] [proxy:trace2] [pid 10871] proxy_util.c(2370): [client 177.93.3.83:55406] http: found worker http://127.0.0.1:8501/ for http://127.0.0.1:8501/
+[Sat Nov 02 23:15:37.216723 2024] [proxy:debug] [pid 10871] mod_proxy.c(1521): [client 177.93.3.83:55406] AH01143: Running scheme http handler (attempt 0)
+[Sat Nov 02 23:15:37.216727 2024] [proxy:debug] [pid 10871] proxy_util.c(2576): AH00942: http: has acquired connection for (127.0.0.1:8501)
+[Sat Nov 02 23:15:37.216732 2024] [proxy:debug] [pid 10871] proxy_util.c(2641): [client 177.93.3.83:55406] AH00944: connecting http://127.0.0.1:8501/ to 127.0.0.1:8501
+[Sat Nov 02 23:15:37.216736 2024] [proxy:debug] [pid 10871] proxy_util.c(2864): [client 177.93.3.83:55406] AH00947: connected / to 127.0.0.1:8501
+[Sat Nov 02 23:15:37.216757 2024] [proxy:trace2] [pid 10871] proxy_util.c(3146): http: reusing backend connection 127.0.0.1:37386<>127.0.0.1:8501
+[Sat Nov 02 23:15:37.217790 2024] [proxy:debug] [pid 10871] proxy_util.c(2592): AH00943: http: has released connection for (127.0.0.1:8501)
+[Sat Nov 02 23:15:37.440642 2024] [ssl:debug] [pid 10871] ssl_engine_kernel.c(415): [client 177.93.3.83:55406] AH02034: Subsequent (No.6) HTTPS request received for child 0 (server balldatalab.org:443)
+[Sat Nov 02 23:15:37.440707 2024] [proxy:trace2] [pid 10871] mod_proxy.c(884): [client 177.93.3.83:55406] AH03461: attempting to match URI path '/annotation_app' against prefix '/annotation_app' for proxying
+[Sat Nov 02 23:15:37.440713 2024] [proxy:trace1] [pid 10871] mod_proxy.c(1005): [client 177.93.3.83:55406] AH03464: URI path '/annotation_app' matches proxy handler 'proxy:http://127.0.0.1:8501/'
+[Sat Nov 02 23:15:37.440726 2024] [authz_core:debug] [pid 10871] mod_authz_core.c(843): [client 177.93.3.83:55406] AH01628: authorization result: granted (no directives)
+[Sat Nov 02 23:15:37.440754 2024] [proxy:trace2] [pid 10871] proxy_util.c(2370): [client 177.93.3.83:55406] http: found worker http://127.0.0.1:8501/ for http://127.0.0.1:8501/
+[Sat Nov 02 23:15:37.440757 2024] [proxy:debug] [pid 10871] mod_proxy.c(1521): [client 177.93.3.83:55406] AH01143: Running scheme http handler (attempt 0)
+[Sat Nov 02 23:15:37.440761 2024] [proxy:debug] [pid 10871] proxy_util.c(2576): AH00942: http: has acquired connection for (127.0.0.1:8501)
+[Sat Nov 02 23:15:37.440765 2024] [proxy:debug] [pid 10871] proxy_util.c(2641): [client 177.93.3.83:55406] AH00944: connecting http://127.0.0.1:8501/ to 127.0.0.1:8501
+[Sat Nov 02 23:15:37.440769 2024] [proxy:debug] [pid 10871] proxy_util.c(2864): [client 177.93.3.83:55406] AH00947: connected / to 127.0.0.1:8501
+[Sat Nov 02 23:15:37.440796 2024] [proxy:trace2] [pid 10871] proxy_util.c(3146): http: reusing backend connection 127.0.0.1:37386<>127.0.0.1:8501
+[Sat Nov 02 23:15:37.441885 2024] [proxy:debug] [pid 10871] proxy_util.c(2592): AH00943: http: has released connection for (127.0.0.1:8501)
+[Sat Nov 02 23:15:37.632712 2024] [ssl:debug] [pid 10871] ssl_engine_kernel.c(415): [client 177.93.3.83:55406] AH02034: Subsequent (No.7) HTTPS request received for child 0 (server balldatalab.org:443)
+[Sat Nov 02 23:15:37.632764 2024] [proxy:trace2] [pid 10871] mod_proxy.c(884): [client 177.93.3.83:55406] AH03461: attempting to match URI path '/annotation_app' against prefix '/annotation_app' for proxying
+[Sat Nov 02 23:15:37.632773 2024] [proxy:trace1] [pid 10871] mod_proxy.c(1005): [client 177.93.3.83:55406] AH03464: URI path '/annotation_app' matches proxy handler 'proxy:http://127.0.0.1:8501/'
+[Sat Nov 02 23:15:37.632787 2024] [authz_core:debug] [pid 10871] mod_authz_core.c(843): [client 177.93.3.83:55406] AH01628: authorization result: granted (no directives)
+[Sat Nov 02 23:15:37.632811 2024] [proxy:trace2] [pid 10871] proxy_util.c(2370): [client 177.93.3.83:55406] http: found worker http://127.0.0.1:8501/ for http://127.0.0.1:8501/
+[Sat Nov 02 23:15:37.632814 2024] [proxy:debug] [pid 10871] mod_proxy.c(1521): [client 177.93.3.83:55406] AH01143: Running scheme http handler (attempt 0)
+[Sat Nov 02 23:15:37.632817 2024] [proxy:debug] [pid 10871] proxy_util.c(2576): AH00942: http: has acquired connection for (127.0.0.1:8501)
+[Sat Nov 02 23:15:37.632822 2024] [proxy:debug] [pid 10871] proxy_util.c(2641): [client 177.93.3.83:55406] AH00944: connecting http://127.0.0.1:8501/ to 127.0.0.1:8501
+[Sat Nov 02 23:15:37.632825 2024] [proxy:debug] [pid 10871] proxy_util.c(2864): [client 177.93.3.83:55406] AH00947: connected / to 127.0.0.1:8501
+[Sat Nov 02 23:15:37.632846 2024] [proxy:trace2] [pid 10871] proxy_util.c(3146): http: reusing backend connection 127.0.0.1:37386<>127.0.0.1:8501
+[Sat Nov 02 23:15:37.633546 2024] [proxy:debug] [pid 10871] proxy_util.c(2592): AH00943: http: has released connection for (127.0.0.1:8501)
+[Sat Nov 02 23:15:42.638898 2024] [ssl:debug] [pid 10871] ssl_engine_io.c(1147): [client 177.93.3.83:55406] AH02001: Connection closed to child 0 with standard shutdown (server balldatalab.org:443)
+[Sat Nov 02 23:15:47.065374 2024] [ssl:debug] [pid 10872] ssl_engine_kernel.c(415): [client 177.93.3.83:55412] AH02034: Initial (No.1) HTTPS request received for child 1 (server balldatalab.org:443)
+[Sat Nov 02 23:15:47.065449 2024] [proxy:trace2] [pid 10872] mod_proxy.c(884): [client 177.93.3.83:55412] AH03461: attempting to match URI path '/annotation_app' against prefix '/annotation_app' for proxying
+[Sat Nov 02 23:15:47.065461 2024] [proxy:trace1] [pid 10872] mod_proxy.c(1005): [client 177.93.3.83:55412] AH03464: URI path '/annotation_app' matches proxy handler 'proxy:http://127.0.0.1:8501/'
+[Sat Nov 02 23:15:47.065486 2024] [authz_core:debug] [pid 10872] mod_authz_core.c(843): [client 177.93.3.83:55412] AH01628: authorization result: granted (no directives)
+[Sat Nov 02 23:15:47.065545 2024] [proxy:trace2] [pid 10872] proxy_util.c(2370): [client 177.93.3.83:55412] http: found worker http://127.0.0.1:8501/ for http://127.0.0.1:8501/
+[Sat Nov 02 23:15:47.065552 2024] [proxy:debug] [pid 10872] mod_proxy.c(1521): [client 177.93.3.83:55412] AH01143: Running scheme http handler (attempt 0)
+[Sat Nov 02 23:15:47.065557 2024] [proxy:debug] [pid 10872] proxy_util.c(2576): AH00942: http: has acquired connection for (127.0.0.1:8501)
+[Sat Nov 02 23:15:47.065563 2024] [proxy:debug] [pid 10872] proxy_util.c(2641): [client 177.93.3.83:55412] AH00944: connecting http://127.0.0.1:8501/ to 127.0.0.1:8501
+[Sat Nov 02 23:15:47.065717 2024] [proxy:debug] [pid 10872] proxy_util.c(2864): [client 177.93.3.83:55412] AH00947: connected / to 127.0.0.1:8501
+[Sat Nov 02 23:15:47.065773 2024] [proxy:trace2] [pid 10872] proxy_util.c(3302): http: fam 2 socket created to connect to 127.0.0.1:8501
+[Sat Nov 02 23:15:47.065904 2024] [proxy:debug] [pid 10872] proxy_util.c(3336): AH02824: http: connection established with 127.0.0.1:8501 (127.0.0.1:8501)
+[Sat Nov 02 23:15:47.065950 2024] [proxy:debug] [pid 10872] proxy_util.c(3525): AH00962: http: connection complete to 127.0.0.1:8501 (127.0.0.1)
+[Sat Nov 02 23:15:47.067130 2024] [proxy:debug] [pid 10872] proxy_util.c(2592): AH00943: http: has released connection for (127.0.0.1:8501)
+[Sat Nov 02 23:15:47.150534 2024] [ssl:info] [pid 10874] [client 177.93.3.83:50022] AH01964: Connection to child 3 established (server balldatalab.org:443)
+[Sat Nov 02 23:15:47.151124 2024] [ssl:debug] [pid 10874] ssl_engine_kernel.c(2395): [client 177.93.3.83:50022] AH02043: SSL virtual host for servername www.balldatalab.org found
+[Sat Nov 02 23:15:47.151171 2024] [socache_shmcb:debug] [pid 10874] mod_socache_shmcb.c(545): AH00835: socache_shmcb_retrieve (0x4e -> subcache 14)
+[Sat Nov 02 23:15:47.151183 2024] [socache_shmcb:debug] [pid 10874] mod_socache_shmcb.c(898): AH00849: match at idx=0, data=0
+[Sat Nov 02 23:15:47.151186 2024] [socache_shmcb:debug] [pid 10874] mod_socache_shmcb.c(556): AH00836: leaving socache_shmcb_retrieve successfully
+[Sat Nov 02 23:15:47.151676 2024] [core:debug] [pid 10874] protocol.c(2460): [client 177.93.3.83:50022] AH03155: select protocol from , choices=h2,http/1.1 for server balldatalab.org
+[Sat Nov 02 23:15:47.233178 2024] [ssl:debug] [pid 10874] ssl_engine_kernel.c(2254): [client 177.93.3.83:50022] AH02041: Protocol: TLSv1.3, Cipher: TLS_AES_128_GCM_SHA256 (128/128 bits)
+[Sat Nov 02 23:15:47.233263 2024] [socache_shmcb:debug] [pid 10874] mod_socache_shmcb.c(508): AH00831: socache_shmcb_store (0x4a -> subcache 10)
+[Sat Nov 02 23:15:47.233275 2024] [socache_shmcb:debug] [pid 10874] mod_socache_shmcb.c(862): AH00847: insert happened at idx=0, data=(0:32)
+[Sat Nov 02 23:15:47.233277 2024] [socache_shmcb:debug] [pid 10874] mod_socache_shmcb.c(865): AH00848: finished insert, subcache: idx_pos/idx_used=0/1, data_pos/data_used=0/213
+[Sat Nov 02 23:15:47.233279 2024] [socache_shmcb:debug] [pid 10874] mod_socache_shmcb.c(530): AH00834: leaving socache_shmcb_store successfully
+[Sat Nov 02 23:15:52.072527 2024] [ssl:debug] [pid 10872] ssl_engine_io.c(1147): [client 177.93.3.83:55412] AH02001: Connection closed to child 1 with standard shutdown (server balldatalab.org:443)
+[Sat Nov 02 23:16:07.241360 2024] [reqtimeout:info] [pid 10874] [client 177.93.3.83:50022] AH01382: Request header read timeout
+[Sat Nov 02 23:16:07.241579 2024] [ssl:debug] [pid 10874] ssl_engine_io.c(1147): [client 177.93.3.83:50022] AH02001: Connection closed to child 3 with standard shutdown (server balldatalab.org:443)
+[Sat Nov 02 23:21:00.479953 2024] [ssl:info] [pid 10936] [client 45.63.49.138:38696] AH01964: Connection to child 5 established (server balldatalab.org:443)
+[Sat Nov 02 23:21:00.482857 2024] [ssl:debug] [pid 10936] ssl_engine_kernel.c(2395): [client 45.63.49.138:38696] AH02043: SSL virtual host for servername balldatalab.org found
+[Sat Nov 02 23:21:00.483165 2024] [core:debug] [pid 10936] protocol.c(2460): [client 45.63.49.138:38696] AH03155: select protocol from , choices=h2,http/1.1 for server balldatalab.org
+[Sat Nov 02 23:21:00.542251 2024] [ssl:debug] [pid 10936] ssl_engine_kernel.c(2254): [client 45.63.49.138:38696] AH02041: Protocol: TLSv1.3, Cipher: TLS_AES_256_GCM_SHA384 (256/256 bits)
+[Sat Nov 02 23:21:00.542415 2024] [socache_shmcb:debug] [pid 10936] mod_socache_shmcb.c(508): AH00831: socache_shmcb_store (0xe5 -> subcache 5)
+[Sat Nov 02 23:21:00.542449 2024] [socache_shmcb:debug] [pid 10936] mod_socache_shmcb.c(862): AH00847: insert happened at idx=0, data=(0:32)
+[Sat Nov 02 23:21:00.542454 2024] [socache_shmcb:debug] [pid 10936] mod_socache_shmcb.c(865): AH00848: finished insert, subcache: idx_pos/idx_used=0/1, data_pos/data_used=0/224
+[Sat Nov 02 23:21:00.542459 2024] [socache_shmcb:debug] [pid 10936] mod_socache_shmcb.c(530): AH00834: leaving socache_shmcb_store successfully
+[Sat Nov 02 23:21:00.542610 2024] [socache_shmcb:debug] [pid 10936] mod_socache_shmcb.c(508): AH00831: socache_shmcb_store (0xea -> subcache 10)
+[Sat Nov 02 23:21:00.542629 2024] [socache_shmcb:debug] [pid 10936] mod_socache_shmcb.c(745): AH00842: expiring 1 and reclaiming 0 removed socache entries
+[Sat Nov 02 23:21:00.542669 2024] [socache_shmcb:debug] [pid 10936] mod_socache_shmcb.c(765): AH00843: we now have 0 socache entries
+[Sat Nov 02 23:21:00.542672 2024] [socache_shmcb:debug] [pid 10936] mod_socache_shmcb.c(862): AH00847: insert happened at idx=0, data=(0:32)
+[Sat Nov 02 23:21:00.542674 2024] [socache_shmcb:debug] [pid 10936] mod_socache_shmcb.c(865): AH00848: finished insert, subcache: idx_pos/idx_used=0/1, data_pos/data_used=0/225
+[Sat Nov 02 23:21:00.542677 2024] [socache_shmcb:debug] [pid 10936] mod_socache_shmcb.c(530): AH00834: leaving socache_shmcb_store successfully
+[Sat Nov 02 23:21:00.542827 2024] [ssl:debug] [pid 10936] ssl_engine_kernel.c(415): [client 45.63.49.138:38696] AH02034: Initial (No.1) HTTPS request received for child 5 (server balldatalab.org:443)
+[Sat Nov 02 23:21:00.543448 2024] [authz_core:debug] [pid 10936] mod_authz_core.c(815): [client 45.63.49.138:38696] AH01626: authorization result of Require all granted: granted
+[Sat Nov 02 23:21:00.543466 2024] [authz_core:debug] [pid 10936] mod_authz_core.c(815): [client 45.63.49.138:38696] AH01626: authorization result of <RequireAny>: granted
+[Sat Nov 02 23:21:00.543707 2024] [authz_core:debug] [pid 10936] mod_authz_core.c(815): [client 45.63.49.138:38696] AH01626: authorization result of Require all granted: granted
+[Sat Nov 02 23:21:00.543722 2024] [authz_core:debug] [pid 10936] mod_authz_core.c(815): [client 45.63.49.138:38696] AH01626: authorization result of <RequireAny>: granted
+[Sat Nov 02 23:21:00.834661 2024] [ssl:info] [pid 10959] [client 66.165.225.107:60882] AH01964: Connection to child 6 established (server balldatalab.org:443)
+[Sat Nov 02 23:21:00.835246 2024] [ssl:debug] [pid 10959] ssl_engine_kernel.c(2395): [client 66.165.225.107:60882] AH02043: SSL virtual host for servername balldatalab.org found
+[Sat Nov 02 23:21:00.835427 2024] [core:debug] [pid 10959] protocol.c(2460): [client 66.165.225.107:60882] AH03155: select protocol from , choices=h2,http/1.1 for server balldatalab.org
+[Sat Nov 02 23:21:00.897659 2024] [ssl:debug] [pid 10959] ssl_engine_kernel.c(2254): [client 66.165.225.107:60882] AH02041: Protocol: TLSv1.3, Cipher: TLS_AES_256_GCM_SHA384 (256/256 bits)
+[Sat Nov 02 23:21:00.897763 2024] [socache_shmcb:debug] [pid 10959] mod_socache_shmcb.c(508): AH00831: socache_shmcb_store (0x67 -> subcache 7)
+[Sat Nov 02 23:21:00.897774 2024] [socache_shmcb:debug] [pid 10959] mod_socache_shmcb.c(862): AH00847: insert happened at idx=0, data=(0:32)
+[Sat Nov 02 23:21:00.897777 2024] [socache_shmcb:debug] [pid 10959] mod_socache_shmcb.c(865): AH00848: finished insert, subcache: idx_pos/idx_used=0/1, data_pos/data_used=0/225
+[Sat Nov 02 23:21:00.897780 2024] [socache_shmcb:debug] [pid 10959] mod_socache_shmcb.c(530): AH00834: leaving socache_shmcb_store successfully
+[Sat Nov 02 23:21:00.897893 2024] [socache_shmcb:debug] [pid 10959] mod_socache_shmcb.c(508): AH00831: socache_shmcb_store (0x9d -> subcache 29)
+[Sat Nov 02 23:21:00.897908 2024] [socache_shmcb:debug] [pid 10959] mod_socache_shmcb.c(862): AH00847: insert happened at idx=0, data=(0:32)
+[Sat Nov 02 23:21:00.897911 2024] [socache_shmcb:debug] [pid 10959] mod_socache_shmcb.c(865): AH00848: finished insert, subcache: idx_pos/idx_used=0/1, data_pos/data_used=0/225
+[Sat Nov 02 23:21:00.897913 2024] [socache_shmcb:debug] [pid 10959] mod_socache_shmcb.c(530): AH00834: leaving socache_shmcb_store successfully
+[Sat Nov 02 23:21:00.898070 2024] [ssl:debug] [pid 10959] ssl_engine_kernel.c(415): [client 66.165.225.107:60882] AH02034: Initial (No.1) HTTPS request received for child 6 (server balldatalab.org:443), referer: http://balldatalab.org/
+[Sat Nov 02 23:21:00.898191 2024] [authz_core:debug] [pid 10959] mod_authz_core.c(815): [client 66.165.225.107:60882] AH01626: authorization result of Require all granted: granted, referer: http://balldatalab.org/
+[Sat Nov 02 23:21:00.898197 2024] [authz_core:debug] [pid 10959] mod_authz_core.c(815): [client 66.165.225.107:60882] AH01626: authorization result of <RequireAny>: granted, referer: http://balldatalab.org/
+[Sat Nov 02 23:21:00.898322 2024] [authz_core:debug] [pid 10959] mod_authz_core.c(815): [client 66.165.225.107:60882] AH01626: authorization result of Require all granted: granted, referer: http://balldatalab.org/
+[Sat Nov 02 23:21:00.898326 2024] [authz_core:debug] [pid 10959] mod_authz_core.c(815): [client 66.165.225.107:60882] AH01626: authorization result of <RequireAny>: granted, referer: http://balldatalab.org/
+[Sat Nov 02 23:21:00.901969 2024] [deflate:debug] [pid 10959] mod_deflate.c(904): [client 66.165.225.107:60882] AH01384: Zlib: Compressed 1475 to 645 : URL /, referer: http://balldatalab.org/
+[Sat Nov 02 23:21:01.003781 2024] [ssl:debug] [pid 10959] ssl_engine_io.c(1147): [client 66.165.225.107:60882] AH02001: Connection closed to child 6 with standard shutdown (server balldatalab.org:443)
+[Sat Nov 02 23:21:05.553263 2024] [ssl:debug] [pid 10936] ssl_engine_io.c(1147): [client 45.63.49.138:38696] AH02001: Connection closed to child 5 with standard shutdown (server balldatalab.org:443)
+[Sat Nov 02 23:22:08.402599 2024] [proxy:debug] [pid 10871] proxy_util.c(3449): [remote 127.0.0.1:8501] AH02642: proxy: connection shutdown
+[Sat Nov 02 23:22:08.403722 2024] [proxy:debug] [pid 10872] proxy_util.c(3449): [remote 127.0.0.1:8501] AH02642: proxy: connection shutdown
+[Sat Nov 02 23:22:08.422742 2024] [wsgi:info] [pid 10870] mod_wsgi (pid=10870): Shutdown requested 'bdatalab'.
+[Sat Nov 02 23:22:08.423042 2024] [wsgi:debug] [pid 10870] src/server/mod_wsgi.c(9161): mod_wsgi (pid=10870): Exiting thread 4 in daemon process 'bdatalab'.
+[Sat Nov 02 23:22:08.423067 2024] [wsgi:debug] [pid 10870] src/server/mod_wsgi.c(9161): mod_wsgi (pid=10870): Exiting thread 0 in daemon process 'bdatalab'.
+[Sat Nov 02 23:22:08.423070 2024] [wsgi:debug] [pid 10870] src/server/mod_wsgi.c(9161): mod_wsgi (pid=10870): Exiting thread 3 in daemon process 'bdatalab'.
+[Sat Nov 02 23:22:08.423199 2024] [wsgi:info] [pid 10870] mod_wsgi (pid=10870): Stopping process 'bdatalab'.
+[Sat Nov 02 23:22:08.423214 2024] [wsgi:info] [pid 10870] mod_wsgi (pid=10870): Destroying interpreters.
+[Sat Nov 02 23:22:08.423220 2024] [wsgi:info] [pid 10870] mod_wsgi (pid=10870): Cleanup interpreter ''.
+[Sat Nov 02 23:22:08.423251 2024] [wsgi:debug] [pid 10870] src/server/mod_wsgi.c(9161): mod_wsgi (pid=10870): Exiting thread 2 in daemon process 'bdatalab'.
+[Sat Nov 02 23:22:08.423276 2024] [wsgi:info] [pid 10870] mod_wsgi (pid=10870): Terminating Python.
+[Sat Nov 02 23:22:08.475364 2024] [wsgi:info] [pid 10870] mod_wsgi (pid=10870): Python has shutdown.
+[Sat Nov 02 23:22:08.475402 2024] [wsgi:info] [pid 10870] mod_wsgi (pid=10870): Exiting process 'bdatalab'.
+[Sat Nov 02 23:22:08.534197 2024] [ssl:info] [pid 11064] AH01914: Configuring server balldatalab.org:443 for SSL protocol
+[Sat Nov 02 23:22:08.534896 2024] [ssl:debug] [pid 11064] ssl_engine_init.c(526): AH01893: Configuring TLS extension handling
+[Sat Nov 02 23:22:08.537229 2024] [ssl:debug] [pid 11064] ssl_util_ssl.c(451): AH02412: [balldatalab.org:443] Cert matches for name 'balldatalab.org' [subject: CN=balldatalab.org / issuer: CN=E5,O=Let's Encrypt,C=US / serial: 047A502027FF9A2017597C405A1045D44948 / notbefore: Nov  1 17:20:39 2024 GMT / notafter: Jan 30 17:20:38 2025 GMT]
+[Sat Nov 02 23:22:08.537260 2024] [ssl:info] [pid 11064] AH02568: Certificate and private key balldatalab.org:443:0 configured from /etc/letsencrypt/live/balldatalab.org/fullchain.pem and /etc/letsencrypt/live/balldatalab.org/privkey.pem
+[Sat Nov 02 23:22:08.605572 2024] [ssl:info] [pid 11065] AH01914: Configuring server balldatalab.org:443 for SSL protocol
+[Sat Nov 02 23:22:08.606063 2024] [ssl:debug] [pid 11065] ssl_engine_init.c(526): AH01893: Configuring TLS extension handling
+[Sat Nov 02 23:22:08.607766 2024] [ssl:debug] [pid 11065] ssl_util_ssl.c(451): AH02412: [balldatalab.org:443] Cert matches for name 'balldatalab.org' [subject: CN=balldatalab.org / issuer: CN=E5,O=Let's Encrypt,C=US / serial: 047A502027FF9A2017597C405A1045D44948 / notbefore: Nov  1 17:20:39 2024 GMT / notafter: Jan 30 17:20:38 2025 GMT]
+[Sat Nov 02 23:22:08.607800 2024] [ssl:info] [pid 11065] AH02568: Certificate and private key balldatalab.org:443:0 configured from /etc/letsencrypt/live/balldatalab.org/fullchain.pem and /etc/letsencrypt/live/balldatalab.org/privkey.pem
+[Sat Nov 02 23:22:08.613832 2024] [proxy:debug] [pid 11068] proxy_util.c(2154): AH00925: initializing worker http://127.0.0.1:8501/ shared
+[Sat Nov 02 23:22:08.613866 2024] [proxy:debug] [pid 11068] proxy_util.c(2214): AH00927: initializing worker http://127.0.0.1:8501/ local
+[Sat Nov 02 23:22:08.613899 2024] [proxy:debug] [pid 11068] proxy_util.c(2262): AH00931: initialized single connection worker in child 11068 for (127.0.0.1:8501)
+[Sat Nov 02 23:22:08.614813 2024] [proxy:debug] [pid 11069] proxy_util.c(2154): AH00925: initializing worker http://127.0.0.1:8501/ shared
+[Sat Nov 02 23:22:08.614840 2024] [proxy:debug] [pid 11069] proxy_util.c(2214): AH00927: initializing worker http://127.0.0.1:8501/ local
+[Sat Nov 02 23:22:08.614874 2024] [proxy:debug] [pid 11069] proxy_util.c(2262): AH00931: initialized single connection worker in child 11069 for (127.0.0.1:8501)
+[Sat Nov 02 23:22:08.616347 2024] [proxy:debug] [pid 11070] proxy_util.c(2154): AH00925: initializing worker http://127.0.0.1:8501/ shared
+[Sat Nov 02 23:22:08.616380 2024] [proxy:debug] [pid 11070] proxy_util.c(2214): AH00927: initializing worker http://127.0.0.1:8501/ local
+[Sat Nov 02 23:22:08.616413 2024] [proxy:debug] [pid 11070] proxy_util.c(2262): AH00931: initialized single connection worker in child 11070 for (127.0.0.1:8501)
+[Sat Nov 02 23:22:08.618608 2024] [proxy:debug] [pid 11071] proxy_util.c(2154): AH00925: initializing worker http://127.0.0.1:8501/ shared
+[Sat Nov 02 23:22:08.618647 2024] [proxy:debug] [pid 11071] proxy_util.c(2214): AH00927: initializing worker http://127.0.0.1:8501/ local
+[Sat Nov 02 23:22:08.618679 2024] [proxy:debug] [pid 11071] proxy_util.c(2262): AH00931: initialized single connection worker in child 11071 for (127.0.0.1:8501)
+[Sat Nov 02 23:22:08.625479 2024] [proxy:debug] [pid 11072] proxy_util.c(2154): AH00925: initializing worker http://127.0.0.1:8501/ shared
+[Sat Nov 02 23:22:08.625791 2024] [proxy:debug] [pid 11072] proxy_util.c(2214): AH00927: initializing worker http://127.0.0.1:8501/ local
+[Sat Nov 02 23:22:08.625832 2024] [proxy:debug] [pid 11072] proxy_util.c(2262): AH00931: initialized single connection worker in child 11072 for (127.0.0.1:8501)
+[Sat Nov 02 23:22:08.651092 2024] [wsgi:info] [pid 11067] mod_wsgi (pid=11067): Attach interpreter ''.
+[Sat Nov 02 23:22:08.677232 2024] [wsgi:debug] [pid 11067] src/server/mod_wsgi.c(9180): mod_wsgi (pid=11067): Started thread 1 in daemon process 'bdatalab'.
+[Sat Nov 02 23:22:08.677261 2024] [wsgi:debug] [pid 11067] src/server/mod_wsgi.c(9180): mod_wsgi (pid=11067): Started thread 0 in daemon process 'bdatalab'.
+[Sat Nov 02 23:22:08.677598 2024] [wsgi:debug] [pid 11067] src/server/mod_wsgi.c(9180): mod_wsgi (pid=11067): Started thread 2 in daemon process 'bdatalab'.
+[Sat Nov 02 23:22:08.677714 2024] [wsgi:debug] [pid 11067] src/server/mod_wsgi.c(9180): mod_wsgi (pid=11067): Started thread 3 in daemon process 'bdatalab'.
+[Sat Nov 02 23:22:08.677804 2024] [wsgi:debug] [pid 11067] src/server/mod_wsgi.c(9180): mod_wsgi (pid=11067): Started thread 4 in daemon process 'bdatalab'.
+[Sat Nov 02 23:22:16.164812 2024] [ssl:info] [pid 11070] [client 177.93.3.83:50846] AH01964: Connection to child 2 established (server balldatalab.org:443)
+[Sat Nov 02 23:22:16.164962 2024] [ssl:info] [pid 11072] [client 177.93.3.83:50840] AH01964: Connection to child 4 established (server balldatalab.org:443)
+[Sat Nov 02 23:22:16.165330 2024] [ssl:debug] [pid 11070] ssl_engine_kernel.c(2395): [client 177.93.3.83:50846] AH02043: SSL virtual host for servername www.balldatalab.org found
+[Sat Nov 02 23:22:16.165367 2024] [ssl:debug] [pid 11072] ssl_engine_kernel.c(2395): [client 177.93.3.83:50840] AH02043: SSL virtual host for servername www.balldatalab.org found
+[Sat Nov 02 23:22:16.165456 2024] [core:debug] [pid 11070] protocol.c(2460): [client 177.93.3.83:50846] AH03155: select protocol from , choices=h2,http/1.1 for server balldatalab.org
+[Sat Nov 02 23:22:16.165505 2024] [core:debug] [pid 11072] protocol.c(2460): [client 177.93.3.83:50840] AH03155: select protocol from , choices=h2,http/1.1 for server balldatalab.org
+[Sat Nov 02 23:22:16.245200 2024] [ssl:debug] [pid 11072] ssl_engine_kernel.c(2254): [client 177.93.3.83:50840] AH02041: Protocol: TLSv1.3, Cipher: TLS_AES_128_GCM_SHA256 (128/128 bits)
+[Sat Nov 02 23:22:16.245282 2024] [socache_shmcb:debug] [pid 11072] mod_socache_shmcb.c(508): AH00831: socache_shmcb_store (0x6f -> subcache 15)
+[Sat Nov 02 23:22:16.245305 2024] [socache_shmcb:debug] [pid 11072] mod_socache_shmcb.c(862): AH00847: insert happened at idx=0, data=(0:32)
+[Sat Nov 02 23:22:16.245307 2024] [socache_shmcb:debug] [pid 11072] mod_socache_shmcb.c(865): AH00848: finished insert, subcache: idx_pos/idx_used=0/1, data_pos/data_used=0/213
+[Sat Nov 02 23:22:16.245310 2024] [socache_shmcb:debug] [pid 11072] mod_socache_shmcb.c(530): AH00834: leaving socache_shmcb_store successfully
+[Sat Nov 02 23:22:16.245396 2024] [socache_shmcb:debug] [pid 11072] mod_socache_shmcb.c(508): AH00831: socache_shmcb_store (0x03 -> subcache 3)
+[Sat Nov 02 23:22:16.245404 2024] [socache_shmcb:debug] [pid 11072] mod_socache_shmcb.c(862): AH00847: insert happened at idx=0, data=(0:32)
+[Sat Nov 02 23:22:16.245406 2024] [socache_shmcb:debug] [pid 11072] mod_socache_shmcb.c(865): AH00848: finished insert, subcache: idx_pos/idx_used=0/1, data_pos/data_used=0/212
+[Sat Nov 02 23:22:16.245409 2024] [socache_shmcb:debug] [pid 11072] mod_socache_shmcb.c(530): AH00834: leaving socache_shmcb_store successfully
+[Sat Nov 02 23:22:16.245562 2024] [ssl:debug] [pid 11070] ssl_engine_kernel.c(2254): [client 177.93.3.83:50846] AH02041: Protocol: TLSv1.3, Cipher: TLS_AES_128_GCM_SHA256 (128/128 bits)
+[Sat Nov 02 23:22:16.245624 2024] [socache_shmcb:debug] [pid 11070] mod_socache_shmcb.c(508): AH00831: socache_shmcb_store (0x9a -> subcache 26)
+[Sat Nov 02 23:22:16.245641 2024] [socache_shmcb:debug] [pid 11070] mod_socache_shmcb.c(862): AH00847: insert happened at idx=0, data=(0:32)
+[Sat Nov 02 23:22:16.245643 2024] [socache_shmcb:debug] [pid 11070] mod_socache_shmcb.c(865): AH00848: finished insert, subcache: idx_pos/idx_used=0/1, data_pos/data_used=0/212
+[Sat Nov 02 23:22:16.245646 2024] [socache_shmcb:debug] [pid 11070] mod_socache_shmcb.c(530): AH00834: leaving socache_shmcb_store successfully
+[Sat Nov 02 23:22:16.245695 2024] [socache_shmcb:debug] [pid 11070] mod_socache_shmcb.c(508): AH00831: socache_shmcb_store (0x81 -> subcache 1)
+[Sat Nov 02 23:22:16.245714 2024] [socache_shmcb:debug] [pid 11070] mod_socache_shmcb.c(862): AH00847: insert happened at idx=0, data=(0:32)
+[Sat Nov 02 23:22:16.245717 2024] [socache_shmcb:debug] [pid 11070] mod_socache_shmcb.c(865): AH00848: finished insert, subcache: idx_pos/idx_used=0/1, data_pos/data_used=0/212
+[Sat Nov 02 23:22:16.245719 2024] [socache_shmcb:debug] [pid 11070] mod_socache_shmcb.c(530): AH00834: leaving socache_shmcb_store successfully
+[Sat Nov 02 23:22:16.246186 2024] [ssl:debug] [pid 11070] ssl_engine_kernel.c(415): [client 177.93.3.83:50846] AH02034: Initial (No.1) HTTPS request received for child 2 (server balldatalab.org:443)
+[Sat Nov 02 23:22:16.246217 2024] [proxy:trace2] [pid 11070] mod_proxy.c(884): [client 177.93.3.83:50846] AH03461: attempting to match URI path '/annotation_app' against prefix '/annotation_app' for proxying
+[Sat Nov 02 23:22:16.246226 2024] [proxy:trace1] [pid 11070] mod_proxy.c(1005): [client 177.93.3.83:50846] AH03464: URI path '/annotation_app' matches proxy handler 'proxy:http://127.0.0.1:8501/'
+[Sat Nov 02 23:22:16.246247 2024] [authz_core:debug] [pid 11070] mod_authz_core.c(843): [client 177.93.3.83:50846] AH01628: authorization result: granted (no directives)
+[Sat Nov 02 23:22:16.246294 2024] [proxy:trace2] [pid 11070] proxy_util.c(2370): [client 177.93.3.83:50846] http: found worker http://127.0.0.1:8501/ for http://127.0.0.1:8501/
+[Sat Nov 02 23:22:16.246297 2024] [proxy:debug] [pid 11070] mod_proxy.c(1521): [client 177.93.3.83:50846] AH01143: Running scheme http handler (attempt 0)
+[Sat Nov 02 23:22:16.246312 2024] [proxy:debug] [pid 11070] proxy_util.c(2576): AH00942: http: has acquired connection for (127.0.0.1:8501)
+[Sat Nov 02 23:22:16.246316 2024] [proxy:debug] [pid 11070] proxy_util.c(2641): [client 177.93.3.83:50846] AH00944: connecting http://127.0.0.1:8501/ to 127.0.0.1:8501
+[Sat Nov 02 23:22:16.246422 2024] [proxy:debug] [pid 11070] proxy_util.c(2864): [client 177.93.3.83:50846] AH00947: connected / to 127.0.0.1:8501
+[Sat Nov 02 23:22:16.246454 2024] [proxy:trace2] [pid 11070] proxy_util.c(3302): http: fam 2 socket created to connect to 127.0.0.1:8501
+[Sat Nov 02 23:22:16.246530 2024] [proxy:error] [pid 11070] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:8501 (127.0.0.1:8501) failed
+[Sat Nov 02 23:22:16.246539 2024] [proxy_http:error] [pid 11070] [client 177.93.3.83:50846] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Sat Nov 02 23:22:16.246542 2024] [proxy:debug] [pid 11070] proxy_util.c(2592): AH00943: http: has released connection for (127.0.0.1:8501)
+[Sat Nov 02 23:22:16.246574 2024] [headers:debug] [pid 11070] mod_headers.c(890): AH01503: headers: ap_headers_error_filter()
+[Sat Nov 02 23:22:16.246720 2024] [ssl:debug] [pid 11070] ssl_engine_io.c(1147): [client 177.93.3.83:50846] AH02001: Connection closed to child 2 with standard shutdown (server balldatalab.org:443)
+[Sat Nov 02 23:22:16.630059 2024] [proxy:debug] [pid 11082] proxy_util.c(2154): AH00925: initializing worker http://127.0.0.1:8501/ shared
+[Sat Nov 02 23:22:16.630100 2024] [proxy:debug] [pid 11082] proxy_util.c(2214): AH00927: initializing worker http://127.0.0.1:8501/ local
+[Sat Nov 02 23:22:16.630130 2024] [proxy:debug] [pid 11082] proxy_util.c(2262): AH00931: initialized single connection worker in child 11082 for (127.0.0.1:8501)
+[Sat Nov 02 23:22:19.233808 2024] [ssl:debug] [pid 11072] ssl_engine_kernel.c(415): [client 177.93.3.83:50840] AH02034: Initial (No.1) HTTPS request received for child 4 (server balldatalab.org:443)
+[Sat Nov 02 23:22:19.233898 2024] [proxy:trace2] [pid 11072] mod_proxy.c(884): [client 177.93.3.83:50840] AH03461: attempting to match URI path '/annotation_app' against prefix '/annotation_app' for proxying
+[Sat Nov 02 23:22:19.233911 2024] [proxy:trace1] [pid 11072] mod_proxy.c(1005): [client 177.93.3.83:50840] AH03464: URI path '/annotation_app' matches proxy handler 'proxy:http://127.0.0.1:8501/'
+[Sat Nov 02 23:22:19.233939 2024] [authz_core:debug] [pid 11072] mod_authz_core.c(843): [client 177.93.3.83:50840] AH01628: authorization result: granted (no directives)
+[Sat Nov 02 23:22:19.234003 2024] [proxy:trace2] [pid 11072] proxy_util.c(2370): [client 177.93.3.83:50840] http: found worker http://127.0.0.1:8501/ for http://127.0.0.1:8501/
+[Sat Nov 02 23:22:19.234008 2024] [proxy:debug] [pid 11072] mod_proxy.c(1521): [client 177.93.3.83:50840] AH01143: Running scheme http handler (attempt 0)
+[Sat Nov 02 23:22:19.234013 2024] [proxy:debug] [pid 11072] proxy_util.c(2576): AH00942: http: has acquired connection for (127.0.0.1:8501)
+[Sat Nov 02 23:22:19.234018 2024] [proxy:debug] [pid 11072] proxy_util.c(2641): [client 177.93.3.83:50840] AH00944: connecting http://127.0.0.1:8501/ to 127.0.0.1:8501
+[Sat Nov 02 23:22:19.234165 2024] [proxy:debug] [pid 11072] proxy_util.c(2864): [client 177.93.3.83:50840] AH00947: connected / to 127.0.0.1:8501
+[Sat Nov 02 23:22:19.234217 2024] [proxy:trace2] [pid 11072] proxy_util.c(3302): http: fam 2 socket created to connect to 127.0.0.1:8501
+[Sat Nov 02 23:22:19.234308 2024] [proxy:error] [pid 11072] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:8501 (127.0.0.1:8501) failed
+[Sat Nov 02 23:22:19.234319 2024] [proxy_http:error] [pid 11072] [client 177.93.3.83:50840] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Sat Nov 02 23:22:19.234322 2024] [proxy:debug] [pid 11072] proxy_util.c(2592): AH00943: http: has released connection for (127.0.0.1:8501)
+[Sat Nov 02 23:22:19.234350 2024] [headers:debug] [pid 11072] mod_headers.c(890): AH01503: headers: ap_headers_error_filter()
+[Sat Nov 02 23:22:19.234526 2024] [ssl:debug] [pid 11072] ssl_engine_io.c(1147): [client 177.93.3.83:50840] AH02001: Connection closed to child 4 with standard shutdown (server balldatalab.org:443)
+[Sat Nov 02 23:22:19.319054 2024] [ssl:info] [pid 11071] [client 177.93.3.83:50854] AH01964: Connection to child 3 established (server balldatalab.org:443)
+[Sat Nov 02 23:22:19.319504 2024] [ssl:debug] [pid 11071] ssl_engine_kernel.c(2395): [client 177.93.3.83:50854] AH02043: SSL virtual host for servername www.balldatalab.org found
+[Sat Nov 02 23:22:19.319540 2024] [socache_shmcb:debug] [pid 11071] mod_socache_shmcb.c(545): AH00835: socache_shmcb_retrieve (0x03 -> subcache 3)
+[Sat Nov 02 23:22:19.319552 2024] [socache_shmcb:debug] [pid 11071] mod_socache_shmcb.c(898): AH00849: match at idx=0, data=0
+[Sat Nov 02 23:22:19.319556 2024] [socache_shmcb:debug] [pid 11071] mod_socache_shmcb.c(556): AH00836: leaving socache_shmcb_retrieve successfully
+[Sat Nov 02 23:22:19.319946 2024] [core:debug] [pid 11071] protocol.c(2460): [client 177.93.3.83:50854] AH03155: select protocol from , choices=h2,http/1.1 for server balldatalab.org
+[Sat Nov 02 23:22:19.401744 2024] [ssl:debug] [pid 11071] ssl_engine_kernel.c(2254): [client 177.93.3.83:50854] AH02041: Protocol: TLSv1.3, Cipher: TLS_AES_128_GCM_SHA256 (128/128 bits)
+[Sat Nov 02 23:22:19.401847 2024] [socache_shmcb:debug] [pid 11071] mod_socache_shmcb.c(508): AH00831: socache_shmcb_store (0x57 -> subcache 23)
+[Sat Nov 02 23:22:19.401871 2024] [socache_shmcb:debug] [pid 11071] mod_socache_shmcb.c(862): AH00847: insert happened at idx=0, data=(0:32)
+[Sat Nov 02 23:22:19.401874 2024] [socache_shmcb:debug] [pid 11071] mod_socache_shmcb.c(865): AH00848: finished insert, subcache: idx_pos/idx_used=0/1, data_pos/data_used=0/213
+[Sat Nov 02 23:22:19.401877 2024] [socache_shmcb:debug] [pid 11071] mod_socache_shmcb.c(530): AH00834: leaving socache_shmcb_store successfully
+[Sat Nov 02 23:22:20.309360 2024] [ssl:debug] [pid 11071] ssl_engine_kernel.c(415): [client 177.93.3.83:50854] AH02034: Initial (No.1) HTTPS request received for child 3 (server balldatalab.org:443)
+[Sat Nov 02 23:22:20.309447 2024] [proxy:trace2] [pid 11071] mod_proxy.c(884): [client 177.93.3.83:50854] AH03461: attempting to match URI path '/annotation_app' against prefix '/annotation_app' for proxying
+[Sat Nov 02 23:22:20.309460 2024] [proxy:trace1] [pid 11071] mod_proxy.c(1005): [client 177.93.3.83:50854] AH03464: URI path '/annotation_app' matches proxy handler 'proxy:http://127.0.0.1:8501/'
+[Sat Nov 02 23:22:20.309514 2024] [authz_core:debug] [pid 11071] mod_authz_core.c(843): [client 177.93.3.83:50854] AH01628: authorization result: granted (no directives)
+[Sat Nov 02 23:22:20.309574 2024] [proxy:trace2] [pid 11071] proxy_util.c(2370): [client 177.93.3.83:50854] http: found worker http://127.0.0.1:8501/ for http://127.0.0.1:8501/
+[Sat Nov 02 23:22:20.309579 2024] [proxy:debug] [pid 11071] mod_proxy.c(1521): [client 177.93.3.83:50854] AH01143: Running scheme http handler (attempt 0)
+[Sat Nov 02 23:22:20.309621 2024] [proxy:debug] [pid 11071] proxy_util.c(2576): AH00942: http: has acquired connection for (127.0.0.1:8501)
+[Sat Nov 02 23:22:20.309627 2024] [proxy:debug] [pid 11071] proxy_util.c(2641): [client 177.93.3.83:50854] AH00944: connecting http://127.0.0.1:8501/ to 127.0.0.1:8501
+[Sat Nov 02 23:22:20.309765 2024] [proxy:debug] [pid 11071] proxy_util.c(2864): [client 177.93.3.83:50854] AH00947: connected / to 127.0.0.1:8501
+[Sat Nov 02 23:22:20.309826 2024] [proxy:trace2] [pid 11071] proxy_util.c(3302): http: fam 2 socket created to connect to 127.0.0.1:8501
+[Sat Nov 02 23:22:20.309916 2024] [proxy:error] [pid 11071] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:8501 (127.0.0.1:8501) failed
+[Sat Nov 02 23:22:20.309928 2024] [proxy_http:error] [pid 11071] [client 177.93.3.83:50854] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Sat Nov 02 23:22:20.309931 2024] [proxy:debug] [pid 11071] proxy_util.c(2592): AH00943: http: has released connection for (127.0.0.1:8501)
+[Sat Nov 02 23:22:20.309975 2024] [headers:debug] [pid 11071] mod_headers.c(890): AH01503: headers: ap_headers_error_filter()
+[Sat Nov 02 23:22:20.310120 2024] [ssl:debug] [pid 11071] ssl_engine_io.c(1147): [client 177.93.3.83:50854] AH02001: Connection closed to child 3 with standard shutdown (server balldatalab.org:443)
+[Sat Nov 02 23:22:20.387507 2024] [ssl:info] [pid 11069] [client 177.93.3.83:59288] AH01964: Connection to child 1 established (server balldatalab.org:443)
+[Sat Nov 02 23:22:20.387930 2024] [ssl:debug] [pid 11069] ssl_engine_kernel.c(2395): [client 177.93.3.83:59288] AH02043: SSL virtual host for servername www.balldatalab.org found
+[Sat Nov 02 23:22:20.387960 2024] [socache_shmcb:debug] [pid 11069] mod_socache_shmcb.c(545): AH00835: socache_shmcb_retrieve (0x57 -> subcache 23)
+[Sat Nov 02 23:22:20.387974 2024] [socache_shmcb:debug] [pid 11069] mod_socache_shmcb.c(898): AH00849: match at idx=0, data=0
+[Sat Nov 02 23:22:20.387976 2024] [socache_shmcb:debug] [pid 11069] mod_socache_shmcb.c(556): AH00836: leaving socache_shmcb_retrieve successfully
+[Sat Nov 02 23:22:20.388326 2024] [core:debug] [pid 11069] protocol.c(2460): [client 177.93.3.83:59288] AH03155: select protocol from , choices=h2,http/1.1 for server balldatalab.org
+[Sat Nov 02 23:22:20.466355 2024] [ssl:debug] [pid 11069] ssl_engine_kernel.c(2254): [client 177.93.3.83:59288] AH02041: Protocol: TLSv1.3, Cipher: TLS_AES_128_GCM_SHA256 (128/128 bits)
+[Sat Nov 02 23:22:20.466454 2024] [socache_shmcb:debug] [pid 11069] mod_socache_shmcb.c(508): AH00831: socache_shmcb_store (0xf5 -> subcache 21)
+[Sat Nov 02 23:22:20.466461 2024] [socache_shmcb:debug] [pid 11069] mod_socache_shmcb.c(862): AH00847: insert happened at idx=0, data=(0:32)
+[Sat Nov 02 23:22:20.466464 2024] [socache_shmcb:debug] [pid 11069] mod_socache_shmcb.c(865): AH00848: finished insert, subcache: idx_pos/idx_used=0/1, data_pos/data_used=0/213
+[Sat Nov 02 23:22:20.466467 2024] [socache_shmcb:debug] [pid 11069] mod_socache_shmcb.c(530): AH00834: leaving socache_shmcb_store successfully
+[Sat Nov 02 23:22:21.137796 2024] [ssl:debug] [pid 11069] ssl_engine_kernel.c(415): [client 177.93.3.83:59288] AH02034: Initial (No.1) HTTPS request received for child 1 (server balldatalab.org:443)
+[Sat Nov 02 23:22:21.137873 2024] [proxy:trace2] [pid 11069] mod_proxy.c(884): [client 177.93.3.83:59288] AH03461: attempting to match URI path '/annotation_app' against prefix '/annotation_app' for proxying
+[Sat Nov 02 23:22:21.137885 2024] [proxy:trace1] [pid 11069] mod_proxy.c(1005): [client 177.93.3.83:59288] AH03464: URI path '/annotation_app' matches proxy handler 'proxy:http://127.0.0.1:8501/'
+[Sat Nov 02 23:22:21.137912 2024] [authz_core:debug] [pid 11069] mod_authz_core.c(843): [client 177.93.3.83:59288] AH01628: authorization result: granted (no directives)
+[Sat Nov 02 23:22:21.137968 2024] [proxy:trace2] [pid 11069] proxy_util.c(2370): [client 177.93.3.83:59288] http: found worker http://127.0.0.1:8501/ for http://127.0.0.1:8501/
+[Sat Nov 02 23:22:21.137972 2024] [proxy:debug] [pid 11069] mod_proxy.c(1521): [client 177.93.3.83:59288] AH01143: Running scheme http handler (attempt 0)
+[Sat Nov 02 23:22:21.137977 2024] [proxy:debug] [pid 11069] proxy_util.c(2576): AH00942: http: has acquired connection for (127.0.0.1:8501)
+[Sat Nov 02 23:22:21.137982 2024] [proxy:debug] [pid 11069] proxy_util.c(2641): [client 177.93.3.83:59288] AH00944: connecting http://127.0.0.1:8501/ to 127.0.0.1:8501
+[Sat Nov 02 23:22:21.138113 2024] [proxy:debug] [pid 11069] proxy_util.c(2864): [client 177.93.3.83:59288] AH00947: connected / to 127.0.0.1:8501
+[Sat Nov 02 23:22:21.138171 2024] [proxy:trace2] [pid 11069] proxy_util.c(3302): http: fam 2 socket created to connect to 127.0.0.1:8501
+[Sat Nov 02 23:22:21.138261 2024] [proxy:error] [pid 11069] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:8501 (127.0.0.1:8501) failed
+[Sat Nov 02 23:22:21.138273 2024] [proxy_http:error] [pid 11069] [client 177.93.3.83:59288] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Sat Nov 02 23:22:21.138294 2024] [proxy:debug] [pid 11069] proxy_util.c(2592): AH00943: http: has released connection for (127.0.0.1:8501)
+[Sat Nov 02 23:22:21.138324 2024] [headers:debug] [pid 11069] mod_headers.c(890): AH01503: headers: ap_headers_error_filter()
+[Sat Nov 02 23:22:21.138476 2024] [ssl:debug] [pid 11069] ssl_engine_io.c(1147): [client 177.93.3.83:59288] AH02001: Connection closed to child 1 with standard shutdown (server balldatalab.org:443)
+[Sat Nov 02 23:22:21.220138 2024] [ssl:info] [pid 11068] [client 177.93.3.83:59292] AH01964: Connection to child 0 established (server balldatalab.org:443)
+[Sat Nov 02 23:22:21.220530 2024] [ssl:debug] [pid 11068] ssl_engine_kernel.c(2395): [client 177.93.3.83:59292] AH02043: SSL virtual host for servername www.balldatalab.org found
+[Sat Nov 02 23:22:21.220559 2024] [socache_shmcb:debug] [pid 11068] mod_socache_shmcb.c(545): AH00835: socache_shmcb_retrieve (0xf5 -> subcache 21)
+[Sat Nov 02 23:22:21.220572 2024] [socache_shmcb:debug] [pid 11068] mod_socache_shmcb.c(898): AH00849: match at idx=0, data=0
+[Sat Nov 02 23:22:21.220575 2024] [socache_shmcb:debug] [pid 11068] mod_socache_shmcb.c(556): AH00836: leaving socache_shmcb_retrieve successfully
+[Sat Nov 02 23:22:21.220902 2024] [core:debug] [pid 11068] protocol.c(2460): [client 177.93.3.83:59292] AH03155: select protocol from , choices=h2,http/1.1 for server balldatalab.org
+[Sat Nov 02 23:22:21.301947 2024] [ssl:debug] [pid 11068] ssl_engine_kernel.c(2254): [client 177.93.3.83:59292] AH02041: Protocol: TLSv1.3, Cipher: TLS_AES_128_GCM_SHA256 (128/128 bits)
+[Sat Nov 02 23:22:21.302032 2024] [socache_shmcb:debug] [pid 11068] mod_socache_shmcb.c(508): AH00831: socache_shmcb_store (0xb8 -> subcache 24)
+[Sat Nov 02 23:22:21.302048 2024] [socache_shmcb:debug] [pid 11068] mod_socache_shmcb.c(862): AH00847: insert happened at idx=0, data=(0:32)
+[Sat Nov 02 23:22:21.302051 2024] [socache_shmcb:debug] [pid 11068] mod_socache_shmcb.c(865): AH00848: finished insert, subcache: idx_pos/idx_used=0/1, data_pos/data_used=0/212
+[Sat Nov 02 23:22:21.302053 2024] [socache_shmcb:debug] [pid 11068] mod_socache_shmcb.c(530): AH00834: leaving socache_shmcb_store successfully
+[Sat Nov 02 23:22:41.322259 2024] [reqtimeout:info] [pid 11068] [client 177.93.3.83:59292] AH01382: Request header read timeout
+[Sat Nov 02 23:22:41.322462 2024] [ssl:debug] [pid 11068] ssl_engine_io.c(1147): [client 177.93.3.83:59292] AH02001: Connection closed to child 0 with standard shutdown (server balldatalab.org:443)
+[Sat Nov 02 23:23:42.724410 2024] [wsgi:info] [pid 11067] mod_wsgi (pid=11067): Shutdown requested 'bdatalab'.
+[Sat Nov 02 23:23:42.724664 2024] [wsgi:info] [pid 11067] mod_wsgi (pid=11067): Stopping process 'bdatalab'.
+[Sat Nov 02 23:23:42.724678 2024] [wsgi:info] [pid 11067] mod_wsgi (pid=11067): Destroying interpreters.
+[Sat Nov 02 23:23:42.724684 2024] [wsgi:info] [pid 11067] mod_wsgi (pid=11067): Cleanup interpreter ''.
+[Sat Nov 02 23:23:42.724708 2024] [wsgi:info] [pid 11067] mod_wsgi (pid=11067): Terminating Python.
+[Sat Nov 02 23:23:42.724712 2024] [wsgi:debug] [pid 11067] src/server/mod_wsgi.c(9161): mod_wsgi (pid=11067): Exiting thread 4 in daemon process 'bdatalab'.
+[Sat Nov 02 23:23:42.724766 2024] [wsgi:debug] [pid 11067] src/server/mod_wsgi.c(9161): mod_wsgi (pid=11067): Exiting thread 3 in daemon process 'bdatalab'.
+[Sat Nov 02 23:23:42.724925 2024] [wsgi:debug] [pid 11067] src/server/mod_wsgi.c(9161): mod_wsgi (pid=11067): Exiting thread 0 in daemon process 'bdatalab'.
+[Sat Nov 02 23:23:42.724943 2024] [wsgi:debug] [pid 11067] src/server/mod_wsgi.c(9161): mod_wsgi (pid=11067): Exiting thread 2 in daemon process 'bdatalab'.
+[Sat Nov 02 23:23:42.729520 2024] [wsgi:info] [pid 11067] mod_wsgi (pid=11067): Python has shutdown.
+[Sat Nov 02 23:23:42.729561 2024] [wsgi:info] [pid 11067] mod_wsgi (pid=11067): Exiting process 'bdatalab'.
+[Sat Nov 02 23:23:46.155332 2024] [wsgi:error] [pid 11118] Exception in thread Thread-1 (run_streamlit_server):
+[Sat Nov 02 23:23:46.155870 2024] [wsgi:error] [pid 11118] Traceback (most recent call last):
+[Sat Nov 02 23:23:46.155898 2024] [wsgi:error] [pid 11118]   File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+[Sat Nov 02 23:23:46.156917 2024] [wsgi:error] [pid 11118]     self.run()
+[Sat Nov 02 23:23:46.156970 2024] [wsgi:error] [pid 11118]   File "/usr/lib/python3.12/threading.py", line 1010, in run
+[Sat Nov 02 23:23:46.157244 2024] [wsgi:error] [pid 11118]     self._target(*self._args, **self._kwargs)
+[Sat Nov 02 23:23:46.157277 2024] [wsgi:error] [pid 11118]   File "/var/www/bdatalab/app/routes/streamlit.py", line 14, in run_streamlit_server
+[Sat Nov 02 23:23:46.157343 2024] [wsgi:error] [pid 11118]     run(
+[Sat Nov 02 23:23:46.157401 2024] [wsgi:error] [pid 11118] TypeError: run() got an unexpected keyword argument 'command_line'
+[Sat Nov 02 23:23:48.358435 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944] mod_wsgi (pid=11118): Exception occurred processing WSGI script '/var/www/bdatalab/bdatalab.wsgi'.
+[Sat Nov 02 23:23:48.371769 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944] Traceback (most recent call last):
+[Sat Nov 02 23:23:48.372001 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/urllib3/connection.py", line 199, in _new_conn
+[Sat Nov 02 23:23:48.372011 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]     sock = connection.create_connection(
+[Sat Nov 02 23:23:48.372015 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 23:23:48.372026 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 85, in create_connection
+[Sat Nov 02 23:23:48.372031 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]     raise err
+[Sat Nov 02 23:23:48.372040 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 73, in create_connection
+[Sat Nov 02 23:23:48.372045 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]     sock.connect(sa)
+[Sat Nov 02 23:23:48.372063 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944] ConnectionRefusedError: [Errno 111] Connection refused
+[Sat Nov 02 23:23:48.372137 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944] 
+[Sat Nov 02 23:23:48.372142 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944] The above exception was the direct cause of the following exception:
+[Sat Nov 02 23:23:48.372146 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944] 
+[Sat Nov 02 23:23:48.372155 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944] Traceback (most recent call last):
+[Sat Nov 02 23:23:48.372348 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+[Sat Nov 02 23:23:48.372356 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]     response = self._make_request(
+[Sat Nov 02 23:23:48.372360 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]                ^^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 23:23:48.372368 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 495, in _make_request
+[Sat Nov 02 23:23:48.372372 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]     conn.request(
+[Sat Nov 02 23:23:48.372380 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/urllib3/connection.py", line 441, in request
+[Sat Nov 02 23:23:48.372384 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]     self.endheaders()
+[Sat Nov 02 23:23:48.372391 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]   File "/usr/lib/python3.12/http/client.py", line 1331, in endheaders
+[Sat Nov 02 23:23:48.372395 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]     self._send_output(message_body, encode_chunked=encode_chunked)
+[Sat Nov 02 23:23:48.372413 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]   File "/usr/lib/python3.12/http/client.py", line 1091, in _send_output
+[Sat Nov 02 23:23:48.372415 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]     self.send(msg)
+[Sat Nov 02 23:23:48.372421 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]   File "/usr/lib/python3.12/http/client.py", line 1035, in send
+[Sat Nov 02 23:23:48.372424 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]     self.connect()
+[Sat Nov 02 23:23:48.372430 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/urllib3/connection.py", line 279, in connect
+[Sat Nov 02 23:23:48.372432 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]     self.sock = self._new_conn()
+[Sat Nov 02 23:23:48.372435 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]                 ^^^^^^^^^^^^^^^^
+[Sat Nov 02 23:23:48.372441 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/urllib3/connection.py", line 214, in _new_conn
+[Sat Nov 02 23:23:48.372443 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]     raise NewConnectionError(
+[Sat Nov 02 23:23:48.372456 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944] urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x723e92892330>: Failed to establish a new connection: [Errno 111] Connection refused
+[Sat Nov 02 23:23:48.372467 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944] 
+[Sat Nov 02 23:23:48.372469 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944] The above exception was the direct cause of the following exception:
+[Sat Nov 02 23:23:48.372472 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944] 
+[Sat Nov 02 23:23:48.372478 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944] Traceback (most recent call last):
+[Sat Nov 02 23:23:48.372541 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+[Sat Nov 02 23:23:48.372544 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]     resp = conn.urlopen(
+[Sat Nov 02 23:23:48.372547 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]            ^^^^^^^^^^^^^
+[Sat Nov 02 23:23:48.372553 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+[Sat Nov 02 23:23:48.372556 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]     retries = retries.increment(
+[Sat Nov 02 23:23:48.372558 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]               ^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 23:23:48.372565 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+[Sat Nov 02 23:23:48.372568 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]     raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+[Sat Nov 02 23:23:48.372570 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 23:23:48.372595 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944] urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=8501): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x723e92892330>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Sat Nov 02 23:23:48.372608 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944] 
+[Sat Nov 02 23:23:48.372611 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944] During handling of the above exception, another exception occurred:
+[Sat Nov 02 23:23:48.372613 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944] 
+[Sat Nov 02 23:23:48.372619 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944] Traceback (most recent call last):
+[Sat Nov 02 23:23:48.373030 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/app.py", line 1498, in __call__
+[Sat Nov 02 23:23:48.373037 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]     return self.wsgi_app(environ, start_response)
+[Sat Nov 02 23:23:48.373040 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 23:23:48.373048 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/app.py", line 1476, in wsgi_app
+[Sat Nov 02 23:23:48.373052 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]     response = self.handle_exception(e)
+[Sat Nov 02 23:23:48.373055 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]                ^^^^^^^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 23:23:48.373063 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+[Sat Nov 02 23:23:48.373066 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]     response = self.full_dispatch_request()
+[Sat Nov 02 23:23:48.373068 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 23:23:48.373076 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+[Sat Nov 02 23:23:48.373079 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]     rv = self.handle_user_exception(e)
+[Sat Nov 02 23:23:48.373082 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 23:23:48.373090 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+[Sat Nov 02 23:23:48.373093 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]     rv = self.dispatch_request()
+[Sat Nov 02 23:23:48.373096 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]          ^^^^^^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 23:23:48.373104 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+[Sat Nov 02 23:23:48.373108 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+[Sat Nov 02 23:23:48.373111 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 23:23:48.373120 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]   File "/var/www/bdatalab/app/routes/streamlit.py", line 40, in annotation_app
+[Sat Nov 02 23:23:48.373123 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]     response = requests.get('http://127.0.0.1:8501')
+[Sat Nov 02 23:23:48.373126 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 23:23:48.373134 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/requests/api.py", line 73, in get
+[Sat Nov 02 23:23:48.373137 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]     return request("get", url, params=params, **kwargs)
+[Sat Nov 02 23:23:48.373140 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 23:23:48.373147 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/requests/api.py", line 59, in request
+[Sat Nov 02 23:23:48.373150 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]     return session.request(method=method, url=url, **kwargs)
+[Sat Nov 02 23:23:48.373152 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 23:23:48.373164 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+[Sat Nov 02 23:23:48.373167 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]     resp = self.send(prep, **send_kwargs)
+[Sat Nov 02 23:23:48.373169 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 23:23:48.373175 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+[Sat Nov 02 23:23:48.373178 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]     r = adapter.send(request, **kwargs)
+[Sat Nov 02 23:23:48.373180 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Sat Nov 02 23:23:48.373186 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]   File "/var/www/bdatalab/venv/lib/python3.12/site-packages/requests/adapters.py", line 700, in send
+[Sat Nov 02 23:23:48.373189 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944]     raise ConnectionError(e, request=request)
+[Sat Nov 02 23:23:48.373200 2024] [wsgi:error] [pid 11118] [remote 177.93.3.83:60944] requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8501): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x723e92892330>: Failed to establish a new connection: [Errno 111] Connection refused'))
