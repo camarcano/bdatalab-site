@@ -15,11 +15,13 @@ def create_app(config_name='development'):
     from .routes.main import main_bp
     from .routes.webhook import webhook_bp
     from .routes.streamlit import streamlit_bp
+    from .routes.dash import dash_blueprint, init_dash
 
     app.register_blueprint(admin_bp)
     app.register_blueprint(other_bp)
     app.register_blueprint(main_bp)
     app.register_blueprint(webhook_bp)
     app.register_blueprint(streamlit_bp)
+    app.register_blueprint(dash_blueprint, url_prefix='/dash')
 
     return app
