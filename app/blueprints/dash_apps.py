@@ -1,6 +1,7 @@
 from flask import Blueprint
 from dash import Dash
 from dash import html, dcc, dash_table
+import pandas as pd
 
 # Define the main blueprint for all Dash apps
 dash_bp = Blueprint('dash_bp', __name__, url_prefix='/dash')
