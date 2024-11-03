@@ -10,10 +10,11 @@ dash_blueprint = Blueprint('dash', __name__)
 
 # Initialize the Dash app
 def init_dash(server):
+    # Update the URL base pathname to match your desired route
     dash_app = Dash(
         __name__,
         server=server,
-        url_base_pathname='/dash/',
+        url_base_pathname='/dashboard/',  # Changed from /dash/ to /dashboard/
         assets_folder=current_app.static_folder,
         assets_url_path='/static/'
     )
@@ -115,6 +116,6 @@ def init_dash(server):
     return dash_app
 
 # Blueprint route
-@dash_blueprint.route('/dash')
-def dash_page():
-    return 'This route is not directly accessed'
+@dash_blueprint.route('/dashboard')
+def render_dashboard():
+    return current_app.send_static_file('dash/index.html')
