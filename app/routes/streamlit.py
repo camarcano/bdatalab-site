@@ -1,55 +1,105 @@
 # app/routes/streamlit.py
-from flask import Blueprint, render_template, Response
-import streamlit as st
-from streamlit.web.bootstrap import run
+from flask import Blueprint, Response, current_app
+import streamlit.web.bootstrap as bootstrap
 import threading
 import requests
+import time
+import socket
 from functools import partial
 
 streamlit_bp = Blueprint('streamlit', __name__)
 
+
+def is_port_in_use(port):
+    """Check if a port is in use"""
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+        return s.connect_ex(('localhost', port)) == 0
+
+def wait_for_streamlit(timeout=30):
+    """Wait for Streamlit server to be ready"""
+    start_time = time.time()
+    while time.time() - start_time < timeout:
+        if is_port_in_use(8501):
+            return True
+        time.sleep(1)
+    return False
+
 def run_streamlit():
-    """Run Streamlit server in a separate thread"""
-    run(
-        file="/opt/bdatalab/repos/BaseballCV/streamlit/annotation_app/app.py",
-        flag_options={
-            "server.port": 8501,
-            "server.address": "localhost",
-            "server.headless": True,
-            "server.enableCORS": True,
-            "browser.serverAddress": "localhost",
-            "server.enableXsrfProtection": False
-        }
-    )
+    """Run Streamlit server"""
+    try:
+        bootstrap.run(
+            # Make sure this path is correct
+            file="/opt/bdatalab/repos/BaseballCV/streamlit/annotation_app/app.py",
+            flag_options={
+                "server.port": 8501,
+                "server.address": "localhost",
+                "server.headless": True,
+                "server.enableCORS": True,
+                "server.enableXsrfProtection": False,
+                "browser.serverAddress": "localhost",
+                "global.developmentMode": False
+            }
+        )
+    except Exception as e:
+        print(f"Error starting Streamlit server: {e}")
+        raise
 
-# Start Streamlit in a separate thread when blueprint is registered
-thread = threading.Thread(target=run_streamlit, daemon=True)
-thread.start()
+# Start Streamlit server if it's not already running
+if not is_port_in_use(8501):
+    thread = threading.Thread(target=run_streamlit, daemon=True)
+    thread.start()
+    
+    # Wait for Streamlit to start
+    if not wait_for_streamlit():
+        print("Streamlit server failed to start")
+        raise RuntimeError("Streamlit server failed to start")
+else:
+    print("Streamlit server already running on port 8501")
 
-def proxy_request(path=''):
-    """Proxy requests to Streamlit server"""
+def proxy_streamlit(path=''):
+    """Proxy requests to Streamlit server with error handling"""
     streamlit_url = f'http://localhost:8501/{path}'
     
     try:
-        resp = requests.get(streamlit_url, stream=True)
+        response = requests.get(
+            streamlit_url, 
+            stream=True,
+            timeout=5  # Add timeout
+        )
+        
         excluded_headers = ['content-encoding', 'content-length', 'transfer-encoding', 'connection']
-        headers = [(name, value) for (name, value) in resp.raw.headers.items()
+        headers = [(name, value) for (name, value) in response.raw.headers.items()
                   if name.lower() not in excluded_headers]
         
         return Response(
-            resp.content,
-            resp.status_code,
+            response.content,
+            response.status_code,
             headers
         )
-    except requests.RequestException as e:
-        return str(e), 500
+    except requests.ConnectionError:
+        print(f"Failed to connect to Streamlit server at {streamlit_url}")
+        return "Streamlit server is not responding", 503
+    except requests.Timeout:
+        print(f"Timeout connecting to Streamlit server at {streamlit_url}")
+        return "Request to Streamlit server timed out", 504
+    except Exception as e:
+        print(f"Error proxying request to Streamlit: {e}")
+        return f"Internal server error: {str(e)}", 500
 
 @streamlit_bp.route('/annotation_app')
 def annotation_app():
-    """Main route for Streamlit app"""
-    return proxy_request()
+    """Serve the Streamlit app"""
+    return proxy_streamlit()
 
 @streamlit_bp.route('/annotation_app/<path:path>')
 def streamlit_proxy(path):
     """Handle all other Streamlit routes"""
-    return proxy_request(path)
+    return proxy_streamlit(path)
+
+# Add health check endpoint
+@streamlit_bp.route('/annotation_app/health')
+def health_check():
+    """Check if Streamlit server is running"""
+    if is_port_in_use(8501):
+        return "Streamlit server is running", 200
+    return "Streamlit server is not running", 503
