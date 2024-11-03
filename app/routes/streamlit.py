@@ -66,11 +66,12 @@ if not is_port_in_use(8501):
         print("Streamlit server failed to start")
         raise RuntimeError("Streamlit server failed to start")
 else:
-    logger.info("Streamlit server already running on port 8501")
+    print("Streamlit server already running on port 8501")
 
 def proxy_streamlit(path=''):
     """Proxy requests to Streamlit server with error handling"""
     streamlit_url = f'http://localhost:8501/{path}'
+    print(streamlit_url)
     
     try:
         response = requests.get(
@@ -101,6 +102,7 @@ def proxy_streamlit(path=''):
 @streamlit_bp.route('/annotation_app')
 def annotation_app():
     """Serve the Streamlit app"""
+    print("trying to get the url")
     return proxy_streamlit()
 
 @streamlit_bp.route('/annotation_app/<path:path>')
