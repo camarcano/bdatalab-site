@@ -25,28 +25,33 @@ def wait_for_streamlit(timeout=30):
     return False
 
 def run_streamlit():
-    """Run Streamlit server"""
+    """Run Streamlit server using subprocess"""
     try:
-        print("Starting Streamlit server...")
-        # Get the absolute path to the Streamlit app
+        import subprocess
         app_path = "/opt/bdatalab/repos/BaseballCV/streamlit/annotation_app/app.py"
+        venv_python = "/var/www/bdatalab/venv/bin/python"
         
-        # Change to the directory containing the app
-        os.chdir(os.path.dirname(app_path))
+        cmd = [
+            venv_python,
+            "-m", "streamlit",
+            "run",
+            app_path,
+            "--server.port", "8501",
+            "--server.address", "localhost",
+            "--server.headless", "true",
+            "--server.enableCORS", "true",
+            "--server.enableXsrfProtection", "false"
+        ]
         
-        # Run Streamlit with updated parameters
-        bootstrap.run(
-            main_script_path=app_path,
-            command_line=[],
-            args=[],
-            flag_options={
-                "server.port": 8501,
-                "server.address": "localhost",
-                "server.headless": True,
-                "server.enableCORS": True,
-                "server.enableXsrfProtection": False
-            }
+        process = subprocess.Popen(
+            cmd,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            cwd=os.path.dirname(app_path)
         )
+        
+        print("Started Streamlit server process")
+        return process
     except Exception as e:
         print(f"Error starting Streamlit server: {e}")
         raise
