@@ -1164,3 +1164,6 @@
 177.93.3.83 - - [02/Nov/2024:23:39:06 -0500] "-" 408 2571 "-" "-"
 49.51.72.76 - - [02/Nov/2024:23:39:10 -0500] "GET / HTTP/1.1" 301 537 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1"
 177.93.3.83 - - [02/Nov/2024:23:38:46 -0500] "GET /annotation_app HTTP/1.1" 500 3401 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+49.51.72.76 - - [02/Nov/2024:23:39:11 -0500] "GET / HTTP/1.1" 500 3382 "http://balldatalab.org" "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1"
+177.93.3.83 - - [02/Nov/2024:23:43:46 -0500] "-" 408 2571 "-" "-"
+177.93.3.83 - - [02/Nov/2024:23:43:26 -0500] "GET /annotation_app HTTP/1.1" 500 3401 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"

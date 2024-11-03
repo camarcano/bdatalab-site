@@ -1198,3 +1198,38 @@ chmod: cannot access '/opt/bdatalab/repos/BaseballCV': No such file or directory
 [Sat Nov 02 23:39:17.219152 2024] [wsgi:error] [pid 11492]   File "/var/www/bdatalab/app/routes/streamlit.py", line 30, in run_streamlit
 [Sat Nov 02 23:39:17.219230 2024] [wsgi:error] [pid 11492]     bootstrap.run(
 [Sat Nov 02 23:39:17.219245 2024] [wsgi:error] [pid 11492] TypeError: run() got an unexpected keyword argument 'file'
+[Sat Nov 02 23:39:47.234547 2024] [wsgi:error] [pid 11492] Streamlit server failed to start
+[Sat Nov 02 23:39:47.234718 2024] [wsgi:error] [pid 11492] [remote 49.51.72.76:60460] mod_wsgi (pid=11492): Failed to exec Python script file '/var/www/bdatalab/bdatalab.wsgi'.
+[Sat Nov 02 23:39:47.234790 2024] [wsgi:error] [pid 11492] [remote 49.51.72.76:60460] mod_wsgi (pid=11492): Exception occurred processing WSGI script '/var/www/bdatalab/bdatalab.wsgi'.
+[Sat Nov 02 23:39:47.235042 2024] [wsgi:error] [pid 11492] [remote 49.51.72.76:60460] Traceback (most recent call last):
+[Sat Nov 02 23:39:47.235305 2024] [wsgi:error] [pid 11492] [remote 49.51.72.76:60460]   File "/var/www/bdatalab/bdatalab.wsgi", line 9, in <module>
+[Sat Nov 02 23:39:47.235317 2024] [wsgi:error] [pid 11492] [remote 49.51.72.76:60460]     application = create_app()
+[Sat Nov 02 23:39:47.235323 2024] [wsgi:error] [pid 11492] [remote 49.51.72.76:60460]                   ^^^^^^^^^^^^
+[Sat Nov 02 23:39:47.235336 2024] [wsgi:error] [pid 11492] [remote 49.51.72.76:60460]   File "/var/www/bdatalab/app/__init__.py", line 17, in create_app
+[Sat Nov 02 23:39:47.235342 2024] [wsgi:error] [pid 11492] [remote 49.51.72.76:60460]     from .routes.streamlit import streamlit_bp
+[Sat Nov 02 23:39:47.235353 2024] [wsgi:error] [pid 11492] [remote 49.51.72.76:60460]   File "/var/www/bdatalab/app/routes/streamlit.py", line 55, in <module>
+[Sat Nov 02 23:39:47.235358 2024] [wsgi:error] [pid 11492] [remote 49.51.72.76:60460]     raise RuntimeError("Streamlit server failed to start")
+[Sat Nov 02 23:39:47.235380 2024] [wsgi:error] [pid 11492] [remote 49.51.72.76:60460] RuntimeError: Streamlit server failed to start
+[Sat Nov 02 23:43:27.100193 2024] [wsgi:error] [pid 11614] Starting Streamlit server...
+[Sat Nov 02 23:43:27.100282 2024] [wsgi:error] [pid 11614] Error starting Streamlit server: run() got an unexpected keyword argument 'command_line'
+[Sat Nov 02 23:43:27.100304 2024] [wsgi:error] [pid 11614] Exception in thread Thread-1 (run_streamlit):
+[Sat Nov 02 23:43:27.100319 2024] [wsgi:error] [pid 11614] Traceback (most recent call last):
+[Sat Nov 02 23:43:27.100333 2024] [wsgi:error] [pid 11614]   File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+[Sat Nov 02 23:43:27.100895 2024] [wsgi:error] [pid 11614]     self.run()
+[Sat Nov 02 23:43:27.101005 2024] [wsgi:error] [pid 11614]   File "/usr/lib/python3.12/threading.py", line 1010, in run
+[Sat Nov 02 23:43:27.101408 2024] [wsgi:error] [pid 11614]     self._target(*self._args, **self._kwargs)
+[Sat Nov 02 23:43:27.101476 2024] [wsgi:error] [pid 11614]   File "/var/www/bdatalab/app/routes/streamlit.py", line 38, in run_streamlit
+[Sat Nov 02 23:43:27.101555 2024] [wsgi:error] [pid 11614]     bootstrap.run(
+[Sat Nov 02 23:43:27.101573 2024] [wsgi:error] [pid 11614] TypeError: run() got an unexpected keyword argument 'command_line'
+[Sat Nov 02 23:43:57.117011 2024] [wsgi:error] [pid 11614] Streamlit server failed to start
+[Sat Nov 02 23:43:57.117183 2024] [wsgi:error] [pid 11614] [remote 177.93.3.83:51886] mod_wsgi (pid=11614): Failed to exec Python script file '/var/www/bdatalab/bdatalab.wsgi'.
+[Sat Nov 02 23:43:57.117303 2024] [wsgi:error] [pid 11614] [remote 177.93.3.83:51886] mod_wsgi (pid=11614): Exception occurred processing WSGI script '/var/www/bdatalab/bdatalab.wsgi'.
+[Sat Nov 02 23:43:57.118129 2024] [wsgi:error] [pid 11614] [remote 177.93.3.83:51886] Traceback (most recent call last):
+[Sat Nov 02 23:43:57.118372 2024] [wsgi:error] [pid 11614] [remote 177.93.3.83:51886]   File "/var/www/bdatalab/bdatalab.wsgi", line 9, in <module>
+[Sat Nov 02 23:43:57.118380 2024] [wsgi:error] [pid 11614] [remote 177.93.3.83:51886]     application = create_app()
+[Sat Nov 02 23:43:57.118383 2024] [wsgi:error] [pid 11614] [remote 177.93.3.83:51886]                   ^^^^^^^^^^^^
+[Sat Nov 02 23:43:57.118394 2024] [wsgi:error] [pid 11614] [remote 177.93.3.83:51886]   File "/var/www/bdatalab/app/__init__.py", line 17, in create_app
+[Sat Nov 02 23:43:57.118398 2024] [wsgi:error] [pid 11614] [remote 177.93.3.83:51886]     from .routes.streamlit import streamlit_bp
+[Sat Nov 02 23:43:57.118406 2024] [wsgi:error] [pid 11614] [remote 177.93.3.83:51886]   File "/var/www/bdatalab/app/routes/streamlit.py", line 62, in <module>
+[Sat Nov 02 23:43:57.118409 2024] [wsgi:error] [pid 11614] [remote 177.93.3.83:51886]     raise RuntimeError("Streamlit server failed to start")
+[Sat Nov 02 23:43:57.118426 2024] [wsgi:error] [pid 11614] [remote 177.93.3.83:51886] RuntimeError: Streamlit server failed to start
