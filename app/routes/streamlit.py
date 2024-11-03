@@ -71,33 +71,34 @@ else:
 def proxy_streamlit(path=''):
     """Proxy requests to Streamlit server with error handling"""
     streamlit_url = f'http://localhost:8501/{path}'
-    print(streamlit_url)
+    print(f"Proxying request to: {streamlit_url}")  # Debugging information
     
     try:
-        response = requests.get(
-            streamlit_url, 
-            stream=True,
-            timeout=15
-        )
+        # Stream the response from the Streamlit server
+        response = requests.get(streamlit_url, stream=True, timeout=10)
         
+        # Check if the response is successful
+        if response.status_code != 200:
+            print(f"Error from Streamlit server: {response.status_code}")
+            return Response(f"Error {response.status_code} from Streamlit", response.status_code)
+        
+        # Filter out headers that might conflict with Flask's handling
         excluded_headers = ['content-encoding', 'content-length', 'transfer-encoding', 'connection']
-        headers = [(name, value) for (name, value) in response.raw.headers.items()
-                  if name.lower() not in excluded_headers]
+        headers = [(name, value) for (name, value) in response.raw.headers.items() if name.lower() not in excluded_headers]
         
-        return Response(
-            response.content,
-            response.status_code,
-            headers
-        )
+        # Return the response with headers from Streamlit server
+        return Response(response.content, response.status_code, headers)
+    
     except requests.ConnectionError:
         print(f"Failed to connect to Streamlit server at {streamlit_url}")
         return "Streamlit server is not responding", 503
     except requests.Timeout:
-        print(f"Timeout connecting to Streamlit server at {streamlit_url}")
+        print(f"Request to Streamlit server timed out at {streamlit_url}")
         return "Request to Streamlit server timed out", 504
     except Exception as e:
-        print(f"Error proxying request to Streamlit: {e}")
+        print(f"Error in proxying request to Streamlit: {e}")
         return f"Internal server error: {str(e)}", 500
+
 
 @streamlit_bp.route('/annotation_app')
 def annotation_app():
