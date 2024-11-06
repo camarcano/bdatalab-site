@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="streamlit-container" style="width: 100%; height: 100vh;">    <iframe 
+    id="streamlit-frame"
+    src="{{ url_for('streamlit.annotation_app') }}"
+    style="width: 100%; height: 100%; border: none;"
+    allow="camera *; microphone *; clipboard-write"
+    sandbox="allow-same-origin allow-scripts allow-forms allow-popups"
+    onload="checkIframeLoaded()"
+    onerror="handleIframeError()">
+</iframe>
+
+</div>
+
+<script>
+function checkIframeLoaded() {
+    const iframe = document.getElementById('streamlit-frame');
+    if (iframe.contentDocument.body.innerHTML === '') {
+        handleIframeError();
+    }
+}
+
+function handleIframeError() {
+    const container = document.querySelector('.streamlit-container');
+    container.innerHTML = `
+        <div style="padding: 20px; text-align: center;">
+            <h3>Unable to load Streamlit application</h3>
+            <p>Please try refreshing the page. If the problem persists, contact support.</p>
+            <button onclick="location.reload()">Refresh Page</button>
+        </div>
+    `;
+}
+</script>
+{% endblock %}
