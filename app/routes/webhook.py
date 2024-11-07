@@ -7,7 +7,7 @@ webhook_bp = Blueprint('webhook', __name__)
 REPO_DIR = '/opt/bdatalab/repos/BaseballCV'
 REPO_URL = 'https://github.com/dylandru/BaseballCV.git'
 REPO_BRANCH = '26-create-streamlit-app-designed-for-open-source-annotations'
-SUDO_PASSWORD = '13409848Mb135--CCmm'  # Change this to your actual password or securely retrieve it
+SUDO_PASSWORD = '2024mhSyC78'  # Change this to your actual password or securely retrieve it
 
 @webhook_bp.route('/webhook', methods=['POST'])
 def webhook():
