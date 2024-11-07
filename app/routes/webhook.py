@@ -17,7 +17,7 @@ def webhook():
     # Check if the repository directory exists
     if os.path.exists(REPO_DIR):
         # Change permissions recursively to allow deletion
-        print(jsonify({"message": "Changing permissions for existing repo."}))
+        print("Changing permissions for existing repo.")
         
         # Run the chmod command with sudo
         chmod_command = f"echo {SUDO_PASSWORD} | sudo -S chmod -R 775 {REPO_DIR}"
@@ -27,7 +27,7 @@ def webhook():
             return jsonify({"error": chmod_result.stderr, "message": "Failed to change permissions"}), 500
         
         # Remove the existing repository directory
-        print(jsonify({"message": "Trying to delete existing repo."}))
+        print("Trying to delete existing repo.")
         delete_command = f"echo {SUDO_PASSWORD} | sudo -S rm -rf {REPO_DIR}"
         delete_result = subprocess.run(delete_command, shell=True, capture_output=True, text=True)
 
@@ -37,7 +37,7 @@ def webhook():
         print(jsonify({"message": "Existing repo deleted."}))
 
     # Clone the specified branch of the repository without sudo
-    print(jsonify({"message": "Cloning the repository."}))
+    print("Cloning the repository.")
     clone_command = f"git clone --branch {branch} {REPO_URL} {REPO_DIR}"
     clone_result = subprocess.run(clone_command, shell=True, capture_output=True, text=True)
 
