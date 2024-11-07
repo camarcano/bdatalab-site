@@ -29,11 +29,10 @@ def run_streamlit():
     try:
         import subprocess
         app_path = "/opt/bdatalab/repos/BaseballCV/streamlit/annotation_app/app.py"
-        venv_python = "/var/www/bdatalab/venv/bin/python"
+        venv_python = "/var/www/bdatalab/venv/bin/"
         
         cmd = [
             venv_python,
-            "-m", "streamlit",
             "run",
             app_path,
             "--server.port", "8501",
