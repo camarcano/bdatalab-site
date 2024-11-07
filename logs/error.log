@@ -1336,3 +1336,40 @@ chmod: cannot access '/opt/bdatalab/repos/BaseballCV': No such file or directory
 [Sun Nov 03 16:33:22.151916 2024] [wsgi:error] [pid 25151] [remote 177.93.3.83:57582]     from routes.dash import dash_blueprint, init_dash
 [Sun Nov 03 16:33:22.151940 2024] [wsgi:error] [pid 25151] [remote 177.93.3.83:57582] ModuleNotFoundError: No module named 'routes'
 [Sun Nov 03 16:33:23.475791 2024] [wsgi:error] [pid 25151] Started Streamlit server process
+[Wed Nov 06 15:36:15.016610 2024] [wsgi:error] [pid 725] Started Streamlit server process
+[Wed Nov 06 15:36:21.146682 2024] [wsgi:error] [pid 725] [remote 200.119.187.89:13748] trying to get the url
+[Wed Nov 06 15:36:21.146748 2024] [wsgi:error] [pid 725] [remote 200.119.187.89:13748] Proxying request to: http://localhost:8501/
+[Wed Nov 06 15:36:21.161409 2024] [wsgi:error] [pid 725] [remote 200.119.187.89:13748] <Response [200]>
+[Wed Nov 06 15:36:21.161509 2024] [wsgi:error] [pid 725] [remote 200.119.187.89:13748] [('Server', 'TornadoServer/6.4.1'), ('Content-Type', 'text/html'), ('Date', 'Wed, 06 Nov 2024 21:36:21 GMT'), ('Accept-Ranges', 'bytes'), ('Etag', '"2c06f1bb433d252a1eb544504956def4a269feb16611ea654d8c1a75495c830ea0b3d387e5cd3ddc0016819f4db0fc85474a0465d138dd293b9d952e5b947140"'), ('Last-Modified', 'Sat, 02 Nov 2024 19:54:31 GMT'), ('Cache-Control', 'no-cache'), ('Vary', 'Accept-Encoding')]
+[Wed Nov 06 15:36:21.161873 2024] [wsgi:error] [pid 725] [remote 200.119.187.89:13748] Streamlit response content: b'<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"/><link rel="shortcut icon" href="./favicon.png"/><link r'
+[Wed Nov 06 17:15:26.176289 2024] [core:error] [pid 729] [client 147.139.141.27:56814] AH10244: invalid URI path (/cgi-bin/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/bin/sh)
+[Wed Nov 06 17:15:27.351175 2024] [core:error] [pid 832] [client 147.139.141.27:57894] AH10244: invalid URI path (/cgi-bin/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/bin/sh)
+[Wed Nov 06 18:27:18.213258 2024] [wsgi:error] [pid 729] Started Streamlit server process
+[Wed Nov 06 18:36:10.790912 2024] [wsgi:error] [pid 994] Started Streamlit server process
+[Wed Nov 06 18:47:59.597596 2024] [proxy:error] [pid 1455] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:8501 (127.0.0.1:8501) failed
+[Wed Nov 06 18:47:59.597681 2024] [proxy_http:error] [pid 1455] [client 177.93.3.83:48324] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Wed Nov 06 18:48:02.186773 2024] [proxy:error] [pid 1458] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:8501 (127.0.0.1:8501) failed
+[Wed Nov 06 18:48:02.186825 2024] [proxy_http:error] [pid 1458] [client 177.93.3.83:48308] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Wed Nov 06 18:50:43.984852 2024] [proxy:error] [pid 1457] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:8501 (127.0.0.1:8501) failed
+[Wed Nov 06 18:50:43.984927 2024] [proxy_http:error] [pid 1457] [client 177.93.3.83:48044] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Wed Nov 06 18:50:44.327868 2024] [proxy:error] [pid 1454] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:8501 (127.0.0.1:8501) failed
+[Wed Nov 06 18:50:44.327908 2024] [proxy_http:error] [pid 1454] [client 177.93.3.83:48060] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Wed Nov 06 18:58:45.180120 2024] [proxy:error] [pid 1456] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:8501 (127.0.0.1:8501) failed
+[Wed Nov 06 18:58:45.180175 2024] [proxy_http:error] [pid 1456] [client 156.205.22.18:51640] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Wed Nov 06 18:58:46.881720 2024] [wsgi:error] [pid 1453] Started Streamlit server process
+[Wed Nov 06 18:59:11.203114 2024] [proxy:error] [pid 1778] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:8501 (127.0.0.1:8501) failed
+[Wed Nov 06 18:59:11.203181 2024] [proxy_http:error] [pid 1778] [client 156.205.22.18:51647] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Wed Nov 06 19:04:18.481161 2024] [wsgi:error] [pid 1776] Started Streamlit server process
+[Wed Nov 06 19:12:48.594346 2024] [proxy:error] [pid 1778] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:8501 (127.0.0.1:8501) failed
+[Wed Nov 06 19:12:48.594419 2024] [proxy_http:error] [pid 1778] [client 177.93.3.83:34096] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Wed Nov 06 19:13:12.585894 2024] [proxy:error] [pid 1780] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:8501 (127.0.0.1:8501) failed
+[Wed Nov 06 19:13:12.585978 2024] [proxy_http:error] [pid 1780] [client 177.93.3.83:33322] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Wed Nov 06 19:16:37.416397 2024] [wsgi:error] [pid 2268] Streamlit server already running on port 8501
+[Wed Nov 06 19:38:03.600423 2024] [wsgi:error] [pid 2723] Streamlit server already running on port 8501
+[Wed Nov 06 19:47:07.463100 2024] [wsgi:error] [pid 3014] Streamlit server already running on port 8501
+[Wed Nov 06 20:00:10.020516 2024] [proxy:error] [pid 724] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:8501 (127.0.0.1:8501) failed
+[Wed Nov 06 20:00:10.022185 2024] [proxy_http:error] [pid 724] [client 177.93.3.83:59928] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Thu Nov 07 07:19:06.719122 2024] [proxy:error] [pid 16220] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:8501 (127.0.0.1:8501) failed
+[Thu Nov 07 07:19:06.719557 2024] [proxy_http:error] [pid 16220] [client 102.42.94.28:54355] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: https://www.balldatalab.org/annotation_app/
+[Thu Nov 07 07:19:06.721655 2024] [proxy:error] [pid 16224] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:8501 (127.0.0.1:8501) failed
+[Thu Nov 07 07:19:06.721739 2024] [proxy_http:error] [pid 16224] [client 102.42.94.28:54356] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: https://www.balldatalab.org/annotation_app/
